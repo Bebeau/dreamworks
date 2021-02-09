@@ -12,3 +12,4 @@ client/app/node_modules/
 .DS_Store
 config/keys.js
 yarn.lock
+client/app/.eslintcache
