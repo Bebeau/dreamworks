@@ -23,10 +23,16 @@ export const projects = [
 					"person": "Aaron Waltke and Chad Quandt"
 				}
 			],
-			"streaming": {
-				"netfilx": "LINK",
-				"hulu": "LINK"
-			},
+			"streaming": [
+				{
+					"platform": "Netflix",
+					"link": "LINK"
+				},
+				{
+					"platform": "Netflix",
+					"link": "LINK"
+				}
+			],
 			"items": [
 				{
 					"video": "https://www.youtube.com/watch?v=6adVDTR79n4",
@@ -45,7 +51,7 @@ export const projects = [
 					"poster": "https://img.youtube.com/vi/rpePQS8dW04/0.jpg",
 					"title": "Three Wizards Fight",
 					"description": "When Douxie, Merlin and Morgana finally face off, its a stunning combination of feature quality FX and incredible character animation that brings this magical fight sequence to life."
-				},
+				}
 			],
 			"bonus": {
 				"video": "",
@@ -54,7 +60,7 @@ export const projects = [
 				"description": ""
 			},
 			"consideration": {
-				"poster": "/assets/img/TOA_Wizards/poster.png",
+				"poster": "./img/series/TOA_Wizards/poster.jpg",
 				"title": "Production Design by Alfonso Blaas",
 				"description": "Alfonso Blaas created a stunning production design.",
 				"btnText": "View Now"
@@ -99,10 +105,16 @@ export const projects = [
 					"person": "Joanna Lewis and Kristine Songco"
 				}
 			],
-			"streaming": {
-				"netfilx": "LINK",
-				"hulu": "LINK"
-			},
+			"streaming": [
+				{
+					"platform": "Netflix",
+					"link": "LINK"
+				},
+				{
+					"platform": "Netflix",
+					"link": "LINK"
+				}
+			],
 			"items": [
 				{
 					"video": "https://www.youtube.com/watch?v=25UHUbpFTtY",
@@ -167,10 +179,16 @@ export const projects = [
 					"person": "Steven Spielberg, Colin Trevorrow, Frank Marshall, Scott Kreamer, Aaron Hammersley"
 				}
 			],
-			"streaming": {
-				"netfilx": "LINK",
-				"hulu": "LINK"
-			},
+			"streaming": [
+				{
+					"platform": "Netflix",
+					"link": "LINK"
+				},
+				{
+					"platform": "Netflix",
+					"link": "LINK"
+				}
+			],
 			"items": [
 				{
 					"video": "https://www.youtube.com/watch?v=bUOpbuNgL4w",
@@ -221,10 +239,16 @@ export const projects = [
 					"person": "Lynn Naylor and Sunil Hall"
 				}
 			],
-			"streaming": {
-				"netfilx": "LINK",
-				"hulu": "LINK"
-			},
+			"streaming": [
+				{
+					"platform": "Netflix",
+					"link": "LINK"
+				},
+				{
+					"platform": "Netflix",
+					"link": "LINK"
+				}
+			],
 			"items": [
 				{
 					"video": "https://www.youtube.com/watch?v=mzCXDD3WOuU",
@@ -283,10 +307,16 @@ export const projects = [
 					"person": "Noelle Stevenson and Chuckles Austen"
 				}
 			],
-			"streaming": {
-				"netfilx": "LINK",
-				"hulu": "LINK"
-			},
+			"streaming": [
+				{
+					"platform": "Netflix",
+					"link": "LINK"
+				},
+				{
+					"platform": "Netflix",
+					"link": "LINK"
+				}
+			],
 			"items": [
 				{
 					"video": "https://www.youtube.com/watch?v=7EOGP0zDl1M",
@@ -342,10 +372,16 @@ export const projects = [
 					"person": "Vin Diesel, Neal H Moritz, Chris Morgan"
 				}
 			],
-			"streaming": {
-				"netfilx": "LINK",
-				"hulu": "LINK"
-			},
+			"streaming": [
+				{
+					"platform": "Netflix",
+					"link": "LINK"
+				},
+				{
+					"platform": "Netflix",
+					"link": "LINK"
+				}
+			],
 			"items": [
 				{
 					"video": "https://www.youtube.com/watch?v=JjtZD0RVV_E",
@@ -404,10 +440,16 @@ export const projects = [
 					"person": "Joanna Stein"
 				}
 			],
-			"streaming": {
-				"netfilx": "LINK",
-				"hulu": "LINK"
-			},
+			"streaming": [
+				{
+					"platform": "Netflix",
+					"link": "LINK"
+				},
+				{
+					"platform": "Netflix",
+					"link": "LINK"
+				}
+			],
 			"items": [
 				{
 					"video": "https://www.youtube.com/watch?v=nBi9xnUfeAw",
@@ -446,10 +488,16 @@ export const projects = [
 					"person": "Tony Hale"
 				}
 			],
-			"streaming": {
-				"netfilx": "LINK",
-				"hulu": "LINK"
-			},
+			"streaming": [
+				{
+					"platform": "Netflix",
+					"link": "LINK"
+				},
+				{
+					"platform": "Netflix",
+					"link": "LINK"
+				}
+			],
 			"items": [
 				{
 					"video": "https://www.youtube.com/watch?v=hsRpduH8Pw4",
@@ -482,10 +530,16 @@ export const projects = [
 					"person": "Brandon Sawyer"
 				}
 			],
-			"streaming": {
-				"netfilx": "LINK",
-				"hulu": "LINK"
-			},
+			"streaming": [
+				{
+					"platform": "Netflix",
+					"link": "LINK"
+				},
+				{
+					"platform": "Netflix",
+					"link": "LINK"
+				}
+			],
 			"items": [
 				{
 					"video": "https://www.youtube.com/watch?v=aPu6yQ0OrG8",
@@ -518,10 +572,16 @@ export const projects = [
 					"person": "Peter Hastings"
 				}
 			],
-			"streaming": {
-				"netfilx": "LINK",
-				"hulu": "LINK"
-			},
+			"streaming": [
+				{
+					"platform": "Netflix",
+					"link": "LINK"
+				},
+				{
+					"platform": "Netflix",
+					"link": "LINK"
+				}
+			],
 			"items": [
 				{
 					"video": "https://www.youtube.com/watch?v=2UHylAUXrpA",
@@ -560,10 +620,16 @@ export const projects = [
 					"person": "Aliki Theofilopoulos and Jim Nolan"
 				}
 			],
-			"streaming": {
-				"netfilx": "LINK",
-				"hulu": "LINK"
-			},
+			"streaming": [
+				{
+					"platform": "Netflix",
+					"link": "LINK"
+				},
+				{
+					"platform": "Netflix",
+					"link": "LINK"
+				}
+			],
 			"items": [
 				{
 					"video": "https://www.youtube.com/watch?v=AHnHSr7_V2Q",
@@ -606,10 +672,16 @@ export const projects = [
 					"person": "Brian Roberts"
 				}
 			],
-			"streaming": {
-				"netfilx": "LINK",
-				"hulu": "LINK"
-			},
+			"streaming": [
+				{
+					"platform": "Netflix",
+					"link": "LINK"
+				},
+				{
+					"platform": "Netflix",
+					"link": "LINK"
+				}
+			],
 			"items": [
 				{
 					"video": "https://www.youtube.com/watch?v=7h8HkvJxuDw",
@@ -652,10 +724,16 @@ export const projects = [
 					"person": "Brian Roberts"
 				}
 			],
-			"streaming": {
-				"netfilx": "LINK",
-				"hulu": "LINK"
-			},
+			"streaming": [
+				{
+					"platform": "Netflix",
+					"link": "LINK"
+				},
+				{
+					"platform": "Netflix",
+					"link": "LINK"
+				}
+			],
 			"items": [
 				{
 					"video": "https://www.youtube.com/watch?v=TEe-Fn-XZY8",
@@ -698,10 +776,16 @@ export const projects = [
 					"person": "May Chan"
 				}
 			],
-			"streaming": {
-				"netfilx": "LINK",
-				"hulu": "LINK"
-			},
+			"streaming": [
+				{
+					"platform": "Netflix",
+					"link": "LINK"
+				},
+				{
+					"platform": "Netflix",
+					"link": "LINK"
+				}
+			],
 			"items": [
 				{
 					"video": "https://www.youtube.com/watch?v=Wv-dDq2xj6g",
@@ -734,10 +818,16 @@ export const projects = [
 					"person": "Matt Beans"
 				}
 			],
-			"streaming": {
-				"netfilx": "LINK",
-				"hulu": "LINK"
-			},
+			"streaming": [
+				{
+					"platform": "Netflix",
+					"link": "LINK"
+				},
+				{
+					"platform": "Netflix",
+					"link": "LINK"
+				}
+			],
 			"items": [
 				{
 					"video": "https://www.youtube.com/watch?v=xJiMoDkrwB0",
@@ -780,10 +870,16 @@ export const projects = [
 					"person": "John Tellegen"
 				}
 			],
-			"streaming": {
-				"netfilx": "LINK",
-				"hulu": "LINK"
-			},
+			"streaming": [
+				{
+					"platform": "Netflix",
+					"link": "LINK"
+				},
+				{
+					"platform": "Netflix",
+					"link": "LINK"
+				}
+			],
 			"items": [
 				{
 					"video": "https://www.youtube.com/watch?v=yZe1o8Gg4nY",
