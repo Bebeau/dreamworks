@@ -63,11 +63,9 @@ class inner extends React.Component{
             {this.props.streaming ? ( 
               this.props.streaming.map((data, key) => {
                 return (
-                  <div>
-                    <a href={data.link} target="_blank">
-                      <img src={data.platform} alt="" />
-                    </a>
-                  </div>
+                  <a href={data.link} target="_blank">
+                    <img src={data.logo} alt={data.platform} />
+                  </a>
                 );
               })
             ): null }
@@ -78,8 +76,8 @@ class inner extends React.Component{
             {this.props.items ? (
               this.props.items.map((data, key) => {
                 return (
-                    <button data-video={data.video}>
-                      <img src="" alt="" />
+                    <button className="item" data-video={data.video}>
+                      <img src={data.poster} alt="" />
                       <h3>{data.title}</h3>
                       <p>{data.description}</p>
                     </button>
@@ -88,18 +86,60 @@ class inner extends React.Component{
             ): null }
           </div>
 
-          <div className="innerSecondary">
-            {this.props.consideration ? ( 
-              <div className="innerConsideration">
-                <img src="" alt="" />
-                <h5>For Special Consideration</h5>
-                <h3>{this.props.consideration.title}</h3>
-                <p>{this.props.consideration.description}</p>
-                <button data-video={this.props.consideration.video}>
-                  {this.props.consideration.btnText}
-                </button>
-              </div>
+          <div className={`innerSecondary ${this.props.layout ? this.props.layout : ''}`}>
+
+            {this.props.consideration && this.props.layout === "second" ? ( 
+              <article className="innerConsideration">
+                <img src={this.props.consideration.poster} alt="" />
+                <div className="considerationInfo">
+                  <div>
+                    <h5>For Special Consideration</h5>
+                    <h3>{this.props.consideration.title}</h3>
+                    <p>{this.props.consideration.description}</p>
+                  </div>
+                  <button className="btn" data-video={this.props.consideration.video}>
+                    {this.props.consideration.btnText}
+                  </button>
+                </div>
+              </article>
             ): null }
+
+            {this.props.bonus ? ( 
+              <article className="innerBonus">
+                <button className="item" data-video={this.props.bonus.video}>
+                  <img src={this.props.bonus.poster} alt="" />
+                  <h2>Bonus Feature</h2>
+                  <h3>{this.props.bonus.title}</h3>
+                  <p>{this.props.bonus.description}</p>
+                </button>
+              </article>
+            ): null }
+            
+            {this.props.consideration && this.props.layout !== "second" ? ( 
+              <article className="innerConsideration">
+                <img src={this.props.consideration.poster} alt="" />
+                <div className="considerationInfo">
+                  <div>
+                    <h5>For Special Consideration</h5>
+                    <h3>{this.props.consideration.title}</h3>
+                    <p>{this.props.consideration.description}</p>
+                  </div>
+                  <button className="btn" data-video={this.props.consideration.video}>
+                    {this.props.consideration.btnText}
+                  </button>
+                </div>
+              </article>
+            ): null }
+
+            {this.props.gallery ? ( 
+              <article className="innerGallery" style={{backgroundImage: `url(${this.props.gallery.poster})`}}>
+                <div className="galleryInfo">
+                  <h3>{this.props.gallery.title}</h3>
+                  <button className="btn">{this.props.gallery.btnText}</button>
+                </div>
+              </article>
+            ): null }
+
           </div>
 
         </section>

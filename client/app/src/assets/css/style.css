@@ -178,51 +178,278 @@ footer {
 .innerHero {
   display: flex;
   justify-content: center;
-  align-items: stretch; }
-  .innerHero article:first-child {
-    width: 40%;
+  flex-direction: column; }
+  .innerHero article.heroInfo {
     background: rgba(9, 46, 110, 0.23);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 50px;
+    padding: 20px;
     box-sizing: border-box;
     color: #092E6E; }
-    .innerHero article:first-child p {
-      color: #092E6E; }
-    .innerHero article:first-child img {
-      width: 300px; }
-    .innerHero article:first-child cite {
+    .innerHero article.heroInfo p {
+      color: #092E6E;
+      margin: 30px 0 20px; }
+    .innerHero article.heroInfo img {
+      max-width: 200px;
+      max-height: 200px; }
+    .innerHero article.heroInfo cite {
       font-style: normal;
       margin-bottom: 10px;
       display: block;
-      font-weight: bold; }
-      .innerHero article:first-child cite span {
-        font-size: 0.8rem;
+      font-weight: bold;
+      font-size: 0.8rem; }
+      .innerHero article.heroInfo cite span {
         display: block;
         font-weight: lighter; }
-  .innerHero article:last-child {
-    width: 60%;
-    background: no-repeat scroll center / cover; }
-    .innerHero article:last-child img {
+  .innerHero article.heroImage {
+    width: 100%;
+    height: 300px;
+    background: no-repeat scroll center / cover;
+    display: none; }
+    .innerHero article.heroImage.mobileHero {
+      display: block; }
+    .innerHero article.heroImage img {
       width: 100%;
       height: auto; }
 
+.innerStream {
+  border-bottom: 1px solid #092E6E;
+  margin-bottom: 20px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+  .innerStream h3 {
+    flex: 0 0 100%;
+    text-align: center; }
+  .innerStream a {
+    width: 150px;
+    display: flex;
+    padding: 0 20px; }
+    .innerStream a img {
+      width: 100%; }
+
+.item {
+  width: 100%;
+  border: none;
+  background: none;
+  padding: 20px;
+  box-sizing: border-box; }
+  .item:active, .item:focus {
+    outline: none;
+    border: none;
+    box-shadow: none; }
+  .item img {
+    width: 100%; }
+  .item p {
+    text-align: left;
+    line-height: 1.2rem;
+    text-transform: normal; }
+
 .innerItems {
   display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap; }
+  .innerItems .item {
+    width: 33.3%; }
+  .innerItems h2 {
+    flex: 0 0 100%;
+    text-align: center;
+    width: 100%; }
+
+.innerConsideration {
+  background: #092E6E;
+  color: white;
+  padding: 30px;
+  text-align: center;
+  box-sizing: border-box; }
+  .innerConsideration h5, .innerConsideration h3 {
+    color: white;
+    font-weight: normal; }
+  .innerConsideration h5 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin: 10px 0 5px;
+    font-size: 0.6rem;
+    line-height: 16px; }
+  .innerConsideration h3 {
+    font-size: 1.4rem;
+    margin: 0 auto 10px; }
+  .innerConsideration p {
+    color: white;
+    margin: 0 0 20px;
+    font-weight: lighter;
+    font-size: 0.7rem; }
+  .innerConsideration img {
+    width: 100%; }
+
+.innerGallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: no-repeat scroll center / cover;
+  position: relative; }
+  .innerGallery:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(9, 46, 110, 0.4);
+    mix-blend-mode: multiply;
+    z-index: 1; }
+  .innerGallery h3 {
+    letter-spacing: 5px;
+    font-weight: bold;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: white; }
+  .innerGallery .galleryInfo {
+    position: relative;
+    z-index: 2;
+    text-align: center; }
+
+.innerSecondary {
+  display: flex;
   justify-content: space-between;
-  align-items: flex-start; }
-  .innerItems button {
-    width: 100%;
-    border: none;
+  align-items: stretch; }
+  .innerSecondary .btn {
     background: none;
-    padding: 0 10px;
-    box-sizing: border-box; }
-    .innerItems button img {
-      width: 300px;
-      height: 200px;
-      background: lightgrey; }
-    .innerItems button p {
+    border: 1px solid white;
+    color: white;
+    margin: 0 auto;
+    line-height: 40px;
+    padding: 0 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px; }
+  .innerSecondary.first {
+    flex-direction: column; }
+    .innerSecondary.first .innerConsideration {
+      width: 100%; }
+    .innerSecondary.first .innerGallery {
+      width: 100%;
+      height: 400px; }
+  .innerSecondary.second {
+    flex-wrap: wrap; }
+    .innerSecondary.second .innerConsideration {
+      flex: 0 0 100%;
+      flex-direction: column;
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+      margin-bottom: 30px; }
+      .innerSecondary.second .innerConsideration img {
+        width: 100%; }
+      .innerSecondary.second .innerConsideration .considerationInfo {
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center; }
+    .innerSecondary.second .innerBonus {
+      width: 100%; }
+      .innerSecondary.second .innerBonus .item {
+        padding: 0 20px; }
+        .innerSecondary.second .innerBonus .item h3 {
+          text-align: left; }
+    .innerSecondary.second .innerGallery {
+      width: 100%;
+      height: 400px; }
+  .innerSecondary.third {
+    flex-direction: column; }
+  .innerSecondary.fourth .innerGallery {
+    width: 100%;
+    height: 400px; }
+
+@media (min-width: 768px) {
+  .innerHero {
+    flex-direction: row;
+    align-items: stretch; }
+    .innerHero article.heroInfo {
+      width: 50%;
+      padding: 50px; }
+    .innerHero article.heroImage {
+      width: 50%;
+      height: auto;
+      display: block; }
+      .innerHero article.heroImage.mobileHero {
+        display: none; }
+  .innerBonus h3 {
+    text-align: left; }
+  .innerItems {
+    flex-direction: row; }
+  .innerConsideration {
+    padding: 40px; }
+    .innerConsideration h5 {
+      margin: 0 0 5px; }
+  .innerGallery h3 {
+    letter-spacing: 10px; }
+  .innerSecondary.first {
+    flex-direction: row;
+    align-items: stretch; }
+    .innerSecondary.first article {
+      margin: 0 20px; }
+    .innerSecondary.first .innerConsideration {
+      width: 50%; }
+    .innerSecondary.first .innerGallery {
+      width: 50%;
+      height: auto; }
+  .innerSecondary.second .innerConsideration {
+    flex-direction: row; }
+    .innerSecondary.second .innerConsideration img {
+      width: 40%; }
+    .innerSecondary.second .innerConsideration .considerationInfo {
+      width: 60%;
+      padding: 0 0 0 40px;
       text-align: left;
-      line-height: 1.2rem; }
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start; }
+      .innerSecondary.second .innerConsideration .considerationInfo p {
+        margin: 0; }
+      .innerSecondary.second .innerConsideration .considerationInfo .btn {
+        margin: 0; }
+  .innerSecondary.second .innerBonus {
+    width: 33.3%; }
+    .innerSecondary.second .innerBonus .item {
+      padding: 0 20px 0 0; }
+  .innerSecondary.second .innerGallery {
+    width: 63%; }
+  .innerSecondary.third {
+    flex-direction: row; }
+    .innerSecondary.third .innerBonus {
+      width: 33.3%; }
+      .innerSecondary.third .innerBonus .item {
+        padding: 0 20px; }
+    .innerSecondary.third .innerGallery {
+      width: 65%; }
+    .innerSecondary.third .innerConsideration {
+      width: 65%;
+      flex-direction: row;
+      display: flex; }
+      .innerSecondary.third .innerConsideration img {
+        width: 50%;
+        height: auto; }
+      .innerSecondary.third .innerConsideration .considerationInfo {
+        width: 50%;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-left: 30px; }
+        .innerSecondary.third .innerConsideration .considerationInfo .btn {
+          margin: 0; } }
+
+@media (min-width: 991px) {
+  .innerHero article.heroInfo {
+    width: 40%; }
+  .innerHero article.heroImage {
+    width: 60%; } }

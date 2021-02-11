@@ -29,6 +29,7 @@ class Homepage extends React.Component {
     projects.forEach((data, key) => {
       if(key === parseInt(id)) {
         this.setState({
+          layout: data.layout,
           logo: data.logo,
           hero: data.inner.hero,
           description: data.inner.description,
@@ -44,6 +45,7 @@ class Homepage extends React.Component {
   }
   render() {
     const {
+      layout,
       logo,
       hero,
       description,
@@ -70,6 +72,7 @@ class Homepage extends React.Component {
     return (
       <div>
         <Inner1 
+          layout={layout}
           logo={logo}
           hero={hero}
           description={description}

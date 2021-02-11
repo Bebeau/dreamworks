@@ -2,7 +2,7 @@ export const projects = [
 	// Tales of Arcadia: Wizards
 	{
 		"id": 0,
-		"layout": 1,
+		"layout": "first",
 		"name": "Tales of Arcadia: Wizards",
 		"logo": "./img/series/TOA_Wizards/logo.png",
 		"poster": "./img/series/TOA_Wizards/poster.jpg",
@@ -26,57 +26,68 @@ export const projects = [
 			"streaming": [
 				{
 					"platform": "Netflix",
-					"link": "LINK"
-				},
-				{
-					"platform": "Netflix",
-					"link": "LINK"
+					"logo": "./img/netflix.svg",
+					"link": "https://www.netflix.com/watch/80218108"
 				}
 			],
 			"items": [
 				{
 					"video": "https://www.youtube.com/watch?v=6adVDTR79n4",
-					"poster": "https://img.youtube.com/vi/6adVDTR79n4/0.jpg",
+					"poster": "./img/series/TOA_Wizards/inner/items/1.jpg",
 					"title": "Tales of Arcadia: Wizards Trailer",
 					"description": "The third and final chapter of the Tales of Arcadia trilogy takes audiences on an adventure through time."
 				},
 				{
 					"video": "https://www.youtube.com/watch?v=rpePQS8dW04",
-					"poster": "https://img.youtube.com/vi/rpePQS8dW04/0.jpg",
+					"poster": "./img/series/TOA_Wizards/inner/items/2.jpg",
 					"title": "Floating Castle Battle",
 					"description": "The Wizards team took to the skies for an epic battle between floating castles that pushed the limits of VFX in TV animation."
 				},
 				{
 					"video": "https://www.youtube.com/watch?v=rpePQS8dW04",
-					"poster": "https://img.youtube.com/vi/rpePQS8dW04/0.jpg",
+					"poster": "./img/series/TOA_Wizards/inner/items/3.jpg",
 					"title": "Three Wizards Fight",
 					"description": "When Douxie, Merlin and Morgana finally face off, its a stunning combination of feature quality FX and incredible character animation that brings this magical fight sequence to life."
 				}
 			],
-			"bonus": {
-				"video": "",
-				"poster": "",
-				"title": "",
-				"description": ""
-			},
 			"consideration": {
-				"poster": "./img/series/TOA_Wizards/poster.jpg",
+				"poster": "./img/series/TOA_Wizards/inner/consideration.jpg",
 				"title": "Production Design by Alfonso Blaas",
 				"description": "Alfonso Blaas created a stunning production design.",
-				"btnText": "View Now"
+				"btnText": "View Now",
+				"images": [
+					"./img/series/TOA_Wizards/inner/gallery/consideration/Color-Key-1_Art-by-Alfonso-Blaas.jpg",
+					"./img/series/TOA_Wizards/inner/gallery/consideration/Color-Key-2_Art-by-Alfonso-Blaas.jpg",
+					"./img/series/TOA_Wizards/inner/gallery/consideration/Color-Key-3_Art-by-Alfonso-Blaas.jpg",
+					"./img/series/TOA_Wizards/inner/gallery/consideration/Color-Key-4_Art-by-Alfonso-Blaas.jpg",
+					"./img/series/TOA_Wizards/inner/gallery/consideration/Color-Key-5_Art-by-Alfonso-Blaas.jpg",
+					"./img/series/TOA_Wizards/inner/gallery/consideration/Color-Key-6_Art-by-Alfonso-Blaas.jpg",
+					"./img/series/TOA_Wizards/inner/gallery/consideration/Color-Key-7_Art-by-Alfonso-Blaas.jpg",
+					"./img/series/TOA_Wizards/inner/gallery/consideration/Douxie-and-Merlin-Viz-Dev_Art-by-Alfonso-Blaas.jpg",
+					"./img/series/TOA_Wizards/inner/gallery/consideration/Main-Title-Color-Key-1_Art-by-Alfonso-Blaas.jpg",
+					"./img/series/TOA_Wizards/inner/gallery/consideration/Main-Title-Color-Key-2_Art-by-Alfonso-Blaas.jpg",
+					"./img/series/TOA_Wizards/inner/gallery/consideration/Main-Title-Color-Key-3_Art-by-Alfonso-Blaas.jpg",
+					"./img/series/TOA_Wizards/inner/gallery/consideration/Main-Title-Color-Key-4_Art-by-Alfonso-Blaas.jpg",
+					"./img/series/TOA_Wizards/inner/gallery/consideration/Main-Title-Color-Key-5_Art-by-Alfonso-Blaas.jpg",
+					"./img/series/TOA_Wizards/inner/gallery/consideration/Main-Title-Color-Key-6_Art-by-Alfonso-Blaas.jpg",
+					"./img/series/TOA_Wizards/inner/gallery/consideration/Main-Title-Color-Key-7_Art-by-Alfonso-Blaas.jpg",
+					"./img/series/TOA_Wizards/inner/gallery/consideration/Main-Title-Color-Key-8_Art-by-Alfonso-Blaas.jpg",
+					"./img/series/TOA_Wizards/inner/gallery/consideration/Main-Title-Color-Key-9_Art-by-Alfonso-Blaas.jpg",
+					"./img/series/TOA_Wizards/inner/gallery/consideration/Morgana-and-Troll-Jim-Viz-Dev_Art-by-Alfonso-Blaas.jpg",
+					"./img/series/TOA_Wizards/inner/gallery/consideration/Portrait-Concept-Art_Art-by-Alfonso-Blaas.jpg"
+				]
 			},
 			"gallery": {
+				"poster": "./img/series/TOA_Wizards/inner/gallery/poster.jpg",
 				"title": "Art Gallery",
 				"btnText": "View Now",
 				"images": [
-					"",
-					"",
-					"",
-					"",
-					"",
-					"",
-					"",
-					"",
+					"./img/series/TOA_Wizards/inner/gallery/stills/1_MorganaAndClaire.jpg",
+					"./img/series/TOA_Wizards/inner/gallery/stills/2_ClaireDouxieSteve.jpg",
+					"./img/series/TOA_Wizards/inner/gallery/stills/3_MerlinArthurClaireSteveDouxie.jpg",
+					"./img/series/TOA_Wizards/inner/gallery/stills/4_TrollsPrepareForKillahead.jpg",
+					"./img/series/TOA_Wizards/inner/gallery/stills/5_MerlinArchieDouxie.jpg",
+					"./img/series/TOA_Wizards/inner/gallery/stills/7_ClaireJimDouxieSteve.jpg"
 				]
 			}
 		}
@@ -84,7 +95,7 @@ export const projects = [
 	// KIPO AND THE AGE OF WONDERBEASTS
 	{
 		"id": 1,
-		"layout": 1,
+		"layout": "second",
 		"name": "KIPO AND THE AGE OF WONDERBEASTS",
 		"logo": "./img/series/Kipo_AW/logo.png",
 		"poster": "./img/series/Kipo_AW/poster.jpg",
@@ -108,57 +119,86 @@ export const projects = [
 			"streaming": [
 				{
 					"platform": "Netflix",
-					"link": "LINK"
-				},
-				{
-					"platform": "Netflix",
-					"link": "LINK"
+					"logo": "./img/netflix.svg",
+					"link": "https://www.netflix.com/watch/80221553"
 				}
 			],
 			"items": [
 				{
 					"video": "https://www.youtube.com/watch?v=25UHUbpFTtY",
-					"poster": "https://img.youtube.com/vi/25UHUbpFTtY/0.jpg",
+					"poster": "./img/series/Kipo_AW/inner/items/1.jpg",
 					"title": "Kipo and the Age of Wonderbeasts Trailer",
 					"description": "Take a ride through the post-apoclyptic wonderland of Kipo and the Age of Wonderbeasts."
 				},
 				{
 					"video": "https://www.youtube.com/watch?v=25UHUbpFTtY",
-					"poster": "https://img.youtube.com/vi/25UHUbpFTtY/0.jpg",
+					"poster": "./img/series/Kipo_AW/inner/items/2.jpg",
 					"title": "LGBTQ Representation Matters",
 					"description": "Kipo and the Age of Wonderbeasts featured the first time a character in a kids animated series said the words I'm gay."
 				},
 				{
 					"video": "https://www.youtube.com/watch?v=25UHUbpFTtY",
-					"poster": "https://img.youtube.com/vi/25UHUbpFTtY/0.jpg",
+					"poster": "./img/series/Kipo_AW/inner/items/3.jpg",
 					"title": "The Music of Kipo",
 					"description": "Composer Daniel Rojas created stunning original music and score that gave the series a distinct sound."
 				},
 			],
 			"bonus": {
-				"video": "",
-				"poster": "/assets/img/Kipo_AW/bonus.jpg",
-				"title": "Kipo and the Age of Wonderbeasts treats coming out like just another part of life. ",
+				"link": "https://www.polygon.com/2020/1/15/21067505/kipo-and-the-age-of-wonderbeasts-coming-out-scene",
+				"poster": "./img/series/Kipo_AW/inner/bonus.jpg",
+				"title": "READ: Kipo and the Age of Wonderbeasts treats coming out like just another part of life. ",
 				"description": "A short, sweet character moment says what most cartoons just show."
 			},
 			"consideration": {
-				"poster": "/assets/img/Kipo_AW/specialConsideration.jpg",
+				"poster": "./img/series/Kipo_AW/inner/consideration.jpg",
 				"title": "Production Design by Angela Sung",
 				"description": "Blue Pigs And Mutant Mandrills: Designing The Post-Apocalypse In ‘Kipo And The Age Of Wonderbeasts’",
-				"btnText": "View Now"
-			},
-			"gallery": {
-				"title": "Art Gallery",
 				"btnText": "View Now",
 				"images": [
-					"",
-					"",
-					"",
-					"",
-					"",
-					"",
-					"",
-					"",
+					"./img/series/Kipo_AW/inner/gallery/consideration/Surface-Building_Art-by-Angela-Sung.jpg",
+					"./img/series/Kipo_AW/inner/gallery/consideration/Surface-Clover_Art-by-Angela-Sung.jpg",
+					"./img/series/Kipo_AW/inner/gallery/consideration/Surface-School_Art-by-Angela-Sung.jpg",
+					"./img/series/Kipo_AW/inner/gallery/consideration/Surface-Stairs_Art-by-Angela-Sung.jpg",
+					"./img/series/Kipo_AW/inner/gallery/consideration/Surface-Waterfall_Art-by-Angela-Sung.jpg"
+				]
+			},
+			"gallery": {
+				"poster": "./img/series/Kipo_AW/inner/gallery/poster.jpg",
+				"title": "Digital Comic",
+				"btnText": "View Now",
+				"images": [
+					"./img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_01.jpg",
+					"./img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_02.jpg",
+					"./img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_03.jpg",
+					"./img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_04.jpg",
+					"./img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_05.jpg",
+					"./img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_06.jpg",
+					"./img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_07.jpg",
+					"./img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_08.jpg",
+					"./img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_09.jpg",
+					"./img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_10.jpg",
+					"./img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_11.jpg",
+					"./img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_12.jpg",
+					"./img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_13.jpg",
+					"./img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_14.jpg",
+					"./img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_15.jpg",
+					"./img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_16.jpg",
+					"./img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_17.jpg",
+					"./img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_18.jpg",
+					"./img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_19.jpg",
+					"./img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_20.jpg",
+					"./img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_21.jpg",
+					"./img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_22.jpg",
+					"./img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_23.jpg",
+					"./img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_24.jpg",
+					"./img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_25.jpg",
+					"./img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_26.jpg",
+					"./img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_27.jpg",
+					"./img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_28.jpg",
+					"./img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_29.jpg",
+					"./img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_30.jpg",
+					"./img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_31.jpg",
+					"./img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_32.jpg",
 				]
 			}
 		}
@@ -166,7 +206,7 @@ export const projects = [
 	// JURASSIC WORLD: CAMP CRETACEOUS
 	{
 		"id": 2,
-		"layout": 1,
+		"layout": "third",
 		"name": "JURASSIC WORLD: CAMP CRETACEOUS",
 		"logo": "./img/series/JurassicWorld/logo.png",
 		"poster": "./img/series/JurassicWorld/poster.jpg",
@@ -182,41 +222,38 @@ export const projects = [
 			"streaming": [
 				{
 					"platform": "Netflix",
-					"link": "LINK"
-				},
-				{
-					"platform": "Netflix",
-					"link": "LINK"
+					"logo": "./img/netflix.svg",
+					"link": "https://www.netflix.com/watch/81009646"
 				}
 			],
 			"items": [
 				{
 					"video": "https://www.youtube.com/watch?v=bUOpbuNgL4w",
-					"poster": "https://img.youtube.com/vi/bUOpbuNgL4w/0.jpg",
+					"poster": "./img/series/JurassicWorld/inner/items/1.jpg",
 					"title": "Jurassic World: Camp Cretaceous Trailer",
 					"description": "Jurassic World Camp Cretaceous opens up the world of Isla Nublar like never before."
 				},
 				{
 					"video": "https://www.youtube.com/watch?v=EwaCQn1QVM0",
-					"poster": "https://img.youtube.com/vi/EwaCQn1QVM0/0.jpg",
+					"poster": "./img/series/JurassicWorld/inner/items/2.jpg",
 					"title": "Behind the Scenes",
 					"description": "The cast and crew of Jurassic World: Camp Cretaceous take you behind the scenes of making an animated series during a global pandemic."
 				},
 				{
 					"video": "https://www.youtube.com/watch?v=bUOpbuNgL4w",
-					"poster": "https://img.youtube.com/vi/bUOpbuNgL4w/0.jpg",
+					"poster": "./img/series/JurassicWorld/inner/items/3.jpg",
 					"title": "It's a Cattle Drive!",
 					"description": "Go behind the epic cattle drive sequence in Season One, from storyboard artist Ed Tadem."
 				},
 			],
 			"bonus": {
 				"video": "",
-				"poster": "",
+				"poster": "./img/series/JurassicWorld/inner/bonus.jpg",
 				"title": "Visual Effects in Jurassic World",
 				"description": "Custom jungle lighting, underground bioluminescent rivers and a giant mosasaurus lagoon are just a few of environments that the incredible FX team created."
 			},
 			"consideration": {
-				"poster": "",
+				"poster": "./img/series/JurassicWorld/inner/consideration.jpg",
 				"title": "Production Design by Christophe Vacher",
 				"description": "Stunning locales, rich colors and lush environments bring Isla Nublar to life in the first ever Jurassic World animated series.",
 				"btnText": "View Now"
@@ -226,7 +263,7 @@ export const projects = [
 	// THE MIGHTY ONES
 	{
 		"id": 3,
-		"layout": 1,
+		"layout": "third",
 		"name": "THE MIGHTY ONES",
 		"logo": "./img/series/MightyOnes/logo.png",
 		"poster": "./img/series/MightyOnes/poster.jpg",
@@ -241,42 +278,45 @@ export const projects = [
 			],
 			"streaming": [
 				{
-					"platform": "Netflix",
-					"link": "LINK"
+					"platform": "Peacock",
+					"logo": "./img/peacock.svg",
+					"link": ""
 				},
 				{
-					"platform": "Netflix",
-					"link": "LINK"
+					"platform": "Hulu",
+					"logo": "./img/hulu.svg",
+					"link": "https://www.netflix.com/watch/81009646"
 				}
 			],
 			"items": [
 				{
 					"video": "https://www.youtube.com/watch?v=mzCXDD3WOuU",
-					"poster": "https://img.youtube.com/vi/mzCXDD3WOuU/0.jpg",
+					"poster": "./img/series/MightyOnes/inner/items/1.jpg",
 					"title": "The Mighty Ones Trailer",
 					"description": "A peek inside the weird backyard world of The Mighty Ones."
 				},
 				{
 					"video": "https://www.youtube.com/watch?v=mzCXDD3WOuU",
-					"poster": "https://img.youtube.com/vi/mzCXDD3WOuU/0.jpg",
+					"poster": "./img/series/MightyOnes/inner/items/2.jpg",
 					"title": "Beware the Snowbeast",
 					"description": "Take a look inside the weird world of The Mighty Ones, with storyboard artist Eric Jones."
 				},
 				{
 					"video": "https://www.youtube.com/watch?v=VPubLCgfLu8",
-					"poster": "https://img.youtube.com/vi/VPubLCgfLu8/0.jpg",
+					"poster": "./img/series/MightyOnes/inner/items/3.jpg",
 					"title": "Rocksy Sinks",
 					"description": "It’s all fun and games until Rocksy rolls into the water!"
 				},
 			],
 			"bonus": {
 				"video": "",
-				"poster": "",
+				"poster": "./img/series/MightyOnes/inner/bonus.jpg",
 				"title": "Conversation with Creators",
 				"description": "Series creators and executive producers Lynn Naylor and Sunil Hall talk about bringing this passion project to fruition."
 			},
 			"gallery": {
-				"title": "Character Design / Production Design / Series Stills",
+				"poster": "./img/series/MightyOnes/inner/gallery/poster.jpg",
+				"title": "Art Gallery",
 				"btnText": "View Now",
 				"images": [
 					"",
@@ -294,7 +334,7 @@ export const projects = [
 	// SHE-RA AND THE PRINCESS OF POWER
 	{
 		"id": 4,
-		"layout": 1,
+		"layout": "fourth",
 		"name": "SHE-RA AND THE PRINCESS OF POWER",
 		"logo": "./img/series/SheRa/logo.png",
 		"poster": "./img/series/SheRa/poster.jpg",
@@ -310,44 +350,46 @@ export const projects = [
 			"streaming": [
 				{
 					"platform": "Netflix",
-					"link": "LINK"
-				},
-				{
-					"platform": "Netflix",
-					"link": "LINK"
+					"logo": "./img/netflix.svg",
+					"link": "https://www.netflix.com/watch/80179762"
 				}
 			],
 			"items": [
 				{
 					"video": "https://www.youtube.com/watch?v=7EOGP0zDl1M",
-					"poster": "https://img.youtube.com/vi/7EOGP0zDl1M/0.jpg",
+					"poster": "./img/series/SheRa/inner/items/1.jpg",
 					"title": "She-Ra and the Princesses of Power Final Season Featurette",
 					"description": "Last year, fans saw She-Ra come to an epic conclusion. The cast and crew reflect on their journey."
 				},
 				{
 					"video": "https://www.youtube.com/watch?v=7EOGP0zDl1M",
-					"poster": "https://img.youtube.com/vi/7EOGP0zDl1M/0.jpg",
+					"poster": "./img/series/SheRa/inner/items/2.jpg",
 					"title": "LGBTQ Representation Matters",
 					"description": "In one of the final scenes of the series, fans learned that love truly wins, backed by composer Sunna Wehrmeijer's gorgeous score."
 				},
 				{
+					"poster": "./img/series/SheRa/inner/items/3.jpg",
 					"link": "https://www.latimes.com/entertainment-arts/tv/story/2020-05-18/netflix-she-ra-series-finale-queer-love-wins",
 					"title": "From the LA Times",
 					"description": "‘She-Ra’ rewrote the script for TV’s queer love stories. Here’s why it matters."
 				},
 			],
 			"gallery": {
-				"title": "Series Stills",
+				"poster": "./img/series/SheRa/inner/gallery/poster.jpg",
+				"title": "Art Gallery",
 				"btnText": "View Now",
 				"images": [
-					"",
-					"",
-					"",
-					"",
-					"",
-					"",
-					"",
-					"",
+					"./img/series/SheRa/inner/gallery/stills/PerfumaFrostaAdoraScorpiaBow.jpg",
+					"./img/series/SheRa/inner/gallery/stills/SHE_PD215_01111702_RGB.jpg",
+					"./img/series/SheRa/inner/gallery/stills/SHE_PD216_01011919_RGB.jpg",
+					"./img/series/SheRa/inner/gallery/stills/SHE_PD220_01015612.jpg",
+					"./img/series/SheRa/inner/gallery/stills/SHE_PD220_01134423_RGB.jpg",
+					"./img/series/SheRa/inner/gallery/stills/SHE_PD224_01112512.jpg",
+					"./img/series/SheRa/inner/gallery/stills/SHE_PD224_01122017.jpg",
+					"./img/series/SheRa/inner/gallery/stills/SHE_PD224_01173905.jpg",
+					"./img/series/SheRa/inner/gallery/stills/SHE_PD225_01164623_RGB.jpg",
+					"./img/series/SheRa/inner/gallery/stills/SHE_PD226_01171614_RGB.jpg",
+					"./img/series/SheRa/inner/gallery/stills/SHE_PD226_01215117_RGB.jpg"
 				]
 			}
 		}
@@ -355,7 +397,7 @@ export const projects = [
 	// FAST & FURIOUS: SPY RACERS
 	{
 		"id": 5,
-		"layout": 1,
+		"layout": "first",
 		"name": "FAST & FURIOUS: SPY RACERS",
 		"logo": "./img/series/FastFurious/logo.png",
 		"poster": "./img/series/FastFurious/poster.jpg",
@@ -375,51 +417,52 @@ export const projects = [
 			"streaming": [
 				{
 					"platform": "Netflix",
-					"link": "LINK"
-				},
-				{
-					"platform": "Netflix",
-					"link": "LINK"
+					"logo": "./img/netflix.svg",
+					"link": "https://www.netflix.com/watch/80225085"
 				}
 			],
 			"items": [
 				{
 					"video": "https://www.youtube.com/watch?v=JjtZD0RVV_E",
-					"poster": "https://img.youtube.com/vi/JjtZD0RVV_E/0.jpg",
+					"poster": "./img/series/FastFurious/inner/items/1.jpg",
 					"title": "Fast & Furious: Spy Racers Rio Trailer",
 					"description": "The Spy Racers head to Rio on their first international mission."
 				},
 				{
 					"video": "https://www.youtube.com/watch?v=JjtZD0RVV_E",
-					"poster": "https://img.youtube.com/vi/JjtZD0RVV_E/0.jpg",
+					"poster": "./img/series/FastFurious/inner/items/2.jpg",
 					"title": "Reimagining Rio",
 					"description": "The Fast team took their high octane races to the streets of Rio in Season 2. Here Tony and Layla navigate the narrow, winding corridors of Rio's favelas in an adrenaline pumping chase."
 				},
 				{
 					"video": "https://www.youtube.com/watch?v=90JMgMHflvk",
-					"poster": "https://img.youtube.com/vi/90JMgMHflvk/0.jpg",
+					"poster": "./img/series/FastFurious/inner/items/3.jpg",
 					"title": "Lost in the Sahara",
 					"description": "When the Spy Racers head to Africa in season 3, they find themselves in a death-defying race across the dangerous Sahara."
 				},
 			],
 			"consideration": {
-				"poster": "",
+				"poster": "./img/series/FastFurious/inner/consideration.jpg",
 				"title": "Rafaela's Escape",
 				"description": "Season 3 kicked off with this epic sequence directed by Micah Gunnell.",
 				"btnText": "View Now"
 			},
 			"gallery": {
-				"title": "Series Stills",
+				"poster": "./img/series/FastFurious/inner/gallery/poster.jpg",
+				"title": "Art Gallery",
 				"btnText": "View Now",
-				"images": [
-					"",
-					"",
-					"",
-					"",
-					"",
-					"",
-					"",
-					"",
+				"images":[
+					"./img/series/FastFurious/inner/gallery/consideration/S2_Cars-3.jpg",
+					"./img/series/FastFurious/inner/gallery/consideration/S2_Rafaela.jpg",
+					"./img/series/FastFurious/inner/gallery/consideration/S2_Rio.jpg",
+					"./img/series/FastFurious/inner/gallery/consideration/S2_Tony.jpg",
+					"./img/series/FastFurious/inner/gallery/consideration/S3_Car.jpg",
+					"./img/series/FastFurious/inner/gallery/consideration/S3_Cars.jpg",
+					"./img/series/FastFurious/inner/gallery/consideration/S3_Desert.jpg",
+					"./img/series/FastFurious/inner/gallery/consideration/S3_Gary-Ms-Nowhere.jpg",
+					"./img/series/FastFurious/inner/gallery/consideration/S3_Ms-Nowhere.jpg",
+					"./img/series/FastFurious/inner/gallery/consideration/S3_Tony-Frostee-Cisco-Echo-Layla.jpg",
+					"./img/series/FastFurious/inner/gallery/consideration/S3_Villians.jpg"
 				]
 			}
 		}
@@ -427,7 +470,7 @@ export const projects = [
 	// MADAGASCAR: A LITTLE WILD
 	{
 		"id": 6,
-		"layout": 1,
+		"layout": "first",
 		"name": "MADAGASCAR: A LITTLE WILD",
 		"logo": "./img/series/Madagascar/logo.png",
 		"poster": "./img/series/Madagascar/poster.jpg",
@@ -442,30 +485,32 @@ export const projects = [
 			],
 			"streaming": [
 				{
-					"platform": "Netflix",
-					"link": "LINK"
+					"platform": "Peacock",
+					"logo": "./img/peacock.svg",
+					"link": ""
 				},
 				{
-					"platform": "Netflix",
-					"link": "LINK"
+					"platform": "Hulu",
+					"logo": "./img/hulu.svg",
+					"link": ""
 				}
 			],
 			"items": [
 				{
 					"video": "https://www.youtube.com/watch?v=nBi9xnUfeAw",
-					"poster": "https://img.youtube.com/vi/nBi9xnUfeAw/0.jpg",
+					"poster": "./img/series/Madagascar/inner/items/1.jpg",
 					"title": "Madagascar: A Little Wild Trailer",
 					"description": "The lovable Zoo Crew is back as their younger selves, living out big dream in the big city."
 				},
 				{
 					"video": "https://www.youtube.com/watch?v=G3fy2metCRM",
-					"poster": "https://img.youtube.com/vi/G3fy2metCRM/0.jpg",
+					"poster": "./img/series/Madagascar/inner/items/2.jpg",
 					"title": "Disability Representation Matters",
 					"description": "Madagascar: A Little Wild features a diverse cast of characters, including Dave and Pickles, a chimp who is deaf and his sister speaks and translates ASL to the other animals."
 				},
 				{
 					"video": "https://www.youtube.com/watch?v=nKHdtp7Znbc",
-					"poster": "https://img.youtube.com/vi/nKHdtp7Znbc/0.jpg",
+					"poster": "./img/series/Madagascar/inner/items/3.jpg",
 					"title": "Best Original Song - Shine",
 					"description": "When Gloria’s faith in her dancing is tested, she learns that she doesn’t need someone else to decide that she’s a prima hippo-rina! Twirl along to 'Shine', written by the incredible Alana D and Jordan Yaeger, who have filled the world of Madagascar with incredible original songs in every episode."
 				},
@@ -475,7 +520,7 @@ export const projects = [
 	// ARCHIBALD'S NEXT BIG THING
 	{
 		"id": 7,
-		"layout": 1,
+		"layout": "first",
 		"name": "ARCHIBALD'S NEXT BIG THING",
 		"logo": "./img/series/Archibalds_NBT/logo.png",
 		"poster": "./img/series/Archibalds_NBT/poster.jpg",
@@ -491,23 +536,20 @@ export const projects = [
 			"streaming": [
 				{
 					"platform": "Netflix",
-					"link": "LINK"
-				},
-				{
-					"platform": "Netflix",
-					"link": "LINK"
+					"logo": "./img/netflix.svg",
+					"link": "https://www.netflix.com/watch/80221550"
 				}
 			],
 			"items": [
 				{
 					"video": "https://www.youtube.com/watch?v=hsRpduH8Pw4",
-					"poster": "https://img.youtube.com/vi/hsRpduH8Pw4/0.jpg",
+					"poster": "./img/series/Archibalds_NBT/inner/items/1.jpg",
 					"title": "Archibald's Next Big Thing Trailer",
 					"description": "Emmy winner Tony Hale brought his celebrated children's book to life in this charming and vibrant series."
 				},
 				{
 					"video": "https://www.youtube.com/watch?v=Djxa8tDillM",
-					"poster": "https://img.youtube.com/vi/Djxa8tDillM/0.jpg",
+					"poster": "./img/series/Archibalds_NBT/inner/items/2.jpg",
 					"title": "Archibald's New Singing Voice",
 					"description": "No day is an ordinary day in Crackridge, especially when Archibald discovers his new Broadway-worthy vocals."
 				}
@@ -517,7 +559,7 @@ export const projects = [
 	// THE BOSS BABY: BACK IN BUSINESS (SERIES)
 	{
 		"id": 8,
-		"layout": 1,
+		"layout": "first",
 		"name": "THE BOSS BABY: BACK IN BUSINESS (SERIES)",
 		"logo": "./img/series/BossBaby_BIB/logo.png",
 		"poster": "./img/series/BossBaby_BIB/poster.jpg",
@@ -533,23 +575,20 @@ export const projects = [
 			"streaming": [
 				{
 					"platform": "Netflix",
-					"link": "LINK"
-				},
-				{
-					"platform": "Netflix",
-					"link": "LINK"
+					"logo": "./img/netflix.svg",
+					"link": "https://www.netflix.com/watch/81037060"
 				}
 			],
 			"items": [
 				{
 					"video": "https://www.youtube.com/watch?v=aPu6yQ0OrG8",
-					"poster": "https://img.youtube.com/vi/aPu6yQ0OrG8/0.jpg",
+					"poster": "./img/series/BossBaby_BIB/inner/items/1.jpg",
 					"title": "The Boss Baby: Back In Business Trailer",
 					"description": "The Boss Baby is back in season 4 of the incredibly popular series."
 				},
 				{
 					"video": "https://www.youtube.com/watch?v=KX1av1R35PU",
-					"poster": "https://img.youtube.com/vi/KX1av1R35PU/0.jpg",
+					"poster": "./img/series/BossBaby_BIB/inner/items/2.jpg",
 					"title": "The Boss Baby: Get That Baby! Interactive Special",
 					"description": "You can be the boss in this interactive Special Production that puts the viewer in the C-Suite."
 				}
@@ -559,7 +598,7 @@ export const projects = [
 	// THE EPIC TALES OF CAPTAIN UNDERPANTS 
 	{
 		"id": 9,
-		"layout": 1,
+		"layout": "first",
 		"name": "THE EPIC TALES OF CAPTAIN UNDERPANTS",
 		"logo": "./img/series/CaptainUnderpants/logo.png",
 		"poster": "./img/series/CaptainUnderpants/poster.jpg",
@@ -575,29 +614,26 @@ export const projects = [
 			"streaming": [
 				{
 					"platform": "Netflix",
-					"link": "LINK"
-				},
-				{
-					"platform": "Netflix",
-					"link": "LINK"
+					"logo": "./img/netflix.svg",
+					"link": "https://www.netflix.com/watch/81147421"
 				}
 			],
 			"items": [
 				{
 					"video": "https://www.youtube.com/watch?v=2UHylAUXrpA",
-					"poster": "https://img.youtube.com/vi/2UHylAUXrpA/0.jpg",
+					"poster": "./img/series/CaptainUnderpants/inner/items/1.jpg",
 					"title": "Captain Underpants in Space Trailer",
 					"description": "George and Harold are in for the ultimate field trip: outer space!"
 				},
 				{
 					"video": "https://www.youtube.com/watch?v=6WMaYHCmV1k",
-					"poster": "https://img.youtube.com/vi/6WMaYHCmV1k/0.jpg",
+					"poster": "./img/series/CaptainUnderpants/inner/items/2.jpg",
 					"title": "The Epic Tales of Captain Underpants: Epic Choice-O-RamaTrailer",
 					"description": "Imagine a world where you can control what adventures George and Harold go on. Oh wait, this is that world!"
 				},
 				{
 					"video": "https://www.youtube.com/watch?v=AHAHqkOGIn0",
-					"poster": "https://img.youtube.com/vi/AHAHqkOGIn0/0.jpg",
+					"poster": "./img/series/CaptainUnderpants/inner/items/3.jpg",
 					"title": "Captain Underpants Mega Blissmas Trailer",
 					"description": "George and Harold travel back in time to convince Santa that a few ideas from their new version of Christmas (Blissmas) should be incorporated into his holiday. But will replacing red bows with laser shows work out as they had hoped?"
 				}
@@ -607,7 +643,7 @@ export const projects = [
 	// DOUG UNPLUGS
 	{
 		"id": 10,
-		"layout": 1,
+		"layout": "first",
 		"name": "DOUG UNPLUGS",
 		"logo": "./img/series/DougUnplugs/logo.png",
 		"poster": "./img/series/DougUnplugs/poster.jpg",
@@ -622,30 +658,27 @@ export const projects = [
 			],
 			"streaming": [
 				{
-					"platform": "Netflix",
-					"link": "LINK"
-				},
-				{
-					"platform": "Netflix",
-					"link": "LINK"
+					"platform": "Apple TV",
+					"logo": "./img/appleTV.svg",
+					"link": ""
 				}
 			],
 			"items": [
 				{
 					"video": "https://www.youtube.com/watch?v=AHnHSr7_V2Q",
-					"poster": "https://img.youtube.com/vi/AHnHSr7_V2Q/0.jpg",
+					"poster": "./img/series/DougUnplugs/inner/items/1.jpg",
 					"title": "Doug UnplugsTrailer",
 					"description": "Meet Doug, the boy robot who’s taking on the world one curious question at a time."
 				},
 				{
 					"video": "",
-					"poster": "",
+					"poster": "./img/series/DougUnplugs/inner/items/2.jpg",
 					"title": "Conversation with Creators",
 					"description": "Executive producers Aliki Theofilopoulos and Jim Nolan chat about their new series."
 				},
 				{
 					"video": "https://www.youtube.com/watch?v=ZSARM5DtAc8",
-					"poster": "https://img.youtube.com/vi/ZSARM5DtAc8/0.jpg",
+					"poster": "./img/series/DougUnplugs/inner/items/3.jpg",
 					"title": "Doug Explores the Woods",
 					"description": "Doug and his friends love to explore the great outdoors."
 				}
@@ -655,7 +688,7 @@ export const projects = [
 	// DRAGONS RESCUE RIDERS
 	{
 		"id": 11,
-		"layout": 1,
+		"layout": "first",
 		"name": "DOUG UNPLUGS",
 		"logo": "./img/series/DragonsRescueRiders/logo.png",
 		"poster": "./img/series/DragonsRescueRiders/poster.jpg",
@@ -675,29 +708,26 @@ export const projects = [
 			"streaming": [
 				{
 					"platform": "Netflix",
-					"link": "LINK"
-				},
-				{
-					"platform": "Netflix",
-					"link": "LINK"
+					"logo": "./img/netflix.svg",
+					"link": "https://www.netflix.com/watch/80218107"
 				}
 			],
 			"items": [
 				{
 					"video": "https://www.youtube.com/watch?v=7h8HkvJxuDw",
-					"poster": "https://img.youtube.com/vi/7h8HkvJxuDw/0.jpg",
+					"poster": "./img/series/DragonsRescueRiders/inner/items/1.jpg",
 					"title": "Dragons Rescue Riders Trailer",
 					"description": "Dak, Leyla and dragon friends work together to save the day."
 				},
 				{
 					"video": "https://www.youtube.com/watch?v=u-MOnjM2Lvg",
-					"poster": "https://img.youtube.com/vi/MOnjM2Lvg/0.jpg",
+					"poster": "./img/series/DragonsRescueRiders/inner/items/2.jpg",
 					"title": "Dragons Rescue Riders: Hunt for the Golden Dragon Trailer",
 					"description": "The Rescue Riders are tasked with their most adventurous and daring rescue mission yet: keep the Golden Dragon and her egg safe from the band of pirates searching for her nest!"
 				},
 				{
 					"video": "https://www.youtube.com/watch?v=Pn4P1IYdQuU",
-					"poster": "https://img.youtube.com/vi/Pn4P1IYdQuU/0.jpg",
+					"poster": "./img/series/DragonsRescueRiders/inner/items/3.jpg",
 					"title": "Dragons Rescue Riders: Secrets of the Songwing Trailer",
 					"description": "The Rescue Riders race to save Aggro after she falls under the spell of Melodia, a Songwing dragon with a melodic call that enchants anyone who hears it!"
 				}
@@ -707,7 +737,7 @@ export const projects = [
 	// RHYME TIME TOWN (SERIES)
 	{
 		"id": 12,
-		"layout": 1,
+		"layout": "first",
 		"name": "DOUG UNPLUGS",
 		"logo": "./img/series/RhymeTimeTown/logo.png",
 		"poster": "./img/series/RhymeTimeTown/poster.jpg",
@@ -727,29 +757,26 @@ export const projects = [
 			"streaming": [
 				{
 					"platform": "Netflix",
-					"link": "LINK"
-				},
-				{
-					"platform": "Netflix",
-					"link": "LINK"
+					"logo": "./img/netflix.svg",
+					"link": "https://www.netflix.com/watch/80226787"
 				}
 			],
 			"items": [
 				{
 					"video": "https://www.youtube.com/watch?v=TEe-Fn-XZY8",
-					"poster": "https://img.youtube.com/vi/TEe-Fn-XZY8/0.jpg",
+					"poster": "./img/series/RhymeTimeTown/inner/items/1.jpg",
 					"title": "Rhyme Time Town Trailer",
 					"description": "Join Daisy the puppy and Cole the kitten in a colorful world of nursery rhymes and imagination."
 				},
 				{
 					"video": "https://www.youtube.com/watch?v=2h4Kd-ay0IE",
-					"poster": "https://img.youtube.com/vi/2h4Kd-ay0IE/0.jpg",
+					"poster": "./img/series/RhymeTimeTown/inner/items/2.jpg",
 					"title": "Rhyme Time Town: Sing-a-longs Trailer",
 					"description": "All aboard to Rhyme Time Town, where Daisy the Puppy and Cole the Kitten go from one sing-a-long adventure to the next."
 				},
 				{
 					"video": "https://www.youtube.com/watch?v=9vggFJsNDvM",
-					"poster": "https://img.youtube.com/vi/9vggFJsNDvM/0.jpg",
+					"poster": "./img/series/RhymeTimeTown/inner/items/3.jpg",
 					"title": "Bhangra Boogie Clip",
 					"description": "Mayor Spoon teaches her nieces and nephews a dance routine to help them burn off their energy!"
 				}
@@ -759,7 +786,7 @@ export const projects = [
 	// SPIRIT RIDING FREE: RIDING ACADEMY
 	{
 		"id": 13,
-		"layout": 1,
+		"layout": "first",
 		"name": "SPIRIT RIDING FREE: RIDING ACADEMY",
 		"logo": "./img/series/SpiritRidingAcademy/logo.png",
 		"poster": "./img/series/SpiritRidingAcademy/poster.jpg",
@@ -779,23 +806,20 @@ export const projects = [
 			"streaming": [
 				{
 					"platform": "Netflix",
-					"link": "LINK"
-				},
-				{
-					"platform": "Netflix",
-					"link": "LINK"
+					"logo": "./img/netflix.svg",
+					"link": "https://www.netflix.com/watch/81054417"
 				}
 			],
 			"items": [
 				{
 					"video": "https://www.youtube.com/watch?v=Wv-dDq2xj6g",
-					"poster": "https://img.youtube.com/vi/Wv-dDq2xj6g/0.jpg",
+					"poster": "./img/series/SpiritRidingAcademy/inner/items/1.jpg",
 					"title": "Spirit Riding Free: Riding Academy Trailer",
 					"description": "Saddle up for new adventures at Palomino Bluffs."
 				},
 				{
 					"video": "https://www.youtube.com/watch?v=_J2WoJx5azM",
-					"poster": "https://img.youtube.com/vi/_J2WoJx5azM/0.jpg",
+					"poster": "./img/series/SpiritRidingAcademy/inner/items/2.jpg",
 					"title": "Spirit Riding Free: Ride Along Adventure Trailer",
 					"description": "You're in control of this interactive adventure when Maricela’s horse is stolen by a group of bandits, and the PALs embark on a daring adventure to rescue her back."
 				}
@@ -805,7 +829,7 @@ export const projects = [
 	// TROLLS: TROLLSTOPIA
 	{
 		"id": 14,
-		"layout": 1,
+		"layout": "first",
 		"name": "SPIRIT RIDING FREE: RIDING ACADEMY",
 		"logo": "./img/series/Trollstopia/logo.png",
 		"poster": "./img/series/Trollstopia/poster.jpg",
@@ -820,30 +844,32 @@ export const projects = [
 			],
 			"streaming": [
 				{
-					"platform": "Netflix",
-					"link": "LINK"
+					"platform": "Peacock",
+					"logo": "./img/peacock.svg",
+					"link": ""
 				},
 				{
-					"platform": "Netflix",
-					"link": "LINK"
+					"platform": "Hulu",
+					"logo": "./img/hulu.svg",
+					"link": ""
 				}
 			],
 			"items": [
 				{
 					"video": "https://www.youtube.com/watch?v=xJiMoDkrwB0",
-					"poster": "https://img.youtube.com/vi/xJiMoDkrwB0/0.jpg",
+					"poster": "./img/series/Trollstopia/inner/items/1.jpg",
 					"title": "Trolls: TrollsTopia Trailer",
 					"description": "Picking up where Trolls: World Tour left off, TrollsTopia is an exciting, new Troll city with delegates from the Country Western, Classical, Funk, Techno and Hard Rock tribes."
 				},
 				{
 					"video": "https://www.youtube.com/watch?v=47HU_h8iPgk",
-					"poster": "https://img.youtube.com/vi/47HU_h8iPgk/0.jpg",
+					"poster": "./img/series/Trollstopia/inner/items/2.jpg",
 					"title": "Tiny Diamond Clip",
 					"description": "Guy and the Trolls must rally around Tiny Diamond after he runs away with an admission that he has yet to glitter fart."
 				},
 				{
 					"video": "https://www.youtube.com/watch?v=47HU_h8iPgk",
-					"poster": "https://img.youtube.com/vi/47HU_h8iPgk/0.jpg",
+					"poster": "./img/series/Trollstopia/inner/items/3.jpg",
 					"title": "Conversations with Creators",
 					"description": "Executive producer Matt Beans talks about expanding the world of Trollstopia."
 				}
@@ -873,17 +899,14 @@ export const projects = [
 			"streaming": [
 				{
 					"platform": "Netflix",
-					"link": "LINK"
-				},
-				{
-					"platform": "Netflix",
-					"link": "LINK"
+					"logo": "./img/netflix.svg",
+					"link": ""
 				}
 			],
 			"items": [
 				{
 					"video": "https://www.youtube.com/watch?v=yZe1o8Gg4nY",
-					"poster": "https://img.youtube.com/vi/yZe1o8Gg4nY/0.jpg",
+					"poster": "./img/series/WheresWaldo/inner/items/1.jpg",
 					"title": "Where's Waldo? Trailer",
 					"description": "Grab your passports and get ready for all new globetrotting adventures with Waldo and Wenda."
 				}
