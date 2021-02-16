@@ -2,6 +2,8 @@ import React from 'react';
 
 import Footer from './footer.js';
 
+import playIcon from '../assets/img/play.svg';
+
 class inner extends React.Component{
   constructor(props) {
     super(props);
@@ -78,11 +80,14 @@ class inner extends React.Component{
             {this.props.items ? (
               this.props.items.map((data, key) => {
                 return (
-                    <button className="item" data-video={data.video}>
+                  <button className="item" data-video={data.video}>
+                    <div className="itemThumb">
                       <img src={data.poster} alt="" />
-                      <h3>{data.title}</h3>
-                      <p>{data.description}</p>
-                    </button>
+                      <i className="play" style={{backgroundImage: `url(${playIcon})`}}></i>
+                    </div>
+                    <h3>{data.title}</h3>
+                    <p>{data.description}</p>
+                  </button>
                 );
               })
             ): null }
@@ -108,8 +113,13 @@ class inner extends React.Component{
 
             {this.props.bonus ? ( 
               <article className="innerBonus">
-                <button className="item" data-video={this.props.bonus.video}>
-                  <img src={this.props.bonus.poster} alt="" />
+                <button className="item" data-video={this.props.bonus.video} data-link={this.props.bonus.link}>
+                  <div className="itemThumb">
+                    <img src={this.props.bonus.poster} alt="" />
+                    {this.props.bonus.video ? ( 
+                      <i className="play" style={{backgroundImage: `url(${playIcon})`}}></i>
+                    ) : null }
+                  </div>
                   <h2>Bonus Feature</h2>
                   <h3>{this.props.bonus.title}</h3>
                   <p>{this.props.bonus.description}</p>

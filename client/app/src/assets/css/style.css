@@ -282,6 +282,27 @@ footer {
   .innerItems .item {
     width: 100%;
     padding: 20px; }
+    .innerItems .item .itemThumb {
+      position: relative; }
+      .innerItems .item .itemThumb .play {
+        background: no-repeat scroll center/contain rgba(0, 0, 0, 0.3);
+        background-size: 40%;
+        background-position: 60% 50%;
+        display: block;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        border: 3px solid white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.5);
+        transition: all 0.3s ease-in-out; }
+    .innerItems .item:hover .play {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+      transition: all 0.3s ease-in-out; }
   .innerItems h2 {
     flex: 0 0 100%;
     text-align: center;
