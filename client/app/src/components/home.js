@@ -26,6 +26,32 @@ class Homepage extends React.Component {
     })
     // You can also log error messages to an error reporting service here
   }
+  componentDidMount() {
+    let slug = window.location.pathname.replace("/", "");
+    projects.forEach((data, key) => {
+      if(data.slug === slug) {
+        this.setState({
+          layout: data.layout,
+          logo: data.logo,
+          hero: data.inner.hero,
+          description: data.inner.description,
+          credits: data.inner.credits,
+          streaming: data.inner.streaming,
+          items: data.inner.items,
+          bonus: data.inner.bonus,
+          consideration: data.inner.consideration,
+          gallery: data.inner.gallery,
+          clicked: true
+        });
+        // lock body scrll
+        document.body.classList.add("lock");
+        // auto scroll body to top
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        // update url path
+        window.history.replaceState({}, data.name, data.slug);
+      }
+    });
+  }
   onTemplateOpen(e) {
     // get clicked project id
     let id = e.target.closest(".project").getAttribute("data-id");
@@ -96,7 +122,7 @@ class Homepage extends React.Component {
       );
     }
     return (
-      <div id="pageWrap" class={this.state.clicked ? 'inner': null}>
+      <div id="pageWrap" className={this.state.clicked ? 'inner': null}>
         <Header onClick={this.onTemplateClose} />
         <Inner1 
           layout={layout}
