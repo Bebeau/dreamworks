@@ -12,9 +12,11 @@ class Homepage extends React.Component {
     super(props);
     this.state = { 
       error: null, 
-      errorInfo: null
+      errorInfo: null,
+      clicked: false
     };
-    this.onTemplate = this.onTemplate.bind(this);
+    this.onTemplateOpen = this.onTemplateOpen.bind(this);
+    this.onTemplateClose = this.onTemplateClose.bind(this);
   }
   componentDidCatch(error, errorInfo) {
     // Catch errors in any components below and re-render with error message
@@ -24,9 +26,12 @@ class Homepage extends React.Component {
     })
     // You can also log error messages to an error reporting service here
   }
-  onTemplate(e) {
+  onTemplateOpen(e) {
+    // get clicked project id
     let id = e.target.closest(".project").getAttribute("data-id");
+    // check if data exists
     projects.forEach((data, key) => {
+      // if match, set data and show inner view
       if(key === parseInt(id)) {
         this.setState({
           layout: data.layout,
@@ -38,10 +43,31 @@ class Homepage extends React.Component {
           items: data.inner.items,
           bonus: data.inner.bonus,
           consideration: data.inner.consideration,
-          gallery: data.inner.gallery
+          gallery: data.inner.gallery,
+          clicked: true
         });
+        // lock body scrll
+        document.body.classList.add("lock");
+        // auto scroll body to top
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        // update url path
+        window.history.replaceState({}, data.name, data.slug);
       }
     });
+  }
+  onTemplateClose() {
+    // hide inner view
+    this.setState({
+      clicked: false
+    });
+    // lock body scrll
+    document.body.classList.remove("lock");
+    // auto scroll body to top
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    // auto scroll project to top
+    document.getElementById('innerPageTemplate').scrollTo({ top: 0, behavior: 'smooth' });
+    // update url path
+    window.history.replaceState({}, "Dreamworks", "/");
   }
   render() {
     const {
@@ -70,7 +96,8 @@ class Homepage extends React.Component {
       );
     }
     return (
-      <div>
+      <div id="pageWrap" class={this.state.clicked ? 'inner': null}>
+        <Header onClick={this.onTemplateClose} />
         <Inner1 
           layout={layout}
           logo={logo}
@@ -82,20 +109,22 @@ class Homepage extends React.Component {
           bonus={bonus}
           consideration={consideration}
           gallery={gallery}
+          onClick={this.onTemplateClose}
         />
-        <Header />
-        <div className="mainBanner"></div>
-        <div id="projectListing">
-          {projects.map((data, key) => {
-            return (
-              <div className="project" key={data.id} data-id={data.id} onClick={this.onTemplate}>
-                <article>
-                  <img className="poster" src={data.poster} alt={data.name} />
-                  <img className="logo" src={data.logo} alt={data.name} />
-                </article>
-              </div>
-            );
-          })}
+        <div id="homePage">
+          <div className="mainBanner"></div>
+          <div id="projectListing">
+            {projects.map((data, key) => {
+              return (
+                <div className="project" key={data.id} data-id={data.id} onClick={this.onTemplateOpen}>
+                  <article>
+                    <img className="poster" src={data.poster} alt={data.name} />
+                    <img className="logo" src={data.logo} alt={data.name} />
+                  </article>
+                </div>
+              );
+            })}
+          </div>
         </div>
         <Footer />
       </div>

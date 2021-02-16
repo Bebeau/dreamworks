@@ -4,6 +4,7 @@ export const projects = [
 		"id": 0,
 		"layout": "first",
 		"name": "Tales of Arcadia: Wizards",
+		"slug": "wizards-tales-of-arcadia",
 		"logo": "./img/series/TOA_Wizards/logo.png",
 		"poster": "./img/series/TOA_Wizards/poster.jpg",
 		"inner": {
@@ -97,6 +98,7 @@ export const projects = [
 		"id": 1,
 		"layout": "second",
 		"name": "KIPO AND THE AGE OF WONDERBEASTS",
+		"slug": "kipo-age-of-wonderbeasts",
 		"logo": "./img/series/Kipo_AW/logo.png",
 		"poster": "./img/series/Kipo_AW/poster.jpg",
 		"inner": {
@@ -208,6 +210,7 @@ export const projects = [
 		"id": 2,
 		"layout": "third",
 		"name": "JURASSIC WORLD: CAMP CRETACEOUS",
+		"slug": "jurassic-world-camp-cretaceous",
 		"logo": "./img/series/JurassicWorld/logo.png",
 		"poster": "./img/series/JurassicWorld/poster.jpg",
 		"inner": {
@@ -265,6 +268,7 @@ export const projects = [
 		"id": 3,
 		"layout": "third",
 		"name": "THE MIGHTY ONES",
+		"slug": "mighty-ones",
 		"logo": "./img/series/MightyOnes/logo.png",
 		"poster": "./img/series/MightyOnes/poster.jpg",
 		"inner": {
@@ -336,6 +340,7 @@ export const projects = [
 		"id": 4,
 		"layout": "fourth",
 		"name": "SHE-RA AND THE PRINCESS OF POWER",
+		"slug": "she-ra-princess-of-power",
 		"logo": "./img/series/SheRa/logo.png",
 		"poster": "./img/series/SheRa/poster.jpg",
 		"inner": {
@@ -399,6 +404,7 @@ export const projects = [
 		"id": 5,
 		"layout": "first",
 		"name": "FAST & FURIOUS: SPY RACERS",
+		"slug": "fast-furious-spy-racers",
 		"logo": "./img/series/FastFurious/logo.png",
 		"poster": "./img/series/FastFurious/poster.jpg",
 		"inner": {
@@ -472,6 +478,7 @@ export const projects = [
 		"id": 6,
 		"layout": "first",
 		"name": "MADAGASCAR: A LITTLE WILD",
+		"slug": "madagascar-a-little-wild",
 		"logo": "./img/series/Madagascar/logo.png",
 		"poster": "./img/series/Madagascar/poster.jpg",
 		"inner": {
@@ -522,6 +529,7 @@ export const projects = [
 		"id": 7,
 		"layout": "first",
 		"name": "ARCHIBALD'S NEXT BIG THING",
+		"slug": "archibalds-next-big-thing",
 		"logo": "./img/series/Archibalds_NBT/logo.png",
 		"poster": "./img/series/Archibalds_NBT/poster.jpg",
 		"inner": {
@@ -561,6 +569,7 @@ export const projects = [
 		"id": 8,
 		"layout": "first",
 		"name": "THE BOSS BABY: BACK IN BUSINESS (SERIES)",
+		"slug": "boss-baby-back-in-business",
 		"logo": "./img/series/BossBaby_BIB/logo.png",
 		"poster": "./img/series/BossBaby_BIB/poster.jpg",
 		"inner": {
@@ -600,6 +609,7 @@ export const projects = [
 		"id": 9,
 		"layout": "first",
 		"name": "THE EPIC TALES OF CAPTAIN UNDERPANTS",
+		"slug": "epic-tales-of-captain-underpants",
 		"logo": "./img/series/CaptainUnderpants/logo.png",
 		"poster": "./img/series/CaptainUnderpants/poster.jpg",
 		"inner": {
@@ -645,6 +655,7 @@ export const projects = [
 		"id": 10,
 		"layout": "first",
 		"name": "DOUG UNPLUGS",
+		"slug": "doug-unplugs",
 		"logo": "./img/series/DougUnplugs/logo.png",
 		"poster": "./img/series/DougUnplugs/poster.jpg",
 		"inner": {
@@ -689,7 +700,8 @@ export const projects = [
 	{
 		"id": 11,
 		"layout": "first",
-		"name": "DOUG UNPLUGS",
+		"name": "Dragons Rescue Riders",
+		"slug": "dragons-rescue-riders",
 		"logo": "./img/series/DragonsRescueRiders/logo.png",
 		"poster": "./img/series/DragonsRescueRiders/poster.jpg",
 		"inner": {
@@ -738,7 +750,8 @@ export const projects = [
 	{
 		"id": 12,
 		"layout": "first",
-		"name": "DOUG UNPLUGS",
+		"name": "Rhyme Time Town",
+		"slug": "rhyme-time-town",
 		"logo": "./img/series/RhymeTimeTown/logo.png",
 		"poster": "./img/series/RhymeTimeTown/poster.jpg",
 		"inner": {
@@ -788,6 +801,7 @@ export const projects = [
 		"id": 13,
 		"layout": "first",
 		"name": "SPIRIT RIDING FREE: RIDING ACADEMY",
+		"slug": "spirit-riding-free-riding-academy",
 		"logo": "./img/series/SpiritRidingAcademy/logo.png",
 		"poster": "./img/series/SpiritRidingAcademy/poster.jpg",
 		"inner": {
@@ -830,7 +844,8 @@ export const projects = [
 	{
 		"id": 14,
 		"layout": "first",
-		"name": "SPIRIT RIDING FREE: RIDING ACADEMY",
+		"name": "TROLLS: TROLLSTOPIA",
+		"slug": "trolls-trollstopia",
 		"logo": "./img/series/Trollstopia/logo.png",
 		"poster": "./img/series/Trollstopia/poster.jpg",
 		"inner": {
@@ -881,6 +896,7 @@ export const projects = [
 		"id": 15,
 		"layout": 1,
 		"name": "WHERE'S WALDO?",
+		"slug": "wheres-waldo",
 		"logo": "./img/series/WheresWaldo/logo.png",
 		"poster": "./img/series/WheresWaldo/poster.jpg",
 		"inner": {

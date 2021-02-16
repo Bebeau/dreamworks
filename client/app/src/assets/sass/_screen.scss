@@ -5,7 +5,10 @@ body,
 html {
 	padding: 0;
 	margin: 0;
-	font-family: sans-serif;
+	font-family: "Arial", sans-serif;
+	&.lock {
+		overflow: hidden;
+	}
 }
 h1,h2,h3,h4,h5,h6 {
 	color: $primary;
@@ -87,6 +90,30 @@ footer {
 		font-size: 0.6rem;
 		letter-spacing: 0.5px;
 		color: $primary;
+	}
+}
+#pageWrap {
+	#homePage {
+		overflow-x: scroll;
+	}
+	#innerPageTemplate {
+		position: fixed;
+		z-index: 10;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		overflow-x: scroll;
+		padding: 70px 0 0;
+		background: white;
+		transform: translate(0, -120vh);
+		transition: all 0.3s ease-in-out;
+	}
+	&.inner {
+		#innerPageTemplate {
+			transform: translate(0,0);
+			transition: all 0.3s ease-in-out;
+		}
 	}
 }
 .mainBanner {

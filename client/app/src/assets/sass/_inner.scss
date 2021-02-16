@@ -72,7 +72,7 @@
 	width: 100%;
 	border: none;
 	background: none;
-	padding: 20px;
+	padding: 0;
 	box-sizing: border-box;
 	&:active,
 	&:focus {
@@ -95,8 +95,10 @@
 	align-items: flex-start;
 	flex-direction: column;
 	flex-wrap: wrap;
+	margin: 0;
 	.item {
-		width: 33.3%;
+		width: 100%;
+		padding: 20px;
 	}
 	h2 {
 		flex: 0 0 100%;
@@ -176,19 +178,22 @@
 		border: 1px solid white;
 		color: white;
 		margin: 0 auto;
-		line-height: 40px;
+		line-height: 63px;
 		padding: 0 20px;
 		text-transform: uppercase;
 		letter-spacing: 3px;
+		width: 241px;
 	}
 	&.first {
 		flex-direction: column;
 		.innerConsideration {
 			width: 100%;
+			margin: 0;
 		}
 		.innerGallery {
 			width: 100%;
 			height: 400px;
+			margin: 0;
 		}
 	}
 	&.second {
@@ -227,7 +232,11 @@
 	&.third {
 		flex-direction: column;
 		.innerBonus {
-
+			margin: 0;
+			.item {
+				margin: 0;
+				padding: 0;
+			}
 		}
 	}
 	&.fourth {
@@ -262,7 +271,11 @@
 		}
 	}
 	.innerItems {
+		margin: 0 -20px;
 		flex-direction: row;
+		.item {
+			width: 33.3%;
+		}
 	}
 	.innerConsideration {
 		padding: 40px;
@@ -279,15 +292,14 @@
 		&.first {
 			flex-direction: row;
 			align-items: stretch;
-			article {
-				margin: 0 20px;
-			}
 			.innerConsideration {
 				width: 50%;
+				margin: 0 20px 0 0;
 			}
 			.innerGallery {
 				width: 50%;
 				height: auto;
+				margin: 0 0 0 20px;
 			}
 		}
 		&.second {
@@ -327,14 +339,16 @@
 			.innerBonus {
 				width: 33.3%;
 				.item {
-					padding: 0 20px;
+					padding: 0 20px 0 0;
 				}
 			}
 			.innerGallery {
-				width: 65%;
+				margin: 0 0 0 20px;
+				width: 66.6%;
 			}
 			.innerConsideration {
-				width: 65%;
+				margin: 0 0 0 20px;
+				width: 66.6%;
 				flex-direction: row;
 				display: flex;
 				img {
@@ -367,5 +381,11 @@
 				width: 60%;
 			}
 		}
+	}
+}
+@media (min-width: 1920px) {
+	.innerHero {
+		width: 1920px;
+		margin: 0 auto;
 	}
 }

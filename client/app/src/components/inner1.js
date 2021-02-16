@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Footer from './footer.js';
+
 class inner extends React.Component{
   constructor(props) {
     super(props);
@@ -31,7 +33,7 @@ class inner extends React.Component{
       );
     }
     return (
-    	<div>
+    	<div id="innerPageTemplate">
 
         <section className="innerHero">
           <article className="heroImage mobileHero" style={{backgroundImage: `url(${this.props.hero})`}}>
@@ -63,7 +65,7 @@ class inner extends React.Component{
             {this.props.streaming ? ( 
               this.props.streaming.map((data, key) => {
                 return (
-                  <a href={data.link} target="_blank">
+                  <a href={data.link} target="_blank" rel="noreferrer">
                     <img src={data.logo} alt={data.platform} />
                   </a>
                 );
@@ -143,6 +145,8 @@ class inner extends React.Component{
           </div>
 
         </section>
+
+        <Footer onClick={this.props.onClick} />
 
       </div>
     );
