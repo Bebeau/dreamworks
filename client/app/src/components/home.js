@@ -13,10 +13,13 @@ class Homepage extends React.Component {
     this.state = { 
       error: null, 
       errorInfo: null,
-      clicked: false
+      clicked: false,
+      showVideo: false
     };
     this.onTemplateOpen = this.onTemplateOpen.bind(this);
     this.onTemplateClose = this.onTemplateClose.bind(this);
+    this.showVideoModal = this.showVideoModal.bind(this);
+    this.hideVideoModal = this.hideVideoModal.bind(this);
   }
   componentDidCatch(error, errorInfo) {
     // Catch errors in any components below and re-render with error message
@@ -95,6 +98,53 @@ class Homepage extends React.Component {
     // update url path
     window.history.replaceState({}, "Dreamworks", "/");
   }
+  showVideoModal(e) {
+    // define links
+    let videoLink = e.target.closest(".item").getAttribute("data-video"),
+        articleLink = e.target.closest(".item").getAttribute("data-link");
+    // if article link, redirect to link
+    if(articleLink !== null) {
+      window.open(articleLink);
+    }
+    // if video link launch modal
+    if(videoLink !== null) { 
+      // Create an iFrame with autoplay set to true
+      let iframe = document.createElement("iframe"),
+          videoModal = document.getElementById("videoRatioWrap");
+      // set attributes
+      iframe.setAttribute("src",videoLink);
+      iframe.setAttribute("frameborder",0);
+      iframe.setAttribute("allow","accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture");
+      iframe.setAttribute("allowfullscreen", 1);
+      iframe.setAttribute("autoplay", 1);
+      iframe.setAttribute("id", "videoIframe");
+      // append iframe to video modal
+      videoModal.appendChild(iframe);
+      // change state
+      this.setState({
+        showVideo: true
+      });
+      this.hideVideoModal(this);
+    }
+  }
+  hideVideoModal(e) {
+    // define vars
+    let body = document.getElementById('videoModal'),
+        except = document.getElementById('videoRatioWrap'),
+        currentIframe = document.getElementById("videoIframe");
+    // add click listener to modal body
+    body.addEventListener("click", function() {
+        currentIframe.remove();
+        // change state
+        e.setState({
+          showVideo: false
+        });
+    }, false);
+    // add click listener to inner modal
+    except.addEventListener("click", function(e) {
+        e.stopPropagation();
+    }, false);
+  }
   render() {
     const {
       layout,
@@ -123,6 +173,9 @@ class Homepage extends React.Component {
     }
     return (
       <div id="pageWrap" className={this.state.clicked ? 'inner': null}>
+        <section id="videoModal" className={this.state.showVideo ? 'projectModal show': 'projectModal'}>
+        <article id="videoRatioWrap"></article>
+        </section>
         <Header onClick={this.onTemplateClose} />
         <Inner1 
           layout={layout}
@@ -136,6 +189,7 @@ class Homepage extends React.Component {
           consideration={consideration}
           gallery={gallery}
           onClick={this.onTemplateClose}
+          showVideo={this.showVideoModal}
         />
         <div id="homePage">
           <div className="mainBanner"></div>

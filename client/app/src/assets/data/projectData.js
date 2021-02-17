@@ -33,19 +33,19 @@ export const projects = [
 			],
 			"items": [
 				{
-					"video": "https://www.youtube.com/watch?v=6adVDTR79n4",
+					"video": "https://www.youtube.com/embed/6adVDTR79n4?autoplay=1",
 					"poster": "./img/series/TOA_Wizards/inner/items/1.jpg",
 					"title": "Tales of Arcadia: Wizards Trailer",
 					"description": "The third and final chapter of the Tales of Arcadia trilogy takes audiences on an adventure through time."
 				},
 				{
-					"video": "https://www.youtube.com/watch?v=rpePQS8dW04",
+					"video": "https://www.youtube.com/embed/rpePQS8dW04?autoplay=1",
 					"poster": "./img/series/TOA_Wizards/inner/items/2.jpg",
 					"title": "Floating Castle Battle",
 					"description": "The Wizards team took to the skies for an epic battle between floating castles that pushed the limits of VFX in TV animation."
 				},
 				{
-					"video": "https://www.youtube.com/watch?v=rpePQS8dW04",
+					"video": "https://www.youtube.com/embed/rpePQS8dW04?autoplay=1",
 					"poster": "./img/series/TOA_Wizards/inner/items/3.jpg",
 					"title": "Three Wizards Fight",
 					"description": "When Douxie, Merlin and Morgana finally face off, its a stunning combination of feature quality FX and incredible character animation that brings this magical fight sequence to life."
@@ -127,19 +127,19 @@ export const projects = [
 			],
 			"items": [
 				{
-					"video": "https://www.youtube.com/watch?v=25UHUbpFTtY",
+					"video": "https://www.youtube.com/embed/25UHUbpFTtY?autoplay=1",
 					"poster": "./img/series/Kipo_AW/inner/items/1.jpg",
 					"title": "Kipo and the Age of Wonderbeasts Trailer",
 					"description": "Take a ride through the post-apoclyptic wonderland of Kipo and the Age of Wonderbeasts."
 				},
 				{
-					"video": "https://www.youtube.com/watch?v=25UHUbpFTtY",
+					"video": "https://www.youtube.com/embed/25UHUbpFTtY?autoplay=1",
 					"poster": "./img/series/Kipo_AW/inner/items/2.jpg",
 					"title": "LGBTQ Representation Matters",
 					"description": "Kipo and the Age of Wonderbeasts featured the first time a character in a kids animated series said the words I'm gay."
 				},
 				{
-					"video": "https://www.youtube.com/watch?v=25UHUbpFTtY",
+					"video": "https://www.youtube.com/embed/25UHUbpFTtY?autoplay=1",
 					"poster": "./img/series/Kipo_AW/inner/items/3.jpg",
 					"title": "The Music of Kipo",
 					"description": "Composer Daniel Rojas created stunning original music and score that gave the series a distinct sound."
@@ -231,19 +231,19 @@ export const projects = [
 			],
 			"items": [
 				{
-					"video": "https://www.youtube.com/watch?v=bUOpbuNgL4w",
+					"video": "https://www.youtube.com/embed/bUOpbuNgL4w?autoplay=1",
 					"poster": "./img/series/JurassicWorld/inner/items/1.jpg",
 					"title": "Jurassic World: Camp Cretaceous Trailer",
 					"description": "Jurassic World Camp Cretaceous opens up the world of Isla Nublar like never before."
 				},
 				{
-					"video": "https://www.youtube.com/watch?v=EwaCQn1QVM0",
+					"video": "https://www.youtube.com/embed/EwaCQn1QVM0?autoplay=1",
 					"poster": "./img/series/JurassicWorld/inner/items/2.jpg",
 					"title": "Behind the Scenes",
 					"description": "The cast and crew of Jurassic World: Camp Cretaceous take you behind the scenes of making an animated series during a global pandemic."
 				},
 				{
-					"video": "https://www.youtube.com/watch?v=bUOpbuNgL4w",
+					"video": "https://www.youtube.com/embed/bUOpbuNgL4w?autoplay=1",
 					"poster": "./img/series/JurassicWorld/inner/items/3.jpg",
 					"title": "It's a Cattle Drive!",
 					"description": "Go behind the epic cattle drive sequence in Season One, from storyboard artist Ed Tadem."
@@ -294,19 +294,19 @@ export const projects = [
 			],
 			"items": [
 				{
-					"video": "https://www.youtube.com/watch?v=mzCXDD3WOuU",
+					"video": "https://www.youtube.com/embed/mzCXDD3WOuU?autoplay=1",
 					"poster": "./img/series/MightyOnes/inner/items/1.jpg",
 					"title": "The Mighty Ones Trailer",
 					"description": "A peek inside the weird backyard world of The Mighty Ones."
 				},
 				{
-					"video": "https://www.youtube.com/watch?v=mzCXDD3WOuU",
+					"video": "https://www.youtube.com/embed/mzCXDD3WOuU?autoplay=1",
 					"poster": "./img/series/MightyOnes/inner/items/2.jpg",
 					"title": "Beware the Snowbeast",
 					"description": "Take a look inside the weird world of The Mighty Ones, with storyboard artist Eric Jones."
 				},
 				{
-					"video": "https://www.youtube.com/watch?v=VPubLCgfLu8",
+					"video": "https://www.youtube.com/embed/VPubLCgfLu8?autoplay=1",
 					"poster": "./img/series/MightyOnes/inner/items/3.jpg",
 					"title": "Rocksy Sinks",
 					"description": "It’s all fun and games until Rocksy rolls into the water!"
@@ -361,13 +361,13 @@ export const projects = [
 			],
 			"items": [
 				{
-					"video": "https://www.youtube.com/watch?v=7EOGP0zDl1M",
+					"video": "https://www.youtube.com/embed/7EOGP0zDl1M?autoplay=1",
 					"poster": "./img/series/SheRa/inner/items/1.jpg",
 					"title": "She-Ra and the Princesses of Power Final Season Featurette",
 					"description": "Last year, fans saw She-Ra come to an epic conclusion. The cast and crew reflect on their journey."
 				},
 				{
-					"video": "https://www.youtube.com/watch?v=7EOGP0zDl1M",
+					"video": "https://www.youtube.com/embed/7EOGP0zDl1M?autoplay=1",
 					"poster": "./img/series/SheRa/inner/items/2.jpg",
 					"title": "LGBTQ Representation Matters",
 					"description": "In one of the final scenes of the series, fans learned that love truly wins, backed by composer Sunna Wehrmeijer's gorgeous score."
@@ -429,19 +429,19 @@ export const projects = [
 			],
 			"items": [
 				{
-					"video": "https://www.youtube.com/watch?v=JjtZD0RVV_E",
+					"video": "https://www.youtube.com/embed/JjtZD0RVV_E?autoplay=1",
 					"poster": "./img/series/FastFurious/inner/items/1.jpg",
 					"title": "Fast & Furious: Spy Racers Rio Trailer",
 					"description": "The Spy Racers head to Rio on their first international mission."
 				},
 				{
-					"video": "https://www.youtube.com/watch?v=JjtZD0RVV_E",
+					"video": "https://www.youtube.com/embed/JjtZD0RVV_E?autoplay=1",
 					"poster": "./img/series/FastFurious/inner/items/2.jpg",
 					"title": "Reimagining Rio",
 					"description": "The Fast team took their high octane races to the streets of Rio in Season 2. Here Tony and Layla navigate the narrow, winding corridors of Rio's favelas in an adrenaline pumping chase."
 				},
 				{
-					"video": "https://www.youtube.com/watch?v=90JMgMHflvk",
+					"video": "https://www.youtube.com/embed/90JMgMHflvk?autoplay=1",
 					"poster": "./img/series/FastFurious/inner/items/3.jpg",
 					"title": "Lost in the Sahara",
 					"description": "When the Spy Racers head to Africa in season 3, they find themselves in a death-defying race across the dangerous Sahara."
@@ -504,19 +504,19 @@ export const projects = [
 			],
 			"items": [
 				{
-					"video": "https://www.youtube.com/watch?v=nBi9xnUfeAw",
+					"video": "https://www.youtube.com/embed/nBi9xnUfeAw?autoplay=1",
 					"poster": "./img/series/Madagascar/inner/items/1.jpg",
 					"title": "Madagascar: A Little Wild Trailer",
 					"description": "The lovable Zoo Crew is back as their younger selves, living out big dream in the big city."
 				},
 				{
-					"video": "https://www.youtube.com/watch?v=G3fy2metCRM",
+					"video": "https://www.youtube.com/embed/G3fy2metCRM?autoplay=1",
 					"poster": "./img/series/Madagascar/inner/items/2.jpg",
 					"title": "Disability Representation Matters",
 					"description": "Madagascar: A Little Wild features a diverse cast of characters, including Dave and Pickles, a chimp who is deaf and his sister speaks and translates ASL to the other animals."
 				},
 				{
-					"video": "https://www.youtube.com/watch?v=nKHdtp7Znbc",
+					"video": "https://www.youtube.com/embed/nKHdtp7Znbc?autoplay=1",
 					"poster": "./img/series/Madagascar/inner/items/3.jpg",
 					"title": "Best Original Song - Shine",
 					"description": "When Gloria’s faith in her dancing is tested, she learns that she doesn’t need someone else to decide that she’s a prima hippo-rina! Twirl along to 'Shine', written by the incredible Alana D and Jordan Yaeger, who have filled the world of Madagascar with incredible original songs in every episode."
@@ -550,13 +550,13 @@ export const projects = [
 			],
 			"items": [
 				{
-					"video": "https://www.youtube.com/watch?v=hsRpduH8Pw4",
+					"video": "https://www.youtube.com/embed/hsRpduH8Pw4?autoplay=1",
 					"poster": "./img/series/Archibalds_NBT/inner/items/1.jpg",
 					"title": "Archibald's Next Big Thing Trailer",
 					"description": "Emmy winner Tony Hale brought his celebrated children's book to life in this charming and vibrant series."
 				},
 				{
-					"video": "https://www.youtube.com/watch?v=Djxa8tDillM",
+					"video": "https://www.youtube.com/embed/Djxa8tDillM?autoplay=1",
 					"poster": "./img/series/Archibalds_NBT/inner/items/2.jpg",
 					"title": "Archibald's New Singing Voice",
 					"description": "No day is an ordinary day in Crackridge, especially when Archibald discovers his new Broadway-worthy vocals."
@@ -590,13 +590,13 @@ export const projects = [
 			],
 			"items": [
 				{
-					"video": "https://www.youtube.com/watch?v=aPu6yQ0OrG8",
+					"video": "https://www.youtube.com/embed/aPu6yQ0OrG8?autoplay=1",
 					"poster": "./img/series/BossBaby_BIB/inner/items/1.jpg",
 					"title": "The Boss Baby: Back In Business Trailer",
 					"description": "The Boss Baby is back in season 4 of the incredibly popular series."
 				},
 				{
-					"video": "https://www.youtube.com/watch?v=KX1av1R35PU",
+					"video": "https://www.youtube.com/embed/KX1av1R35PU?autoplay=1",
 					"poster": "./img/series/BossBaby_BIB/inner/items/2.jpg",
 					"title": "The Boss Baby: Get That Baby! Interactive Special",
 					"description": "You can be the boss in this interactive Special Production that puts the viewer in the C-Suite."
@@ -630,19 +630,19 @@ export const projects = [
 			],
 			"items": [
 				{
-					"video": "https://www.youtube.com/watch?v=2UHylAUXrpA",
+					"video": "https://www.youtube.com/embed/2UHylAUXrpA?autoplay=1",
 					"poster": "./img/series/CaptainUnderpants/inner/items/1.jpg",
 					"title": "Captain Underpants in Space Trailer",
 					"description": "George and Harold are in for the ultimate field trip: outer space!"
 				},
 				{
-					"video": "https://www.youtube.com/watch?v=6WMaYHCmV1k",
+					"video": "https://www.youtube.com/embed/6WMaYHCmV1k?autoplay=1",
 					"poster": "./img/series/CaptainUnderpants/inner/items/2.jpg",
 					"title": "The Epic Tales of Captain Underpants: Epic Choice-O-RamaTrailer",
 					"description": "Imagine a world where you can control what adventures George and Harold go on. Oh wait, this is that world!"
 				},
 				{
-					"video": "https://www.youtube.com/watch?v=AHAHqkOGIn0",
+					"video": "https://www.youtube.com/embed/AHAHqkOGIn0?autoplay=1",
 					"poster": "./img/series/CaptainUnderpants/inner/items/3.jpg",
 					"title": "Captain Underpants Mega Blissmas Trailer",
 					"description": "George and Harold travel back in time to convince Santa that a few ideas from their new version of Christmas (Blissmas) should be incorporated into his holiday. But will replacing red bows with laser shows work out as they had hoped?"
@@ -676,7 +676,7 @@ export const projects = [
 			],
 			"items": [
 				{
-					"video": "https://www.youtube.com/watch?v=AHnHSr7_V2Q",
+					"video": "https://www.youtube.com/embed/AHnHSr7_V2Q?autoplay=1",
 					"poster": "./img/series/DougUnplugs/inner/items/1.jpg",
 					"title": "Doug UnplugsTrailer",
 					"description": "Meet Doug, the boy robot who’s taking on the world one curious question at a time."
@@ -688,7 +688,7 @@ export const projects = [
 					"description": "Executive producers Aliki Theofilopoulos and Jim Nolan chat about their new series."
 				},
 				{
-					"video": "https://www.youtube.com/watch?v=ZSARM5DtAc8",
+					"video": "https://www.youtube.com/embed/ZSARM5DtAc8?autoplay=1",
 					"poster": "./img/series/DougUnplugs/inner/items/3.jpg",
 					"title": "Doug Explores the Woods",
 					"description": "Doug and his friends love to explore the great outdoors."
@@ -726,19 +726,19 @@ export const projects = [
 			],
 			"items": [
 				{
-					"video": "https://www.youtube.com/watch?v=7h8HkvJxuDw",
+					"video": "https://www.youtube.com/embed/7h8HkvJxuDw?autoplay=1",
 					"poster": "./img/series/DragonsRescueRiders/inner/items/1.jpg",
 					"title": "Dragons Rescue Riders Trailer",
 					"description": "Dak, Leyla and dragon friends work together to save the day."
 				},
 				{
-					"video": "https://www.youtube.com/watch?v=u-MOnjM2Lvg",
+					"video": "https://www.youtube.com/embed/u-MOnjM2Lvg?autoplay=1",
 					"poster": "./img/series/DragonsRescueRiders/inner/items/2.jpg",
 					"title": "Dragons Rescue Riders: Hunt for the Golden Dragon Trailer",
 					"description": "The Rescue Riders are tasked with their most adventurous and daring rescue mission yet: keep the Golden Dragon and her egg safe from the band of pirates searching for her nest!"
 				},
 				{
-					"video": "https://www.youtube.com/watch?v=Pn4P1IYdQuU",
+					"video": "https://www.youtube.com/embed/Pn4P1IYdQuU?autoplay=1",
 					"poster": "./img/series/DragonsRescueRiders/inner/items/3.jpg",
 					"title": "Dragons Rescue Riders: Secrets of the Songwing Trailer",
 					"description": "The Rescue Riders race to save Aggro after she falls under the spell of Melodia, a Songwing dragon with a melodic call that enchants anyone who hears it!"
@@ -776,19 +776,19 @@ export const projects = [
 			],
 			"items": [
 				{
-					"video": "https://www.youtube.com/watch?v=TEe-Fn-XZY8",
+					"video": "https://www.youtube.com/embed/TEe-Fn-XZY8?autoplay=1",
 					"poster": "./img/series/RhymeTimeTown/inner/items/1.jpg",
 					"title": "Rhyme Time Town Trailer",
 					"description": "Join Daisy the puppy and Cole the kitten in a colorful world of nursery rhymes and imagination."
 				},
 				{
-					"video": "https://www.youtube.com/watch?v=2h4Kd-ay0IE",
+					"video": "https://www.youtube.com/embed/2h4Kd-ay0IE?autoplay=1",
 					"poster": "./img/series/RhymeTimeTown/inner/items/2.jpg",
 					"title": "Rhyme Time Town: Sing-a-longs Trailer",
 					"description": "All aboard to Rhyme Time Town, where Daisy the Puppy and Cole the Kitten go from one sing-a-long adventure to the next."
 				},
 				{
-					"video": "https://www.youtube.com/watch?v=9vggFJsNDvM",
+					"video": "https://www.youtube.com/embed/9vggFJsNDvM?autoplay=1",
 					"poster": "./img/series/RhymeTimeTown/inner/items/3.jpg",
 					"title": "Bhangra Boogie Clip",
 					"description": "Mayor Spoon teaches her nieces and nephews a dance routine to help them burn off their energy!"
@@ -826,13 +826,13 @@ export const projects = [
 			],
 			"items": [
 				{
-					"video": "https://www.youtube.com/watch?v=Wv-dDq2xj6g",
+					"video": "https://www.youtube.com/embed/Wv-dDq2xj6g?autoplay=1",
 					"poster": "./img/series/SpiritRidingAcademy/inner/items/1.jpg",
 					"title": "Spirit Riding Free: Riding Academy Trailer",
 					"description": "Saddle up for new adventures at Palomino Bluffs."
 				},
 				{
-					"video": "https://www.youtube.com/watch?v=_J2WoJx5azM",
+					"video": "https://www.youtube.com/embed/_J2WoJx5azM?autoplay=1",
 					"poster": "./img/series/SpiritRidingAcademy/inner/items/2.jpg",
 					"title": "Spirit Riding Free: Ride Along Adventure Trailer",
 					"description": "You're in control of this interactive adventure when Maricela’s horse is stolen by a group of bandits, and the PALs embark on a daring adventure to rescue her back."
@@ -871,19 +871,19 @@ export const projects = [
 			],
 			"items": [
 				{
-					"video": "https://www.youtube.com/watch?v=xJiMoDkrwB0",
+					"video": "https://www.youtube.com/embed/xJiMoDkrwB0?autoplay=1",
 					"poster": "./img/series/Trollstopia/inner/items/1.jpg",
 					"title": "Trolls: TrollsTopia Trailer",
 					"description": "Picking up where Trolls: World Tour left off, TrollsTopia is an exciting, new Troll city with delegates from the Country Western, Classical, Funk, Techno and Hard Rock tribes."
 				},
 				{
-					"video": "https://www.youtube.com/watch?v=47HU_h8iPgk",
+					"video": "https://www.youtube.com/embed/47HU_h8iPgk?autoplay=1",
 					"poster": "./img/series/Trollstopia/inner/items/2.jpg",
 					"title": "Tiny Diamond Clip",
 					"description": "Guy and the Trolls must rally around Tiny Diamond after he runs away with an admission that he has yet to glitter fart."
 				},
 				{
-					"video": "https://www.youtube.com/watch?v=47HU_h8iPgk",
+					"video": "https://www.youtube.com/embed/47HU_h8iPgk?autoplay=1",
 					"poster": "./img/series/Trollstopia/inner/items/3.jpg",
 					"title": "Conversations with Creators",
 					"description": "Executive producer Matt Beans talks about expanding the world of Trollstopia."
@@ -921,7 +921,7 @@ export const projects = [
 			],
 			"items": [
 				{
-					"video": "https://www.youtube.com/watch?v=yZe1o8Gg4nY",
+					"video": "https://www.youtube.com/embed/yZe1o8Gg4nY?autoplay=1",
 					"poster": "./img/series/WheresWaldo/inner/items/1.jpg",
 					"title": "Where's Waldo? Trailer",
 					"description": "Grab your passports and get ready for all new globetrotting adventures with Waldo and Wenda."

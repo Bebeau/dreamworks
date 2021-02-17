@@ -16,8 +16,8 @@ class inner extends React.Component{
     // Catch errors in any components below and re-render with error message
     this.setState({
       error: error,
-      errorInfo: errorInfo
-    })
+      errorInfo: errorInfo,
+    });
     // You can also log error messages to an error reporting service here
   }
   render(){
@@ -67,7 +67,7 @@ class inner extends React.Component{
             {this.props.streaming ? ( 
               this.props.streaming.map((data, key) => {
                 return (
-                  <a href={data.link} target="_blank" rel="noreferrer">
+                  <a key={key} href={data.link} target="_blank" rel="noreferrer">
                     <img src={data.logo} alt={data.platform} />
                   </a>
                 );
@@ -80,7 +80,7 @@ class inner extends React.Component{
             {this.props.items ? (
               this.props.items.map((data, key) => {
                 return (
-                  <button className="item" data-video={data.video}>
+                  <button key={key} className="item" data-video={data.video} onClick={this.props.showVideo}>
                     <div className="itemThumb">
                       <img src={data.poster} alt="" />
                       <i className="play" style={{backgroundImage: `url(${playIcon})`}}></i>
