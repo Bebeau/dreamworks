@@ -18,10 +18,6 @@ export const projects = [
 				{
 					"label": "Executive Producers",
 					"person": "Marc Guggenheim, Chad Hammes"
-				},
-				{
-					"label": "Co-Executive Producers",
-					"person": "Aaron Waltke and Chad Quandt"
 				}
 			],
 			"streaming": [
@@ -35,7 +31,7 @@ export const projects = [
 				{
 					"video": "https://www.youtube.com/embed/6adVDTR79n4?autoplay=1",
 					"poster": "./img/series/TOA_Wizards/inner/items/1.jpg",
-					"title": "Tales of Arcadia: Wizards Trailer",
+					"title": "Series Trailer",
 					"description": "The third and final chapter of the Tales of Arcadia trilogy takes audiences on an adventure through time."
 				},
 				{
@@ -112,10 +108,6 @@ export const projects = [
 				{
 					"label": "Developed for Television and Executive Produced by",
 					"person": "Bill Wolkoff"
-				},
-				{
-					"label": "Co-Executive Producers",
-					"person": "Joanna Lewis and Kristine Songco"
 				}
 			],
 			"streaming": [
@@ -129,7 +121,7 @@ export const projects = [
 				{
 					"video": "https://www.youtube.com/embed/25UHUbpFTtY?autoplay=1",
 					"poster": "./img/series/Kipo_AW/inner/items/1.jpg",
-					"title": "Kipo and the Age of Wonderbeasts Trailer",
+					"title": "Series Trailer",
 					"description": "Take a ride through the post-apoclyptic wonderland of Kipo and the Age of Wonderbeasts."
 				},
 				{
@@ -233,7 +225,7 @@ export const projects = [
 				{
 					"video": "https://www.youtube.com/embed/bUOpbuNgL4w?autoplay=1",
 					"poster": "./img/series/JurassicWorld/inner/items/1.jpg",
-					"title": "Jurassic World: Camp Cretaceous Trailer",
+					"title": "Series Trailer",
 					"description": "Jurassic World Camp Cretaceous opens up the world of Isla Nublar like never before."
 				},
 				{
@@ -296,7 +288,7 @@ export const projects = [
 				{
 					"video": "https://www.youtube.com/embed/mzCXDD3WOuU?autoplay=1",
 					"poster": "./img/series/MightyOnes/inner/items/1.jpg",
-					"title": "The Mighty Ones Trailer",
+					"title": "Series Trailer",
 					"description": "A peek inside the weird backyard world of The Mighty Ones."
 				},
 				{
@@ -363,7 +355,7 @@ export const projects = [
 				{
 					"video": "https://www.youtube.com/embed/7EOGP0zDl1M?autoplay=1",
 					"poster": "./img/series/SheRa/inner/items/1.jpg",
-					"title": "She-Ra and the Princesses of Power Final Season Featurette",
+					"title": "Series Trailer",
 					"description": "Last year, fans saw She-Ra come to an epic conclusion. The cast and crew reflect on their journey."
 				},
 				{
@@ -431,7 +423,7 @@ export const projects = [
 				{
 					"video": "https://www.youtube.com/embed/JjtZD0RVV_E?autoplay=1",
 					"poster": "./img/series/FastFurious/inner/items/1.jpg",
-					"title": "Fast & Furious: Spy Racers Rio Trailer",
+					"title": "Series Trailer",
 					"description": "The Spy Racers head to Rio on their first international mission."
 				},
 				{
@@ -506,7 +498,7 @@ export const projects = [
 				{
 					"video": "https://www.youtube.com/embed/nBi9xnUfeAw?autoplay=1",
 					"poster": "./img/series/Madagascar/inner/items/1.jpg",
-					"title": "Madagascar: A Little Wild Trailer",
+					"title": "Series Trailer",
 					"description": "The lovable Zoo Crew is back as their younger selves, living out big dream in the big city."
 				},
 				{
@@ -539,6 +531,10 @@ export const projects = [
 				{
 					"label": "Created and Executive Produced by",
 					"person": "Tony Hale"
+				},
+				{
+					"label": "Executive Producer: ",
+					"person": "Eric Fogel"
 				}
 			],
 			"streaming": [
@@ -552,7 +548,7 @@ export const projects = [
 				{
 					"video": "https://www.youtube.com/embed/hsRpduH8Pw4?autoplay=1",
 					"poster": "./img/series/Archibalds_NBT/inner/items/1.jpg",
-					"title": "Archibald's Next Big Thing Trailer",
+					"title": "Series Trailer",
 					"description": "Emmy winner Tony Hale brought his celebrated children's book to life in this charming and vibrant series."
 				},
 				{
@@ -592,7 +588,7 @@ export const projects = [
 				{
 					"video": "https://www.youtube.com/embed/aPu6yQ0OrG8?autoplay=1",
 					"poster": "./img/series/BossBaby_BIB/inner/items/1.jpg",
-					"title": "The Boss Baby: Back In Business Trailer",
+					"title": "Series Trailer",
 					"description": "The Boss Baby is back in season 4 of the incredibly popular series."
 				},
 				{
@@ -632,19 +628,19 @@ export const projects = [
 				{
 					"video": "https://www.youtube.com/embed/2UHylAUXrpA?autoplay=1",
 					"poster": "./img/series/CaptainUnderpants/inner/items/1.jpg",
-					"title": "Captain Underpants in Space Trailer",
+					"title": "Series Trailer",
 					"description": "George and Harold are in for the ultimate field trip: outer space!"
 				},
 				{
 					"video": "https://www.youtube.com/embed/6WMaYHCmV1k?autoplay=1",
 					"poster": "./img/series/CaptainUnderpants/inner/items/2.jpg",
-					"title": "The Epic Tales of Captain Underpants: Epic Choice-O-RamaTrailer",
+					"title": "Epic Choice-O-Rama Trailer",
 					"description": "Imagine a world where you can control what adventures George and Harold go on. Oh wait, this is that world!"
 				},
 				{
 					"video": "https://www.youtube.com/embed/AHAHqkOGIn0?autoplay=1",
 					"poster": "./img/series/CaptainUnderpants/inner/items/3.jpg",
-					"title": "Captain Underpants Mega Blissmas Trailer",
+					"title": "Mega Blissmas Trailer",
 					"description": "George and Harold travel back in time to convince Santa that a few ideas from their new version of Christmas (Blissmas) should be incorporated into his holiday. But will replacing red bows with laser shows work out as they had hoped?"
 				}
 			]
@@ -678,7 +674,7 @@ export const projects = [
 				{
 					"video": "https://www.youtube.com/embed/AHnHSr7_V2Q?autoplay=1",
 					"poster": "./img/series/DougUnplugs/inner/items/1.jpg",
-					"title": "Doug UnplugsTrailer",
+					"title": "Series Trailer",
 					"description": "Meet Doug, the boy robot who’s taking on the world one curious question at a time."
 				},
 				{
@@ -728,19 +724,19 @@ export const projects = [
 				{
 					"video": "https://www.youtube.com/embed/7h8HkvJxuDw?autoplay=1",
 					"poster": "./img/series/DragonsRescueRiders/inner/items/1.jpg",
-					"title": "Dragons Rescue Riders Trailer",
+					"title": "Series Trailer",
 					"description": "Dak, Leyla and dragon friends work together to save the day."
 				},
 				{
 					"video": "https://www.youtube.com/embed/u-MOnjM2Lvg?autoplay=1",
 					"poster": "./img/series/DragonsRescueRiders/inner/items/2.jpg",
-					"title": "Dragons Rescue Riders: Hunt for the Golden Dragon Trailer",
+					"title": "Hunt for the Golden Dragon Trailer",
 					"description": "The Rescue Riders are tasked with their most adventurous and daring rescue mission yet: keep the Golden Dragon and her egg safe from the band of pirates searching for her nest!"
 				},
 				{
 					"video": "https://www.youtube.com/embed/Pn4P1IYdQuU?autoplay=1",
 					"poster": "./img/series/DragonsRescueRiders/inner/items/3.jpg",
-					"title": "Dragons Rescue Riders: Secrets of the Songwing Trailer",
+					"title": "Secrets of the Songwing Trailer",
 					"description": "The Rescue Riders race to save Aggro after she falls under the spell of Melodia, a Songwing dragon with a melodic call that enchants anyone who hears it!"
 				}
 			]
@@ -778,13 +774,13 @@ export const projects = [
 				{
 					"video": "https://www.youtube.com/embed/TEe-Fn-XZY8?autoplay=1",
 					"poster": "./img/series/RhymeTimeTown/inner/items/1.jpg",
-					"title": "Rhyme Time Town Trailer",
+					"title": "Series Trailer",
 					"description": "Join Daisy the puppy and Cole the kitten in a colorful world of nursery rhymes and imagination."
 				},
 				{
 					"video": "https://www.youtube.com/embed/2h4Kd-ay0IE?autoplay=1",
 					"poster": "./img/series/RhymeTimeTown/inner/items/2.jpg",
-					"title": "Rhyme Time Town: Sing-a-longs Trailer",
+					"title": "Sing-a-longs Trailer",
 					"description": "All aboard to Rhyme Time Town, where Daisy the Puppy and Cole the Kitten go from one sing-a-long adventure to the next."
 				},
 				{
@@ -828,7 +824,7 @@ export const projects = [
 				{
 					"video": "https://www.youtube.com/embed/Wv-dDq2xj6g?autoplay=1",
 					"poster": "./img/series/SpiritRidingAcademy/inner/items/1.jpg",
-					"title": "Spirit Riding Free: Riding Academy Trailer",
+					"title": "Series Trailer",
 					"description": "Saddle up for new adventures at Palomino Bluffs."
 				},
 				{
@@ -873,7 +869,7 @@ export const projects = [
 				{
 					"video": "https://www.youtube.com/embed/xJiMoDkrwB0?autoplay=1",
 					"poster": "./img/series/Trollstopia/inner/items/1.jpg",
-					"title": "Trolls: TrollsTopia Trailer",
+					"title": "Series Trailer",
 					"description": "Picking up where Trolls: World Tour left off, TrollsTopia is an exciting, new Troll city with delegates from the Country Western, Classical, Funk, Techno and Hard Rock tribes."
 				},
 				{
@@ -923,7 +919,7 @@ export const projects = [
 				{
 					"video": "https://www.youtube.com/embed/yZe1o8Gg4nY?autoplay=1",
 					"poster": "./img/series/WheresWaldo/inner/items/1.jpg",
-					"title": "Where's Waldo? Trailer",
+					"title": "Series Trailer",
 					"description": "Grab your passports and get ready for all new globetrotting adventures with Waldo and Wenda."
 				}
 			]

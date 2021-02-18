@@ -17,7 +17,7 @@
 				margin: 30px 0 20px;
 			}
 			img {
-				max-width: 200px;
+				max-width: 300px;
 				max-height: 200px;
 			}
 			cite {
@@ -26,9 +26,11 @@
 				display: block;
 				font-weight: bold;
 				font-size: 0.8rem;
+				line-height: 24px;
+				font-family: "gothamBold", "arial", sans-serif;
 				span {
 					display: block;
-					font-weight: lighter;
+					font-family: "gothamLight", "arial", sans-serif;
 				}
 			}
 		}
@@ -60,9 +62,9 @@
 		text-align: center;
 	}
 	a {
-		width: 150px;
+		width: 100px;
 		display: flex;
-		padding: 0 20px;
+		padding: 0 10px;
 		img {
 			width: 100%;
 		}
@@ -87,6 +89,9 @@
 		text-align: left;
 		line-height: 1.2rem;
 		text-transform: normal;
+	}
+	h3 {
+		font-size: 0.8rem;
 	}
 }
 .innerItems {
@@ -125,11 +130,15 @@
 				transition: all 0.3s ease-in-out;
 			}
 		}
+		h3 {
+			font-size: 1rem;
+		}
 	}
 	h2 {
 		flex: 0 0 100%;
 		text-align: center;
 		width: 100%;
+		font-size: 2rem;
 	}
 }
 .innerConsideration {
@@ -144,10 +153,13 @@
 	}
 	h5 {
 		text-transform: uppercase;
-		letter-spacing: 5px;
+		text-align: justify;
+		text-justify: inter-character;
 		margin: 10px 0 5px;
 		font-size: 0.6rem;
 		line-height: 16px;
+		display: flex;
+		justify-content: space-between;
 	}
 	h3 {
 		font-size: 1.4rem;
@@ -204,11 +216,13 @@
 		border: 1px solid white;
 		color: white;
 		margin: 0 auto;
-		line-height: 63px;
+		line-height: 50px;
 		padding: 0 20px;
 		text-transform: uppercase;
 		letter-spacing: 3px;
-		width: 241px;
+		width: 200px;
+		font-size: 0.7rem;
+		font-family: "gothamBold", "arial", sans-serif;
 	}
 	&.first {
 		flex-direction: column;
@@ -309,12 +323,12 @@
 		align-items: stretch;
 		article {
 			&.heroInfo {
-				width: 50%;
-				padding: 50px;
+				width: 40%;
+				padding: 30px;
 				min-height: 650px;
 			}
 			&.heroImage {
-				width: 50%;
+				width: 60%;
 				height: auto;
 				display: block;
 				&.mobileHero {
@@ -338,7 +352,10 @@
 	.innerConsideration {
 		padding: 40px;
 		h5 {
-			margin: 0 0 5px;
+			margin: 5px 0;
+		}
+		p {
+			margin: 0 auto 20px;
 		}
 	}
 	.innerGallery {
@@ -433,10 +450,10 @@
 	.innerHero {
 		article {
 			&.heroInfo {
-				width: 40%;
+				width: 30%;
 			}
 			&.heroImage {
-				width: 60%;
+				width: 70%;
 			}
 		}
 	}

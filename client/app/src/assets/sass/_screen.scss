@@ -1,17 +1,31 @@
 $primary: #092E6E;
 $text: #6F6F6F;
 
+@font-face {
+  font-family: gothamBlack;
+  src: url("../fonts/gotham/Gotham-Black.otf");
+}
+@font-face {
+  font-family: gothamBold;
+  src: url("../fonts/gotham/Gotham-Bold.otf");
+}
+@font-face {
+  font-family: gothamLight;
+  src: url("../fonts/gotham/Gotham-Light.otf");
+}
+
 body,
 html {
 	padding: 0;
 	margin: 0;
-	font-family: "Arial", sans-serif;
+	font-family: "gothamLight", "arial", sans-serif;
 	&.lock {
 		overflow: hidden;
 	}
 }
 h1,h2,h3,h4,h5,h6 {
 	color: $primary;
+	font-family: "gothamBold", "arial", sans-serif;
 }
 p {
 	color: $text;
@@ -20,6 +34,7 @@ p {
 }
 button,
 a {
+	font-family: "gothamLight", "arial", sans-serif;
 	&:hover {
 		cursor: pointer;
 	}
@@ -44,7 +59,7 @@ header {
 	.bar {
 		display: flex;
 		justify-content: space-between;
-		padding: 20px;
+		padding: 10px 20px;
 		margin: 0 auto;
 		article {
 			display: flex;
@@ -56,18 +71,20 @@ header {
 				font-weight: bolder;
 				text-transform: uppercase;
 				letter-spacing: 3px;
-				font-size: 1rem;
-				margin-left: 15px;
-				padding-left: 20px;
+				font-size: 0.8rem;
+				margin-left: 12px;
+				padding-left: 15px;
 				position: relative;
 				color: white;
+				font-family: "gothamBlack", sans-serif;
+				line-height: 30px;
 				&:before {
 					content:"";
 					position: absolute;
 					left: 0;
 					top: 0;
 					bottom: 0;
-					width: 2px;
+					width: 1px;
 					background: white;
 				}
 			}
@@ -104,7 +121,7 @@ footer {
 		right: 0;
 		bottom: 0;
 		overflow-x: scroll;
-		padding: 70px 0 0;
+		padding: 50px 0 0;
 		background: white;
 		transform: translate(0, -120vh);
 		transition: all 0.3s ease-in-out;
@@ -196,7 +213,7 @@ footer {
   		width: 100%;
 		padding-top: 56.25%;
 		position: relative;
-		transform: scale(0.8);
+		transform: scale(1);
 		iframe {
 			width: 100%;
 			height: 100%;
@@ -215,6 +232,14 @@ footer {
 				width: 200px;
 			}
 		}
+		.bar {
+			article {
+				span {
+					font-size: 1rem;
+					letter-spacing: 5px;
+				}
+			}
+		}
 	}
 	.wrap,
 	#projectListing {
@@ -222,6 +247,11 @@ footer {
 		.project {
 			padding: 10px;
 			width: 33.3333333%;
+		}
+	}
+	#videoModal {
+		#videoRatioWrap {
+			transform: scale(0.6);
 		}
 	}
 }

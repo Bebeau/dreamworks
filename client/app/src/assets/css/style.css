@@ -1,23 +1,39 @@
+@font-face {
+  font-family: gothamBlack;
+  src: url("../fonts/gotham/Gotham-Black.otf"); }
+
+@font-face {
+  font-family: gothamBold;
+  src: url("../fonts/gotham/Gotham-Bold.otf"); }
+
+@font-face {
+  font-family: gothamLight;
+  src: url("../fonts/gotham/Gotham-Light.otf"); }
+
 body,
 html {
   padding: 0;
   margin: 0;
-  font-family: "Arial", sans-serif; }
+  font-family: "gothamLight", "arial", sans-serif; }
   body.lock,
   html.lock {
     overflow: hidden; }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #092E6E; }
+  color: #092E6E;
+  font-family: "gothamBold", "arial", sans-serif; }
 
 p {
   color: #6F6F6F;
   font-size: 0.8rem;
   line-height: 1.2rem; }
 
-button:hover,
-a:hover {
-  cursor: pointer; }
+button,
+a {
+  font-family: "gothamLight", "arial", sans-serif; }
+  button:hover,
+  a:hover {
+    cursor: pointer; }
 
 header {
   background: rgba(9, 46, 110, 0.9);
@@ -36,7 +52,7 @@ header {
   header .bar {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 10px 20px;
     margin: 0 auto; }
     header .bar article {
       display: flex;
@@ -48,18 +64,20 @@ header {
         font-weight: bolder;
         text-transform: uppercase;
         letter-spacing: 3px;
-        font-size: 1rem;
-        margin-left: 15px;
-        padding-left: 20px;
+        font-size: 0.8rem;
+        margin-left: 12px;
+        padding-left: 15px;
         position: relative;
-        color: white; }
+        color: white;
+        font-family: "gothamBlack", sans-serif;
+        line-height: 30px; }
         header .bar article span:before {
           content: "";
           position: absolute;
           left: 0;
           top: 0;
           bottom: 0;
-          width: 2px;
+          width: 1px;
           background: white; }
 
 footer {
@@ -89,7 +107,7 @@ footer {
   right: 0;
   bottom: 0;
   overflow-x: scroll;
-  padding: 70px 0 0;
+  padding: 50px 0 0;
   background: white;
   transform: translate(0, -120vh);
   transition: all 0.3s ease-in-out; }
@@ -168,7 +186,7 @@ footer {
   width: 100%;
   padding-top: 56.25%;
   position: relative;
-  transform: scale(0.8); }
+  transform: scale(1); }
   #videoModal #videoRatioWrap iframe {
     width: 100%;
     height: 100%;
@@ -181,13 +199,18 @@ footer {
 @media (min-width: 768px) {
   header svg.logo {
     width: 200px; }
+  header .bar article span {
+    font-size: 1rem;
+    letter-spacing: 5px; }
   .wrap,
   #projectListing {
     margin: 20px auto; }
     .wrap .project,
     #projectListing .project {
       padding: 10px;
-      width: 33.3333333%; } }
+      width: 33.3333333%; }
+  #videoModal #videoRatioWrap {
+    transform: scale(0.6); } }
 
 @media (min-width: 991px) {
   header .bar {
@@ -230,17 +253,19 @@ footer {
       color: #092E6E;
       margin: 30px 0 20px; }
     .innerHero article.heroInfo img {
-      max-width: 200px;
+      max-width: 300px;
       max-height: 200px; }
     .innerHero article.heroInfo cite {
       font-style: normal;
       margin-bottom: 10px;
       display: block;
       font-weight: bold;
-      font-size: 0.8rem; }
+      font-size: 0.8rem;
+      line-height: 24px;
+      font-family: "gothamBold", "arial", sans-serif; }
       .innerHero article.heroInfo cite span {
         display: block;
-        font-weight: lighter; }
+        font-family: "gothamLight", "arial", sans-serif; }
   .innerHero article.heroImage {
     width: 100%;
     height: 300px;
@@ -264,9 +289,9 @@ footer {
     flex: 0 0 100%;
     text-align: center; }
   .innerStream a {
-    width: 150px;
+    width: 100px;
     display: flex;
-    padding: 0 20px; }
+    padding: 0 10px; }
     .innerStream a img {
       width: 100%; }
 
@@ -286,6 +311,8 @@ footer {
     text-align: left;
     line-height: 1.2rem;
     text-transform: normal; }
+  .item h3 {
+    font-size: 0.8rem; }
 
 .innerItems {
   display: flex;
@@ -318,10 +345,13 @@ footer {
       opacity: 1;
       transform: translate(-50%, -50%) scale(1);
       transition: all 0.3s ease-in-out; }
+    .innerItems .item h3 {
+      font-size: 1rem; }
   .innerItems h2 {
     flex: 0 0 100%;
     text-align: center;
-    width: 100%; }
+    width: 100%;
+    font-size: 2rem; }
 
 .innerConsideration {
   background: #092E6E;
@@ -334,10 +364,13 @@ footer {
     font-weight: normal; }
   .innerConsideration h5 {
     text-transform: uppercase;
-    letter-spacing: 5px;
+    text-align: justify;
+    text-justify: inter-character;
     margin: 10px 0 5px;
     font-size: 0.6rem;
-    line-height: 16px; }
+    line-height: 16px;
+    display: flex;
+    justify-content: space-between; }
   .innerConsideration h3 {
     font-size: 1.4rem;
     margin: 0 auto 10px; }
@@ -387,11 +420,13 @@ footer {
     border: 1px solid white;
     color: white;
     margin: 0 auto;
-    line-height: 63px;
+    line-height: 50px;
     padding: 0 20px;
     text-transform: uppercase;
     letter-spacing: 3px;
-    width: 241px; }
+    width: 200px;
+    font-size: 0.7rem;
+    font-family: "gothamBold", "arial", sans-serif; }
   .innerSecondary.first {
     flex-direction: column; }
     .innerSecondary.first .innerConsideration {
@@ -469,11 +504,11 @@ footer {
     flex-direction: row;
     align-items: stretch; }
     .innerHero article.heroInfo {
-      width: 50%;
-      padding: 50px;
+      width: 40%;
+      padding: 30px;
       min-height: 650px; }
     .innerHero article.heroImage {
-      width: 50%;
+      width: 60%;
       height: auto;
       display: block; }
       .innerHero article.heroImage.mobileHero {
@@ -488,7 +523,9 @@ footer {
   .innerConsideration {
     padding: 40px; }
     .innerConsideration h5 {
-      margin: 0 0 5px; }
+      margin: 5px 0; }
+    .innerConsideration p {
+      margin: 0 auto 20px; }
   .innerGallery h3 {
     letter-spacing: 10px; }
   .innerSecondary.first {
@@ -553,9 +590,9 @@ footer {
 
 @media (min-width: 991px) {
   .innerHero article.heroInfo {
-    width: 40%; }
+    width: 30%; }
   .innerHero article.heroImage {
-    width: 60%; } }
+    width: 70%; } }
 
 @media (min-width: 1400px) {
   .innerHero {

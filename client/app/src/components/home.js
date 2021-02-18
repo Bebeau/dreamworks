@@ -30,7 +30,7 @@ class Homepage extends React.Component {
     // You can also log error messages to an error reporting service here
   }
   componentDidMount() {
-    let slug = window.location.pathname.replace("/", "");
+    let slug = window.location.pathname.replace("/dreamworks/", "").replace("/","");
     projects.forEach((data, key) => {
       if(data.slug === slug) {
         this.setState({
@@ -78,7 +78,7 @@ class Homepage extends React.Component {
         // lock body scrll
         document.body.classList.add("lock");
         // auto scroll body to top
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+        window.scrollTo({ top: 0 });
         // update url path
         window.history.replaceState({}, data.name, data.slug);
       }
@@ -96,7 +96,7 @@ class Homepage extends React.Component {
     // auto scroll project to top
     document.getElementById('innerPageTemplate').scrollTo({ top: 0, behavior: 'smooth' });
     // update url path
-    window.history.replaceState({}, "Dreamworks", "/");
+    window.history.replaceState({}, "Dreamworks", "/dreamworks/");
   }
   showVideoModal(e) {
     // define links

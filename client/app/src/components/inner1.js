@@ -100,7 +100,33 @@ class inner extends React.Component{
                 <img src={this.props.consideration.poster} alt="" />
                 <div className="considerationInfo">
                   <div>
-                    <h5>For Special Consideration</h5>
+                    <h5>
+                      <span>F</span>
+                      <span>o</span>
+                      <span>r</span>
+                      <span>&amp;</span>
+                      <span>S</span>
+                      <span>p</span>
+                      <span>e</span>
+                      <span>c</span>
+                      <span>i</span>
+                      <span>a</span>
+                      <span>l</span>
+                      <span>&amp;</span>
+                      <span>C</span>
+                      <span>o</span>
+                      <span>n</span>
+                      <span>s</span>
+                      <span>i</span>
+                      <span>d</span>
+                      <span>e</span>
+                      <span>r</span>
+                      <span>a</span>
+                      <span>t</span>
+                      <span>i</span>
+                      <span>o</span>
+                      <span>n</span>
+                    </h5>
                     <h3>{this.props.consideration.title}</h3>
                     <p>{this.props.consideration.description}</p>
                   </div>
@@ -132,7 +158,33 @@ class inner extends React.Component{
                 <img src={this.props.consideration.poster} alt="" />
                 <div className="considerationInfo">
                   <div>
-                    <h5>For Special Consideration</h5>
+                    <h5>
+                      <span>F</span>
+                      <span>o</span>
+                      <span>r</span>
+                      <span>&nbsp;</span>
+                      <span>S</span>
+                      <span>p</span>
+                      <span>e</span>
+                      <span>c</span>
+                      <span>i</span>
+                      <span>a</span>
+                      <span>l</span>
+                      <span>&nbsp;</span>
+                      <span>C</span>
+                      <span>o</span>
+                      <span>n</span>
+                      <span>s</span>
+                      <span>i</span>
+                      <span>d</span>
+                      <span>e</span>
+                      <span>r</span>
+                      <span>a</span>
+                      <span>t</span>
+                      <span>i</span>
+                      <span>o</span>
+                      <span>n</span>
+                    </h5>
                     <h3>{this.props.consideration.title}</h3>
                     <p>{this.props.consideration.description}</p>
                   </div>
