@@ -3,7 +3,8 @@ import React from 'react';
 import Header from './header.js';
 import Footer from './footer.js';
 
-import Inner1 from './inner1.js';
+import Inner from './single.js';
+import Gallery from './gallery.js';
 
 import {projects} from '../assets/data/projectData.js';
 
@@ -14,12 +15,17 @@ class Homepage extends React.Component {
       error: null, 
       errorInfo: null,
       clicked: false,
-      showVideo: false
+      modalActive: false,
+      galleryImages: false,
+      activeImage: 0
     };
     this.onTemplateOpen = this.onTemplateOpen.bind(this);
     this.onTemplateClose = this.onTemplateClose.bind(this);
-    this.showVideoModal = this.showVideoModal.bind(this);
-    this.hideVideoModal = this.hideVideoModal.bind(this);
+
+    this.showModal = this.showModal.bind(this);
+    this.hideModal = this.hideModal.bind(this);
+
+    this.changeSlide = this.changeSlide.bind(this);
   }
   componentDidCatch(error, errorInfo) {
     // Catch errors in any components below and re-render with error message
@@ -30,7 +36,7 @@ class Homepage extends React.Component {
     // You can also log error messages to an error reporting service here
   }
   componentDidMount() {
-    let slug = window.location.pathname.replace("/dreamworks/", "").replace("/","");
+    let slug = window.location.pathname.replace("/","");
     projects.forEach((data, key) => {
       if(data.slug === slug) {
         this.setState({
@@ -83,6 +89,7 @@ class Homepage extends React.Component {
         window.history.replaceState({}, data.name, data.slug);
       }
     });
+    document.getElementById("mainVideo").contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
   }
   onTemplateClose() {
     // hide inner view
@@ -96,54 +103,93 @@ class Homepage extends React.Component {
     // auto scroll project to top
     document.getElementById('innerPageTemplate').scrollTo({ top: 0, behavior: 'smooth' });
     // update url path
-    window.history.replaceState({}, "Dreamworks", "/dreamworks/");
+    window.history.replaceState({}, "Dreamworks", "/");
+    document.getElementById("mainVideo").contentWindow.postMessage('{"event":"command","func":"' + 'playVideo' + '","args":""}', '*');
   }
-  showVideoModal(e) {
-    // define links
-    let videoLink = e.target.closest(".item").getAttribute("data-video"),
-        articleLink = e.target.closest(".item").getAttribute("data-link");
-    // if article link, redirect to link
-    if(articleLink !== null) {
-      window.open(articleLink);
+  showModal(e) {
+    let modal = document.getElementById("innerModal");
+    
+    if(e.target.closest(".item")) {
+      // if article link, redirect to link
+      if(e.target.closest(".item").hasAttribute('data-link')) {
+        let articleLink = e.target.closest(".item").getAttribute("data-link");
+        window.open(articleLink);
+      }
+      // if video link launch modal
+      if(e.target.closest(".item").hasAttribute('data-video')) {
+        // Create an iFrame with autoplay set to true
+        let videoLink = e.target.closest(".item").getAttribute("data-video"),
+            iframeWrap = document.createElement("article"),
+            iframe = document.createElement("iframe")
+        // set attributes
+        iframe.setAttribute("src",videoLink);
+        iframe.setAttribute("frameborder",0);
+        iframe.setAttribute("allow","accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture");
+        iframe.setAttribute("allowfullscreen", 1);
+        iframe.setAttribute("autoplay", 1);
+        iframe.setAttribute("id", "videoIframe");
+
+        iframeWrap.setAttribute("id", "videoRatioWrap");
+        iframeWrap.appendChild(iframe);
+        // append iframe to video modal
+        modal.appendChild(iframeWrap);
+      }
     }
-    // if video link launch modal
-    if(videoLink !== null) { 
-      // Create an iFrame with autoplay set to true
-      let iframe = document.createElement("iframe"),
-          videoModal = document.getElementById("videoRatioWrap");
-      // set attributes
-      iframe.setAttribute("src",videoLink);
-      iframe.setAttribute("frameborder",0);
-      iframe.setAttribute("allow","accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture");
-      iframe.setAttribute("allowfullscreen", 1);
-      iframe.setAttribute("autoplay", 1);
-      iframe.setAttribute("id", "videoIframe");
-      // append iframe to video modal
-      videoModal.appendChild(iframe);
-      // change state
+    if(e.target.closest(".innerGallery")) {
       this.setState({
-        showVideo: true
+        galleryImages: this.state.gallery.images
       });
-      this.hideVideoModal(this);
     }
+    if(e.target.closest(".innerConsideration")) {
+      this.setState({
+        galleryImages: this.state.consideration.images
+      });
+    }
+    // change state
+    this.setState({
+      modalActive: true
+    });
+    this.hideModal(this);
   }
-  hideVideoModal(e) {
+  hideModal(e) {
     // define vars
-    let body = document.getElementById('videoModal'),
-        except = document.getElementById('videoRatioWrap'),
-        currentIframe = document.getElementById("videoIframe");
+    let body = document.getElementById('innerModal'),
+        videoWrap = document.getElementById('videoRatioWrap');
     // add click listener to modal body
-    body.addEventListener("click", function() {
-        currentIframe.remove();
-        // change state
-        e.setState({
-          showVideo: false
-        });
+    body.addEventListener("click", function(event) {
+        if(videoWrap) {
+          videoWrap.remove();
+        }
+        if(event.target === event.currentTarget) {
+          // change state
+          e.setState({
+            modalActive: false,
+            galleryImages: false,
+            activeImage: 0
+          });
+        }
     }, false);
     // add click listener to inner modal
-    except.addEventListener("click", function(e) {
-        e.stopPropagation();
-    }, false);
+    if(videoWrap) {
+      videoWrap.addEventListener("click", function(e) {
+          e.stopPropagation();
+      }, false);
+    }
+  }
+  changeSlide(e) {
+    let direction = e.target.closest("article").getAttribute("data-arrow"),
+        index = this.state.activeImage;
+
+    if(direction === "prev") {
+      index = this.state.activeImage === 0 ? this.state.galleryImages.length -1 : this.state.activeImage - 1;
+    }
+    if(direction === "next") {
+      index = this.state.activeImage === this.state.galleryImages.length -1 ? 0 : this.state.activeImage + 1;
+    }
+    // assign the logical index to currentImageIndex that will use in render method
+    this.setState({
+      activeImage: index
+    })
   }
   render() {
     const {
@@ -156,7 +202,10 @@ class Homepage extends React.Component {
       items,
       bonus,
       consideration,
-      gallery
+      gallery,
+      modalActive,
+      galleryImages,
+      activeImage
     } = this.state;
     if (this.state.errorInfo) {
       // Error path
@@ -173,11 +222,15 @@ class Homepage extends React.Component {
     }
     return (
       <div id="pageWrap" className={this.state.clicked ? 'inner': null}>
-        <section id="videoModal" className={this.state.showVideo ? 'projectModal show': 'projectModal'}>
-        <article id="videoRatioWrap"></article>
+        <section id="innerModal" className={modalActive  ? 'projectModal show': 'projectModal'}>
+          <Gallery
+            images={galleryImages}
+            changeSlide={this.changeSlide}
+            activeImage={activeImage}
+          />
         </section>
         <Header onClick={this.onTemplateClose} />
-        <Inner1 
+        <Inner
           layout={layout}
           logo={logo}
           hero={hero}
@@ -189,10 +242,12 @@ class Homepage extends React.Component {
           consideration={consideration}
           gallery={gallery}
           onClick={this.onTemplateClose}
-          showVideo={this.showVideoModal}
+          modalActive={this.showModal}
         />
         <div id="homePage">
-          <div className="mainBanner"></div>
+          <div className="mainBanner">
+            <iframe id="mainVideo" src="https://www.youtube.com/embed/25UHUbpFTtY?autoplay=1&version=3&enablejsapi=1" frameborder="0" allow="autoplay; encrypted-media;" allowfullscreen></iframe>
+          </div>
           <div id="projectListing">
             {projects.map((data, key) => {
               return (

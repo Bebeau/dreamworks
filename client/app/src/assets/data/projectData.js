@@ -242,7 +242,7 @@ export const projects = [
 				},
 			],
 			"bonus": {
-				"video": "",
+				"video": "https://www.youtube.com/embed/bUOpbuNgL4w?autoplay=1",
 				"poster": "./img/series/JurassicWorld/inner/bonus.jpg",
 				"title": "Visual Effects in Jurassic World",
 				"description": "Custom jungle lighting, underground bioluminescent rivers and a giant mosasaurus lagoon are just a few of environments that the incredible FX team created."
@@ -251,7 +251,17 @@ export const projects = [
 				"poster": "./img/series/JurassicWorld/inner/consideration.jpg",
 				"title": "Production Design by Christophe Vacher",
 				"description": "Stunning locales, rich colors and lush environments bring Isla Nublar to life in the first ever Jurassic World animated series.",
-				"btnText": "View Now"
+				"btnText": "View Now",
+				"images": [
+					"",
+					"",
+					"",
+					"",
+					"",
+					"",
+					"",
+					"",
+				]
 			}
 		}
 	},
@@ -450,17 +460,17 @@ export const projects = [
 				"title": "Art Gallery",
 				"btnText": "View Now",
 				"images":[
-					"./img/series/FastFurious/inner/gallery/consideration/S2_Cars-3.jpg",
-					"./img/series/FastFurious/inner/gallery/consideration/S2_Rafaela.jpg",
-					"./img/series/FastFurious/inner/gallery/consideration/S2_Rio.jpg",
-					"./img/series/FastFurious/inner/gallery/consideration/S2_Tony.jpg",
-					"./img/series/FastFurious/inner/gallery/consideration/S3_Car.jpg",
-					"./img/series/FastFurious/inner/gallery/consideration/S3_Cars.jpg",
-					"./img/series/FastFurious/inner/gallery/consideration/S3_Desert.jpg",
-					"./img/series/FastFurious/inner/gallery/consideration/S3_Gary-Ms-Nowhere.jpg",
-					"./img/series/FastFurious/inner/gallery/consideration/S3_Ms-Nowhere.jpg",
-					"./img/series/FastFurious/inner/gallery/consideration/S3_Tony-Frostee-Cisco-Echo-Layla.jpg",
-					"./img/series/FastFurious/inner/gallery/consideration/S3_Villians.jpg"
+					"./img/series/FastFurious/inner/gallery/stills/S2_Cars-3.jpg",
+					"./img/series/FastFurious/inner/gallery/stills/S2_Rafaela.jpg",
+					"./img/series/FastFurious/inner/gallery/stills/S2_Rio.jpg",
+					"./img/series/FastFurious/inner/gallery/stills/S2_Tony.jpg",
+					"./img/series/FastFurious/inner/gallery/stills/S3_Car.jpg",
+					"./img/series/FastFurious/inner/gallery/stills/S3_Cars.jpg",
+					"./img/series/FastFurious/inner/gallery/stills/S3_Desert.jpg",
+					"./img/series/FastFurious/inner/gallery/stills/S3_Gary-Ms-Nowhere.jpg",
+					"./img/series/FastFurious/inner/gallery/stills/S3_Ms-Nowhere.jpg",
+					"./img/series/FastFurious/inner/gallery/stills/S3_Tony-Frostee-Cisco-Echo-Layla.jpg",
+					"./img/series/FastFurious/inner/gallery/stills/S3_Villians.jpg"
 				]
 			}
 		}

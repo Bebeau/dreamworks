@@ -41,19 +41,21 @@ class inner extends React.Component{
           <article className="heroImage mobileHero" style={{backgroundImage: `url(${this.props.hero})`}}>
           </article>
           <article className="heroInfo">
-            <img src={this.props.logo} alt="" />
-            <div>
-              <p>{this.props.description}</p>
-              {this.props.credits ? ( 
-                this.props.credits.map((data, key) => {
-                  return (
-                    <cite>
-                      <span>{data.label}</span>
-                      {data.person}
-                    </cite>
-                  );
-                })
-              ): null }
+            <div className="infoWrap">
+              <img src={this.props.logo} alt="" />
+              <div>
+                <p>{this.props.description}</p>
+                {this.props.credits ? ( 
+                  this.props.credits.map((data, index) => {
+                    return (
+                      <cite key={index}>
+                        <span>{data.label}</span>
+                        {data.person}
+                      </cite>
+                    );
+                  })
+                ): null }
+              </div>
             </div>
           </article> 
           <article className="heroImage" style={{backgroundImage: `url(${this.props.hero})`}}>
@@ -80,7 +82,7 @@ class inner extends React.Component{
             {this.props.items ? (
               this.props.items.map((data, key) => {
                 return (
-                  <button key={key} className="item" data-video={data.video} onClick={this.props.showVideo}>
+                  <button key={key} className="item" data-video={data.video} onClick={this.props.modalActive}>
                     <div className="itemThumb">
                       <img src={data.poster} alt="" />
                       <i className="play" style={{backgroundImage: `url(${playIcon})`}}></i>
@@ -130,7 +132,7 @@ class inner extends React.Component{
                     <h3>{this.props.consideration.title}</h3>
                     <p>{this.props.consideration.description}</p>
                   </div>
-                  <button className="btn" data-video={this.props.consideration.video}>
+                  <button className="btn" onClick={this.props.modalActive} data-video={this.props.consideration.video}>
                     {this.props.consideration.btnText}
                   </button>
                 </div>
@@ -188,7 +190,7 @@ class inner extends React.Component{
                     <h3>{this.props.consideration.title}</h3>
                     <p>{this.props.consideration.description}</p>
                   </div>
-                  <button className="btn" data-video={this.props.consideration.video}>
+                  <button className="btn" onClick={this.props.modalActive}>
                     {this.props.consideration.btnText}
                   </button>
                 </div>
@@ -199,7 +201,7 @@ class inner extends React.Component{
               <article className="innerGallery" style={{backgroundImage: `url(${this.props.gallery.poster})`}}>
                 <div className="galleryInfo">
                   <h3>{this.props.gallery.title}</h3>
-                  <button className="btn">{this.props.gallery.btnText}</button>
+                  <button className="btn" onClick={this.props.modalActive}>{this.props.gallery.btnText}</button>
                 </div>
               </article>
             ): null }
