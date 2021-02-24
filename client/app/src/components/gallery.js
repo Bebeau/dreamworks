@@ -18,9 +18,6 @@ class carousel extends React.Component {
     // You can also log error messages to an error reporting service here
   }
   render() {
-    const {
-      activeImage
-    } = this.state;
     return (
       <div id="gallery" className={this.props.images ? 'show': null}>
         <section id="galleryWrap">

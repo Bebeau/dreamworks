@@ -8,6 +8,9 @@ import Gallery from './gallery.js';
 
 import {projects} from '../assets/data/projectData.js';
 
+import IntroMP4 from '../assets/video/intro.mp4';
+import IntroWebM from '../assets/video/intro.webm';
+
 class Homepage extends React.Component {
   constructor(props) {
     super(props);
@@ -26,6 +29,8 @@ class Homepage extends React.Component {
     this.hideModal = this.hideModal.bind(this);
 
     this.changeSlide = this.changeSlide.bind(this);
+
+    this.unMute = this.unMute.bind(this);
   }
   componentDidCatch(error, errorInfo) {
     // Catch errors in any components below and re-render with error message
@@ -43,6 +48,7 @@ class Homepage extends React.Component {
           layout: data.layout,
           logo: data.logo,
           hero: data.inner.hero,
+          copyright: data.inner.copyright,
           description: data.inner.description,
           credits: data.inner.credits,
           streaming: data.inner.streaming,
@@ -72,6 +78,7 @@ class Homepage extends React.Component {
           layout: data.layout,
           logo: data.logo,
           hero: data.inner.hero,
+          copyright: data.inner.copyright,
           description: data.inner.description,
           credits: data.inner.credits,
           streaming: data.inner.streaming,
@@ -89,7 +96,6 @@ class Homepage extends React.Component {
         window.history.replaceState({}, data.name, data.slug);
       }
     });
-    document.getElementById("mainVideo").contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
   }
   onTemplateClose() {
     // hide inner view
@@ -104,7 +110,6 @@ class Homepage extends React.Component {
     document.getElementById('innerPageTemplate').scrollTo({ top: 0, behavior: 'smooth' });
     // update url path
     window.history.replaceState({}, "Dreamworks", "/");
-    document.getElementById("mainVideo").contentWindow.postMessage('{"event":"command","func":"' + 'playVideo' + '","args":""}', '*');
   }
   showModal(e) {
     let modal = document.getElementById("innerModal");
@@ -114,6 +119,7 @@ class Homepage extends React.Component {
       if(e.target.closest(".item").hasAttribute('data-link')) {
         let articleLink = e.target.closest(".item").getAttribute("data-link");
         window.open(articleLink);
+        return;
       }
       // if video link launch modal
       if(e.target.closest(".item").hasAttribute('data-video')) {
@@ -127,6 +133,7 @@ class Homepage extends React.Component {
         iframe.setAttribute("allow","accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture");
         iframe.setAttribute("allowfullscreen", 1);
         iframe.setAttribute("autoplay", 1);
+        iframe.setAttribute("title", "");
         iframe.setAttribute("id", "videoIframe");
 
         iframeWrap.setAttribute("id", "videoRatioWrap");
@@ -191,11 +198,16 @@ class Homepage extends React.Component {
       activeImage: index
     })
   }
+  unMute() {
+    let video = document.getElementById('introVideo');
+    video.muted = !video.muted;
+  }
   render() {
     const {
       layout,
       logo,
       hero,
+      copyright,
       description,
       credits,
       streaming,
@@ -234,6 +246,7 @@ class Homepage extends React.Component {
           layout={layout}
           logo={logo}
           hero={hero}
+          copyright={copyright}
           description={description}
           credits={credits}
           streaming={streaming}
@@ -246,7 +259,10 @@ class Homepage extends React.Component {
         />
         <div id="homePage">
           <div className="mainBanner">
-            <iframe id="mainVideo" src="https://www.youtube.com/embed/25UHUbpFTtY?autoplay=1&version=3&enablejsapi=1" frameborder="0" allow="autoplay; encrypted-media;" allowfullscreen></iframe>
+            <video id="introVideo" autoPlay muted loop onClick={this.unMute}>
+              <source src={IntroWebM} type="video/webm" />
+              <source src={IntroMP4} type="video/mp4" />
+            </video>
           </div>
           <div id="projectListing">
             {projects.map((data, key) => {

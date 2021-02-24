@@ -6,7 +6,7 @@ class Footer extends React.Component{
        		<footer>
        			<button onClick={this.props.onClick}>All Animated Series</button>
        			<button>Terms of Use</button>
-       			<span>DreamWorks Animation LLC. All Rights Reserved.</span>
+       			<span>&copy; DreamWorks Animation LLC. All Rights Reserved.</span>
           	</footer>
        );
     }

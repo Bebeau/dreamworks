@@ -39,6 +39,7 @@ class inner extends React.Component{
 
         <section className="innerHero">
           <article className="heroImage mobileHero" style={{backgroundImage: `url(${this.props.hero})`}}>
+            <div className="copyright">{this.props.copyright}</div>
           </article>
           <article className="heroInfo">
             <div className="infoWrap">
@@ -59,6 +60,7 @@ class inner extends React.Component{
             </div>
           </article> 
           <article className="heroImage" style={{backgroundImage: `url(${this.props.hero})`}}>
+            <div className="copyright">{this.props.copyright}</div>
           </article>
         </section>
 
@@ -106,7 +108,7 @@ class inner extends React.Component{
                       <span>F</span>
                       <span>o</span>
                       <span>r</span>
-                      <span>&amp;</span>
+                      <span> </span>
                       <span>S</span>
                       <span>p</span>
                       <span>e</span>
@@ -114,7 +116,7 @@ class inner extends React.Component{
                       <span>i</span>
                       <span>a</span>
                       <span>l</span>
-                      <span>&amp;</span>
+                      <span> </span>
                       <span>C</span>
                       <span>o</span>
                       <span>n</span>
@@ -141,7 +143,7 @@ class inner extends React.Component{
 
             {this.props.bonus ? ( 
               <article className="innerBonus">
-                <button className="item" data-video={this.props.bonus.video} data-link={this.props.bonus.link}>
+                <button className="item" data-video={this.props.bonus.video} data-link={this.props.bonus.link} onClick={this.props.modalActive}>
                   <div className="itemThumb">
                     <img src={this.props.bonus.poster} alt="" />
                     {this.props.bonus.video ? ( 

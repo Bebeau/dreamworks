@@ -9,6 +9,7 @@ export const projects = [
 		"poster": "./img/series/TOA_Wizards/poster.jpg",
 		"inner": {
 			"hero": "./img/series/TOA_Wizards/inner/hero.jpg",
+			"copyright": "Dreamworks Tales of Arcadia © 2020 Dreamworks Animation LLC. All Rights Reserved.",
 			"description": "From Academy Award®-winning filmmaker Guillermo del Toro and the seven-time Emmy® Award-winning team behind Trollhunters comes DreamWorks Tales of Arcadia: Wizards, the final chapter in the Tales of Arcadia trilogy. Wizard-in-training Douxie and the heroes of Arcadia embark on a time-bending adventure to medieval Camelot, culminating in an apocalyptic battle for the control of magic that will determine the fate of the universe.",
 			"credits": [
 				{
@@ -99,6 +100,7 @@ export const projects = [
 		"poster": "./img/series/Kipo_AW/poster.jpg",
 		"inner": {
 			"hero": "./img/series/Kipo_AW/inner/hero.jpg",
+			"copyright": "Dreamworks Kipo and the Age of Wonderbeast © 2019 Dreamworks Animation LLC. All Rights Reserved.",
 			"description": "After spending her entire life living in an underground burrow, a young girl named Kipo is thrust into an adventure on the surface of a fantastical post-apocalyptic Earth. She joins a ragtag group of survivors as they embark on a journey through a vibrant wonderland where everything trying to kill them is downright adorable.",
 			"credits": [
 				{
@@ -207,6 +209,7 @@ export const projects = [
 		"poster": "./img/series/JurassicWorld/poster.jpg",
 		"inner": {
 			"hero": "./img/series/JurassicWorld/inner/hero.jpg",
+			"copyright": "Jurrasic World Franchise © 2020 Universal City Studios LLC and Amblin Entertainment INC. Series © 2020 Dreamworks Animation LLC. All Rights Reserved.",
 			"description": "Set against the timeline of the blockbuster film Jurassic World, Jurassic World: Camp Cretaceous follows a group of six teenagers chosen for a once-in-a-lifetime experience at a new adventure camp on the opposite side of Isla Nublar.  When dinosaurs wreak havoc across the island, the campers are unable to reach the outside world and will quickly go from strangers to friends to family as they band together to survive.",
 			"credits": [
 				{
@@ -242,7 +245,7 @@ export const projects = [
 				},
 			],
 			"bonus": {
-				"video": "https://www.youtube.com/embed/bUOpbuNgL4w?autoplay=1",
+				"video": "",
 				"poster": "./img/series/JurassicWorld/inner/bonus.jpg",
 				"title": "Visual Effects in Jurassic World",
 				"description": "Custom jungle lighting, underground bioluminescent rivers and a giant mosasaurus lagoon are just a few of environments that the incredible FX team created."
@@ -275,6 +278,7 @@ export const projects = [
 		"poster": "./img/series/MightyOnes/poster.jpg",
 		"inner": {
 			"hero": "./img/series/MightyOnes/inner/hero.jpg",
+			"copyright": "Dreamworks The Mighty Ones © 2020 Dreamworks Animation LLC. All Rights Reserved.",
 			"description": "In every backyard a secret world exists filled with tiny creatures.The Mighty Ones follows the hilarious adventures of the smallest of them: a twig, a pebble, a leaf and a strawberry who call themselves “the Mighty Ones.”  These best friends live in an unkempt backyard belonging to a trio of equally unkempt humans who they mistake for gods. Despite their diminutive stature, The Mighty Ones are determined to live large and have fun in their wild world.",
 			"credits": [
 				{
@@ -347,6 +351,7 @@ export const projects = [
 		"poster": "./img/series/SheRa/poster.jpg",
 		"inner": {
 			"hero": "./img/series/SheRa/inner/hero.jpg",
+			"copyright": "SHE-RA and associated trademarks and character copyrights are owned by and used under license from Mattel, Inc. Under license to Classic Media.",
 			"description": "A reimagining of the ‘80s hit series, She-Ra and the Princesses of Power is the story of an orphan named Adora, who leaves behind her former life in the evil Horde when she discovers a magic sword that transforms her into She-Ra, a mythical warrior princess. When she finds a new surrogate family in the Rebellion she unites a group of magical princesses in the ultimate fight against evil.",
 			"credits": [
 				{
@@ -411,6 +416,7 @@ export const projects = [
 		"poster": "./img/series/FastFurious/poster.jpg",
 		"inner": {
 			"hero": "./img/series/FastFurious/inner/hero.jpg",
+			"copyright": "Fast &amp; Furious and all other TM &amp; © 2019 Universal City Studios LLC. Series © 2019 Dreamworks Animation LLC. All Rights Reserved.",
 			"description": "Teenager Tony Toretto follows in the footsteps of his cousin Dom when he and his friends are recruited by a government agency to infiltrate an elite racing league serving as a front for a nefarious crime organization bent on world domination.",
 			"credits": [
 				{
@@ -485,6 +491,7 @@ export const projects = [
 		"poster": "./img/series/Madagascar/poster.jpg",
 		"inner": {
 			"hero": "./img/series/Madagascar/inner/hero.jpg",
+			"copyright": "Dreamworks Madagascar © 2020 Dreamworks Animation LLC. All Rights Reserved.",
 			"description": "Loveable foursome Alex the Lion, Marty the Zebra, Melman the Giraffe and Gloria the Hippo steal the show in Madagascar: A Little Wild, from executive producer Johanna Stein and co-excecutive producer Dana Starfield. Capturing the iconic personalities of each of the four dynamos, Madagascar: A Little Wild showcases the team as kids residing in their rescue habitat at the Central Park Zoo. They might be small, but like everybody who lands in New York City, these little guys have big dreams and Madagascar: A Little Wild will follow all of their adventures.",
 			"credits": [
 				{
@@ -536,6 +543,7 @@ export const projects = [
 		"poster": "./img/series/Archibalds_NBT/poster.jpg",
 		"inner": {
 			"hero": "./img/series/Archibalds_NBT/inner/hero.jpg",
+			"copyright": "Dreamworks Archibald's Next Big Thing © 2019 Dreamworks Animation LLC. All Rights Reserved.",
 			"description": "From the creative mind of Tony Hale, Archibald's Next Big Thing follows the adventures of Archibald Strutter, a chicken who 'yes-ands' his way through life. Though living in the moment often leads him astray, Archibald always finds his way back home to an egg-shaped house in the center of Crackridge he shares with his three siblings, Sage, Finly, and Loy, and his trusty sidekick, Bea. Archibald's Next Big Thing is a fresh comedy about the importance of being present and celebrating the journey, not just the destination.",
 			"credits": [
 				{
@@ -580,6 +588,7 @@ export const projects = [
 		"poster": "./img/series/BossBaby_BIB/poster.jpg",
 		"inner": {
 			"hero": "./img/series/BossBaby_BIB/inner/hero.jpg",
+			"copyright": "Dreamworks The Boss Baby Back In Business © 2018 Dreamworks Animation LLC. All Rights Reserved.",
 			"description": "With the help of his big brother and partner in crime, Tim, the Boss Baby continues to navigate the cutthroat corporate jungle gym of BabyCorps, while angling to achieve the near-impossible: a work-life balance.",
 			"credits": [
 				{
@@ -620,6 +629,7 @@ export const projects = [
 		"poster": "./img/series/CaptainUnderpants/poster.jpg",
 		"inner": {
 			"hero": "./img/series/CaptainUnderpants/inner/hero.jpg",
+			"copyright": "Dreamworks Captain Underpants © 2020 Dreamworks Animation LLC. All Rights Reserved.",
 			"description": "The team behind Epic Tales of Captain Underpants had an equally epic year, breaking format and rolling out three distinct special productions for fans on Netflix: the Epic Choice-O-Rama interactive special, Captain Underpants in Space and Captain Underpants: Mega Blissmas.  Whether George and Harold and friends were launched into space, putting their own spin on the Christmas holiday or letting the viewer make the choices that would hopefully save their treehouse, The Epic Tale of Captain Underpants never fails to capture the creativity and imagination of Dav Pilkey's best selling books.",
 			"credits": [
 				{
@@ -666,6 +676,7 @@ export const projects = [
 		"poster": "./img/series/DougUnplugs/poster.jpg",
 		"inner": {
 			"hero": "./img/series/DougUnplugs/inner/hero.jpg",
+			"copyright": "Dreamworks Doug Unplugs © 2020 Dreamworks Animation LLC. All Rights Reserved.",
 			"description": "Based on the critically acclaimed children’s book by Dan Yaccarino, DreamWorks Doug Unplugs follows a curious six-year-old robot, Doug, as he ‘plugs in’ to learn new facts about the world every day. Sensing there’s more to life than just the facts, Doug journeys into the human world in search of experience. And to do that, Doug has to...unplug. With the help of his best friend, a human ball of energy, Emma, the two discover all the simple wonders of the world. Join Doug as he learns about the intersection of technology and humanity, and how they both keep us truly connected!",
 			"credits": [
 				{
@@ -712,6 +723,7 @@ export const projects = [
 		"poster": "./img/series/DragonsRescueRiders/poster.jpg",
 		"inner": {
 			"hero": "./img/series/DragonsRescueRiders/inner/hero.jpg",
+			"copyright": "Dreamworks Dragons © 2019 Dreamworks Animation LLC. All Rights Reserved.",
 			"description": "In a faraway corner of the viking and dragon world, viking twins Dak and Leyla were rescued and raised by dragons, growing up learning to speak their language. In addition to a full season of episodes, the Dragons Rescue Riders team also debuted two incredible special productions. The first, Hunt for the Golden Dragon, sets the young Rescue Riders off an adventure to save the precious Golden Dragon. And the Secret of the Songwing was a music-filled special that found the people of Huttsgalor transfixed by the Songwing dragon's harmonic hypnosis.",
 			"credits": [
 				{
@@ -762,6 +774,7 @@ export const projects = [
 		"poster": "./img/series/RhymeTimeTown/poster.jpg",
 		"inner": {
 			"hero": "./img/series/RhymeTimeTown/inner/hero.jpg",
+			"copyright": "Dreamworks Rhyme Time Town © 2020 Dreamworks Animation LLC. All Rights Reserved.",
 			"description": "All aboard to DreamWorks Rhyme Time Town, where Daisy the Puppy and Cole the Kitten are ready to guide young children through a colorful and adventurous world filled with nursery rhymes and imaginative play.",
 			"credits": [
 				{
@@ -812,6 +825,7 @@ export const projects = [
 		"poster": "./img/series/SpiritRidingAcademy/poster.jpg",
 		"inner": {
 			"hero": "./img/series/SpiritRidingAcademy/inner/hero.jpg",
+			"copyright": "Dreamworks Spirit © 2019 Dreamworks Animation LLC. All Rights Reserved.",
 			"description": "Lucky, Pru and Abigail are preparing to leave Miradero on their next, exciting adventure as they move away to boarding school at Palamino Bluffs Riding Academy! But moving far from home definitely comes with challenges as the girls are faced with fresh responsibilities and experiences. From meeting their new competition, the BUDs, to fitting in among their fellow Foals (first-term students) their transition to the academy is anything but easy. Along the way the PALs will make new friends and explore their individual talents as they grow up and discover their new home together.",
 			"credits": [
 				{
@@ -856,6 +870,7 @@ export const projects = [
 		"poster": "./img/series/Trollstopia/poster.jpg",
 		"inner": {
 			"hero": "./img/series/Trollstopia/inner/hero.jpg",
+			"copyright": "Dreamworks Trolls © 2020 Dreamworks Animation LLC. All Rights Reserved.",
 			"description": "Inspired by the beloved DreamWorks Animation films, TrollsTopia is the next chapter in the hair-raising adventures of the trolls. Now that Poppy knows there are other musical trolls scattered throughout the forest, she bottles up her endless positivity and invites delegates from every troll tribe in the forest to live together in harmony in a grand experiment she calls TrollsTopia!",
 			"credits": [
 				{
@@ -907,6 +922,7 @@ export const projects = [
 		"poster": "./img/series/WheresWaldo/poster.jpg",
 		"inner": {
 			"hero": "./img/series/WheresWaldo/inner/hero.jpg",
+			"copyright": "Dreamworks Where's Waldo? © Dreamworks Distribution Limited. All Rights Reserved.",
 			"description": "Waldo and Wenda are members of the Worldwide Wanderer Society, the international order of curious travelers who circle the globe celebrating cultures and solving problems through observation. Their mentor, Wizard Whitebeard, a seasoned wanderer, sends the inquisitive young adventurers on international travel missions so they can earn their stripes and someday become wizard-level wanderers too. But standing in their way is their rival Odlulu, who can’t help but cause trouble wherever she goes.",
 			"credits": [
 				{
