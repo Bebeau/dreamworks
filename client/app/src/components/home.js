@@ -15,12 +15,13 @@ class Homepage extends React.Component {
   constructor(props) {
     super(props);
     this.state = { 
-      error: null, 
+      error: null,
       errorInfo: null,
       clicked: false,
       modalActive: false,
       galleryImages: false,
-      activeImage: 0
+      activeImage: 0,
+      sound: false
     };
     this.onTemplateOpen = this.onTemplateOpen.bind(this);
     this.onTemplateClose = this.onTemplateClose.bind(this);
@@ -30,7 +31,7 @@ class Homepage extends React.Component {
 
     this.changeSlide = this.changeSlide.bind(this);
 
-    this.unMute = this.unMute.bind(this);
+    this.toggleAudio = this.toggleAudio.bind(this);
   }
   componentDidCatch(error, errorInfo) {
     // Catch errors in any components below and re-render with error message
@@ -63,7 +64,7 @@ class Homepage extends React.Component {
         // auto scroll body to top
         window.scrollTo({ top: 0, behavior: 'smooth' });
         // update url path
-        window.history.replaceState({}, data.name, data.slug);
+        window.history.pushState({}, data.name, data.slug);
       }
     });
   }
@@ -93,8 +94,14 @@ class Homepage extends React.Component {
         // auto scroll body to top
         window.scrollTo({ top: 0 });
         // update url path
-        window.history.replaceState({}, data.name, data.slug);
+        window.history.pushState({}, data.name, data.slug);
       }
+    });
+    // pause video
+    let video = document.getElementById('introVideo');
+    video.muted = true;
+    this.setState({
+      sound: false
     });
   }
   onTemplateClose() {
@@ -109,7 +116,7 @@ class Homepage extends React.Component {
     // auto scroll project to top
     document.getElementById('innerPageTemplate').scrollTo({ top: 0, behavior: 'smooth' });
     // update url path
-    window.history.replaceState({}, "Dreamworks", "/");
+    window.history.pushState({}, "Dreamworks", "/");
   }
   showModal(e) {
     let modal = document.getElementById("innerModal");
@@ -198,9 +205,12 @@ class Homepage extends React.Component {
       activeImage: index
     })
   }
-  unMute() {
+  toggleAudio() {
     let video = document.getElementById('introVideo');
     video.muted = !video.muted;
+    this.setState({
+      sound: !this.state.sound
+    });
   }
   render() {
     const {
@@ -217,7 +227,8 @@ class Homepage extends React.Component {
       gallery,
       modalActive,
       galleryImages,
-      activeImage
+      activeImage,
+      sound
     } = this.state;
     if (this.state.errorInfo) {
       // Error path
@@ -259,7 +270,7 @@ class Homepage extends React.Component {
         />
         <div id="homePage">
           <div className="mainBanner">
-            <video id="introVideo" autoPlay muted loop onClick={this.unMute}>
+            <video id="introVideo" autoPlay muted loop onClick={this.toggleAudio} className={sound ? 'sound': null}>
               <source src={IntroWebM} type="video/webm" />
               <source src={IntroMP4} type="video/mp4" />
             </video>

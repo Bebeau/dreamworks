@@ -61,7 +61,7 @@
 .innerStream {
 	border-bottom: 1px solid $primary;
 	margin-bottom: 20px;
-	padding-bottom: 50px;
+	padding-bottom: 30px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -317,6 +317,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	flex-wrap: nowrap;
 	backdrop-filter: blur(3px);
 	-webkit-backdrop-filter: blur(3px);
 	opacity: 0;
@@ -337,8 +338,8 @@
 	}
 	#gallery {
 		width: 100%;
-		display: none;
 		height: auto;
+		display: none;
 		overflow-x: hidden;
 		background: white;
 		padding: 20px;
@@ -348,15 +349,14 @@
 		}
 		#galleryWrap {
 			display: flex;
+			justify-content: flex-start;
+			align-items: flex-start;
 			overflow: hidden;
 		}
 		img {
-			max-width: 100%;
-			max-height: 100%;
-			height: auto;
-			width: auto;
+			width: 100%;
+			height: inherit;
 			&.slide {
-				flex: 1 0 100%;
   				order: 2;
 			}
 			&.active {
@@ -456,6 +456,9 @@
 				margin: 0 auto;
 			}
 		}
+	}
+	.innerStream {
+		padding-bottom: 50px;
 	}
 	.innerBonus {
 		h3 {
