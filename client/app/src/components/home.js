@@ -10,6 +10,7 @@ import {projects} from '../assets/data/projectData.js';
 
 import IntroMP4 from '../assets/video/intro.mp4';
 import IntroWebM from '../assets/video/intro.webm';
+import IntroPoster from '../assets/video/intro-poster.jpg';
 
 class Homepage extends React.Component {
   constructor(props) {
@@ -67,6 +68,12 @@ class Homepage extends React.Component {
         window.history.pushState({}, data.name, data.slug);
       }
     });
+    setTimeout(
+      function(){
+        let video = document.getElementById('introVideo');
+        video.play();
+      }, 5000
+    );
   }
   onTemplateOpen(e) {
     // get clicked project id
@@ -270,7 +277,7 @@ class Homepage extends React.Component {
         />
         <div id="homePage">
           <div className="mainBanner">
-            <video id="introVideo" autoPlay muted loop onClick={this.toggleAudio} className={sound ? 'sound': null}>
+            <video id="introVideo" poster={IntroPoster} muted loop onClick={this.toggleAudio} className={sound ? 'sound': null}>
               <source src={IntroWebM} type="video/webm" />
               <source src={IntroMP4} type="video/mp4" />
             </video>
