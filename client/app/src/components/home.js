@@ -3,14 +3,14 @@ import React from 'react';
 import Header from './header.js';
 import Footer from './footer.js';
 
-import Inner from './single.js';
-import Gallery from './gallery.js';
-
 import {projects} from '../assets/data/projectData.js';
 
+import Inner from './single.js';
+import Gallery from './gallery.js';
 import IntroMP4 from '../assets/video/intro.mp4';
 import IntroWebM from '../assets/video/intro.webm';
 import IntroPoster from '../assets/video/intro-poster.jpg';
+import playIcon from '../assets/img/play.svg';
 
 class Homepage extends React.Component {
   constructor(props) {
@@ -68,12 +68,15 @@ class Homepage extends React.Component {
         window.history.pushState({}, data.name, data.slug);
       }
     });
-    setTimeout(
-      function(){
-        let video = document.getElementById('introVideo');
-        video.play();
-      }, 5000
-    );
+    let isMobile = navigator.userAgent.toLowerCase().match(/mobile/i);
+    if(!isMobile) {
+      setTimeout(
+        function(){
+          let video = document.getElementById('introVideo');
+          video.play();
+        }, 5000
+      );
+    }
   }
   onTemplateOpen(e) {
     // get clicked project id
@@ -154,6 +157,8 @@ class Homepage extends React.Component {
         iframeWrap.appendChild(iframe);
         // append iframe to video modal
         modal.appendChild(iframeWrap);
+        console.log(window.screen.orientation);
+        window.screen.orientation.lock("landscape-primary");
       }
     }
     if(e.target.closest(".innerGallery")) {
@@ -277,10 +282,11 @@ class Homepage extends React.Component {
         />
         <div id="homePage">
           <div className="mainBanner">
-            <video id="introVideo" poster={IntroPoster} muted loop onClick={this.toggleAudio} className={sound ? 'sound': null}>
+            <video id="introVideo" poster={IntroPoster} onClick={this.toggleAudio} className={sound ? 'sound': null} autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto">
               <source src={IntroWebM} type="video/webm" />
               <source src={IntroMP4} type="video/mp4" />
             </video>
+            <i className="play" style={{backgroundImage: `url(${playIcon})`}}></i>
           </div>
           <div id="projectListing">
             {projects.map((data, key) => {

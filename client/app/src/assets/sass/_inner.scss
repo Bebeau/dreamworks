@@ -62,22 +62,27 @@
 	border-bottom: 1px solid $primary;
 	margin-bottom: 20px;
 	padding-bottom: 30px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
 	h3 {
 		flex: 0 0 100%;
 		text-align: center;
 	}
 	a {
+		padding: 20px;
 		display: flex;
-		padding: 0 20px;
 		img {
-			width: 100px;
-			height: auto;
+			width: auto;
+			margin: 0 auto;
 			&[alt="Peacock"] {
-				width: 140px;
+				height: 43px;
+			}
+			&[alt="Hulu"] {
+				height: 36px;
+			}
+			&[alt="Netflix"] {
+				height: 35px;
+			}
+			&[alt="Apple TV"] {
+				height: 48px;
 			}
 		}
 	}
@@ -126,29 +131,6 @@
 	padding: 20px;
 	.itemThumb {
 		position: relative;
-		.play {
-			background: no-repeat scroll center / contain rgba(0,0,0,0.3);
-			background-size: 40%;
-			background-position: 60% 50%;
-			display: block;
-			width: 80px;
-			height: 80px;
-			border-radius: 50%;
-			border: 3px solid white;
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			opacity: 0;
-			transform: translate(-50%,-50%) scale(0.5);
-			transition: all 0.3s ease-in-out;
-		}
-	}
-	&:hover {
-		.play {
-			opacity: 1;
-			transform: translate(-50%,-50%) scale(1);
-			transition: all 0.3s ease-in-out;
-		}
 	}
 	h3 {
 		font-size: 1rem;
@@ -195,6 +177,7 @@
 	flex-direction: column;
 	background: no-repeat scroll center / cover;
 	position: relative;
+	min-height: 400px;
 	&:before {
 		content: "";
 		display: none;
@@ -213,6 +196,7 @@
 		font-size: 1.6rem;
 		text-transform: uppercase;
 		color: white;
+		margin-top: 0;
 	}
 	.galleryInfo {
 		position: relative;
@@ -251,7 +235,6 @@
 		}
 		.innerGallery {
 			width: 100%;
-			height: 400px;
 			margin: 0;
 		}
 	}
@@ -285,7 +268,6 @@
 		}
 		.innerGallery {
 			width: 100%;
-			height: 400px;
 		}
 	}
 	&.third {
@@ -301,7 +283,6 @@
 	&.fourth {
 		.innerGallery {
 			width: 100%;
-			height: 400px;
 		}
 	}
 }
@@ -444,8 +425,10 @@
 }
 @media (min-width: 768px) {
 	.projectModal {
+		cursor: url('/assets/img/close.png'), move;
 		#gallery {
-			width: 580px;
+			width: 533px;
+			cursor: auto;
 		}
 	}
 	.innerHero {
@@ -459,6 +442,16 @@
 	}
 	.innerStream {
 		padding-bottom: 50px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		a {
+			padding: 0 20px;
+			img {
+				width: 100px;
+			}
+		}
 	}
 	.innerBonus {
 		h3 {
@@ -470,6 +463,19 @@
 		flex-direction: row;
 		.item {
 			width: 33.3%;
+			.itemThumb {
+				.play {
+					opacity: 0;
+					transform: translate(-50%,-50%) scale(0.5);
+				}
+			}
+			&:hover {
+				.play {
+					opacity: 1;
+					transform: translate(-50%,-50%) scale(1);
+					transition: all 0.3s ease-in-out;
+				}
+			}
 		}
 	}
 	.innerConsideration {
