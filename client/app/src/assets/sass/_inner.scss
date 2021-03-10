@@ -458,23 +458,25 @@
 			text-align: left;
 		}
 	}
-	.innerItems {
+	.innerItems, {
 		margin: 0 -20px;
 		flex-direction: row;
 		.item {
 			width: 33.3%;
-			.itemThumb {
-				.play {
-					opacity: 0;
-					transform: translate(-50%,-50%) scale(0.5);
-				}
+		}
+	}
+	.item {
+		.itemThumb {
+			.play {
+				opacity: 0;
+				transform: translate(-50%,-50%) scale(0.5);
 			}
-			&:hover {
-				.play {
-					opacity: 1;
-					transform: translate(-50%,-50%) scale(1);
-					transition: all 0.3s ease-in-out;
-				}
+		}
+		&:hover {
+			.play {
+				opacity: 1;
+				transform: translate(-50%,-50%) scale(1);
+				transition: all 0.3s ease-in-out;
 			}
 		}
 	}

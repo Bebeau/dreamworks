@@ -220,7 +220,7 @@ export const projects = [
 					"description": "The Wizards team took to the skies for an epic battle between floating castles that pushed the limits of VFX in TV animation."
 				},
 				{
-					"video": "https://www.youtube.com/embed/rpePQS8dW04?autoplay=1",
+					"video": "https://www.youtube.com/embed/MJwUC3shv0g?autoplay=1",
 					"poster": TOA_Item3,
 					"title": "Three Wizards Fight",
 					"description": "When Douxie, Merlin and Morgana finally face off, its a stunning combination of feature quality FX and incredible character animation that brings this magical fight sequence to life."
@@ -305,13 +305,13 @@ export const projects = [
 					"description": "Take a ride through the post-apoclyptic wonderland of Kipo and the Age of Wonderbeasts."
 				},
 				{
-					"video": "https://www.youtube.com/embed/25UHUbpFTtY?autoplay=1",
+					"video": "https://www.youtube.com/embed/XqLpxBOyQf0?autoplay=1",
 					"poster": KIPO_Item2,
 					"title": "LGBTQ Representation Matters",
 					"description": "Kipo and the Age of Wonderbeasts featured the first time a character in a kids animated series said the words I'm gay."
 				},
 				{
-					"video": "https://www.youtube.com/embed/25UHUbpFTtY?autoplay=1",
+					"video": "https://www.youtube.com/embed/ZCWqen4Q8nY?autoplay=1",
 					"poster": KIPO_Item3,
 					"title": "The Music of Kipo",
 					"description": "Composer Daniel Rojas created stunning original music and score that gave the series a distinct sound."
@@ -416,14 +416,14 @@ export const projects = [
 					"description": "The cast and crew of Jurassic World: Camp Cretaceous take you behind the scenes of making an animated series during a global pandemic."
 				},
 				{
-					"video": "https://www.youtube.com/embed/bUOpbuNgL4w?autoplay=1",
+					"video": "https://www.youtube.com/embed/JMyPDy6-rEE?autoplay=1",
 					"poster": JW_Item3,
 					"title": "It's a Cattle Drive!",
 					"description": "Go behind the epic cattle drive sequence in Season One, from storyboard artist Ed Tadem."
 				},
 			],
 			"bonus": {
-				"video": "",
+				"video": "https://www.youtube.com/embed/MPRlKqLn7AM?autoplay=1",
 				"poster": JW_Bonus,
 				"title": "Visual Effects in Jurassic World",
 				"description": "Custom jungle lighting, underground bioluminescent rivers and a giant mosasaurus lagoon are just a few of environments that the incredible FX team created."
@@ -497,7 +497,7 @@ export const projects = [
 				},
 			],
 			"bonus": {
-				"video": "",
+				"video": "https://www.youtube.com/embed/eFM4V8LM9FQ?autoplay=1",
 				"poster": TMO_Bonus,
 				"title": "Conversation with Creators",
 				"description": "Series creators and executive producers Lynn Naylor and Sunil Hall talk about bringing this passion project to fruition."
@@ -552,7 +552,7 @@ export const projects = [
 					"description": "Last year, fans saw She-Ra come to an epic conclusion. The cast and crew reflect on their journey."
 				},
 				{
-					"video": "https://www.youtube.com/embed/7EOGP0zDl1M?autoplay=1",
+					"video": "https://www.youtube.com/embed/cz9RkvMnje4?autoplay=1",
 					"poster": SHE_Item2,
 					"title": "LGBTQ Representation Matters",
 					"description": "In one of the final scenes of the series, fans learned that love truly wins, backed by composer Sunna Wehrmeijer's gorgeous score."
@@ -621,7 +621,7 @@ export const projects = [
 					"description": "The Spy Racers head to Rio on their first international mission."
 				},
 				{
-					"video": "https://www.youtube.com/embed/JjtZD0RVV_E?autoplay=1",
+					"video": "https://www.youtube.com/embed/5_9m7VgoSOY?autoplay=1",
 					"poster": FF_Item2,
 					"title": "Reimagining Rio",
 					"description": "The Fast team took their high octane races to the streets of Rio in Season 2. Here Tony and Layla navigate the narrow, winding corridors of Rio's favelas in an adrenaline pumping chase."
@@ -635,6 +635,7 @@ export const projects = [
 			],
 			"consideration": {
 				"poster": FF_Consideration,
+				"video": "https://www.youtube.com/embed/dW7ui2pegSI?autoplay=1",
 				"title": "Rafaela's Escape",
 				"description": "Season 3 kicked off with this epic sequence directed by Micah Gunnell.",
 				"btnText": "View Now"
@@ -1082,7 +1083,7 @@ export const projects = [
 					"description": "Guy and the Trolls must rally around Tiny Diamond after he runs away with an admission that he has yet to glitter fart."
 				},
 				{
-					"video": "https://www.youtube.com/embed/47HU_h8iPgk?autoplay=1",
+					"video": "https://www.youtube.com/embed/FOd2Zgz1vtE?autoplay=1",
 					"poster": TROLL_Item3,
 					"title": "Conversations with Creators",
 					"description": "Executive producer Matt Beans talks about expanding the world of Trollstopia."

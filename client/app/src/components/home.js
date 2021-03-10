@@ -7,10 +7,8 @@ import {projects} from '../assets/data/projectData.js';
 
 import Inner from './single.js';
 import Gallery from './gallery.js';
-import IntroMP4 from '../assets/video/intro.mp4';
-import IntroWebM from '../assets/video/intro.webm';
-import IntroPoster from '../assets/video/intro-poster.jpg';
-import playIcon from '../assets/img/play.svg';
+
+import Hero from '../assets/img/mainHero.jpg';
 
 class Homepage extends React.Component {
   constructor(props) {
@@ -21,8 +19,7 @@ class Homepage extends React.Component {
       clicked: false,
       modalActive: false,
       galleryImages: false,
-      activeImage: 0,
-      sound: false
+      activeImage: 0
     };
     this.onTemplateOpen = this.onTemplateOpen.bind(this);
     this.onTemplateClose = this.onTemplateClose.bind(this);
@@ -32,7 +29,7 @@ class Homepage extends React.Component {
 
     this.changeSlide = this.changeSlide.bind(this);
 
-    this.toggleAudio = this.toggleAudio.bind(this);
+    // this.toggleAudio = this.toggleAudio.bind(this);
   }
   componentDidCatch(error, errorInfo) {
     // Catch errors in any components below and re-render with error message
@@ -68,15 +65,15 @@ class Homepage extends React.Component {
         window.history.pushState({}, data.name, data.slug);
       }
     });
-    let isMobile = navigator.userAgent.toLowerCase().match(/mobile/i);
-    if(!isMobile) {
-      setTimeout(
-        function(){
-          let video = document.getElementById('introVideo');
-          video.play();
-        }, 5000
-      );
-    }
+    // let isMobile = navigator.userAgent.toLowerCase().match(/mobile/i);
+    // if(!isMobile) {
+    //   setTimeout(
+    //     function(){
+    //       let video = document.getElementById('introVideo');
+    //       video.play();
+    //     }, 5000
+    //   );
+    // }
   }
   onTemplateOpen(e) {
     // get clicked project id
@@ -108,11 +105,11 @@ class Homepage extends React.Component {
       }
     });
     // pause video
-    let video = document.getElementById('introVideo');
-    video.muted = true;
-    this.setState({
-      sound: false
-    });
+    // let video = document.getElementById('introVideo');
+    // video.muted = true;
+    // this.setState({
+    //   sound: false
+    // });
   }
   onTemplateClose() {
     // hide inner view
@@ -157,21 +154,20 @@ class Homepage extends React.Component {
         iframeWrap.appendChild(iframe);
         // append iframe to video modal
         modal.appendChild(iframeWrap);
-        console.log(window.screen.orientation);
+        // console.log(window.screen.orientation);
         window.screen.orientation.lock("landscape-primary");
       }
     }
-    if(e.target.closest(".innerGallery")) {
+    if(e.target.closest(".innerGallery") && !e.target.closest(".innerGallery").classList.contains('video')) {
       this.setState({
         galleryImages: this.state.gallery.images
       });
     }
-    if(e.target.closest(".innerConsideration")) {
+    if(e.target.closest(".innerConsideration") && !e.target.closest(".innerConsideration").classList.contains('video')) {
       this.setState({
         galleryImages: this.state.consideration.images
       });
     }
-    // change state
     this.setState({
       modalActive: true
     });
@@ -217,13 +213,13 @@ class Homepage extends React.Component {
       activeImage: index
     })
   }
-  toggleAudio() {
-    let video = document.getElementById('introVideo');
-    video.muted = !video.muted;
-    this.setState({
-      sound: !this.state.sound
-    });
-  }
+  // toggleAudio() {
+  //   let video = document.getElementById('introVideo');
+  //   video.muted = !video.muted;
+  //   this.setState({
+  //     sound: !this.state.sound
+  //   });
+  // }
   render() {
     const {
       layout,
@@ -239,8 +235,7 @@ class Homepage extends React.Component {
       gallery,
       modalActive,
       galleryImages,
-      activeImage,
-      sound
+      activeImage
     } = this.state;
     if (this.state.errorInfo) {
       // Error path
@@ -281,12 +276,7 @@ class Homepage extends React.Component {
           modalActive={this.showModal}
         />
         <div id="homePage">
-          <div className="mainBanner">
-            <video id="introVideo" poster={IntroPoster} onClick={this.toggleAudio} className={sound ? 'sound': null} autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto">
-              <source src={IntroWebM} type="video/webm" />
-              <source src={IntroMP4} type="video/mp4" />
-            </video>
-            <i className="play" style={{backgroundImage: `url(${playIcon})`}}></i>
+          <div className="mainBanner" style={{backgroundImage: `url(${Hero})`}}>
           </div>
           <div id="projectListing">
             {projects.map((data, key) => {

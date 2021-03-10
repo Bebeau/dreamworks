@@ -100,7 +100,7 @@ class inner extends React.Component{
           <div className={`innerSecondary ${this.props.layout ? this.props.layout : ''}`}>
 
             {this.props.consideration && this.props.layout === "second" ? ( 
-              <article className="innerConsideration">
+              <article className={this.props.consideration.video  ? 'innerConsideration video': 'innerConsideration'}>
                 <img src={this.props.consideration.poster} alt="" />
                 <div className="considerationInfo">
                   <div>
@@ -134,7 +134,7 @@ class inner extends React.Component{
                     <h3>{this.props.consideration.title}</h3>
                     <p>{this.props.consideration.description}</p>
                   </div>
-                  <button className="btn" onClick={this.props.modalActive} data-video={this.props.consideration.video}>
+                  <button className="btn item" onClick={this.props.modalActive} data-video={this.props.consideration.video}>
                     {this.props.consideration.btnText}
                   </button>
                 </div>
@@ -158,7 +158,7 @@ class inner extends React.Component{
             ): null }
             
             {this.props.consideration && this.props.layout !== "second" ? ( 
-              <article className="innerConsideration">
+              <article className={this.props.consideration.video  ? 'innerConsideration video': 'innerConsideration'}>
                 <img src={this.props.consideration.poster} alt="" />
                 <div className="considerationInfo">
                   <div>
@@ -192,7 +192,7 @@ class inner extends React.Component{
                     <h3>{this.props.consideration.title}</h3>
                     <p>{this.props.consideration.description}</p>
                   </div>
-                  <button className="btn" onClick={this.props.modalActive}>
+                  <button className="btn item" onClick={this.props.modalActive} data-video={this.props.consideration.video}>
                     {this.props.consideration.btnText}
                   </button>
                 </div>
