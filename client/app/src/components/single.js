@@ -38,12 +38,14 @@ class inner extends React.Component{
     	<div id="innerPageTemplate">
 
         <section className="innerHero">
+
           <article className="heroImage mobileHero" style={{backgroundImage: `url(${this.props.hero})`}}>
             <div className="copyright">{this.props.copyright}</div>
           </article>
+
           <article className="heroInfo">
             <div className="infoWrap">
-              <img src={this.props.logo} alt="" />
+              <img className="heroLogo" src={this.props.logo} alt="" />
               <div>
                 <p>{this.props.description}</p>
                 {this.props.credits ? ( 
@@ -57,27 +59,28 @@ class inner extends React.Component{
                   })
                 ): null }
               </div>
+              <div className="innerStream">
+                <p className="watch">Watch Full Episodes On</p>
+                {this.props.streaming ? ( 
+                  this.props.streaming.map((data, key) => {
+                    return (
+                      <a key={key} href={data.link} target="_blank" rel="noreferrer">
+                        <img src={data.logo} alt={data.platform} />
+                      </a>
+                    );
+                  })
+                ): null }
+              </div>
             </div>
-          </article> 
+          </article>
+
           <article className="heroImage" style={{backgroundImage: `url(${this.props.hero})`}}>
             <div className="copyright">{this.props.copyright}</div>
           </article>
+
         </section>
 
         <section className="wrap">
-
-          <div className="innerStream">
-            <h3>Watch Full Episodes On</h3>
-            {this.props.streaming ? ( 
-              this.props.streaming.map((data, key) => {
-                return (
-                  <a key={key} href={data.link} target="_blank" rel="noreferrer">
-                    <img src={data.logo} alt={data.platform} />
-                  </a>
-                );
-              })
-            ): null }
-          </div>
 
           <div className="innerItems">
             <h2>Take A Peek</h2>

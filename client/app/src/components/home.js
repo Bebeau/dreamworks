@@ -40,7 +40,7 @@ class Homepage extends React.Component {
     // You can also log error messages to an error reporting service here
   }
   componentDidMount() {
-    let slug = window.location.pathname.replace("/","");
+    let slug = window.location.pathname.split("/").pop();
     projects.forEach((data, key) => {
       if(data.slug === slug) {
         this.setState({

@@ -13,13 +13,17 @@
 			padding: 20px;
 			box-sizing: border-box;
 			color: $primary;
+			.watch {
+				margin: 0 0 10px;
+				font-family: gothamBold;
+			}
 			p {
 				color: $primary;
 				margin: 30px 0 20px;
 			}
-			img {
-				max-width: 300px;
-				max-height: 200px;
+			.heroLogo {
+				max-width: 80%;
+				max-height: 150px;
 				margin: 0 auto;
 				text-align: center;
 				display: block;
@@ -59,30 +63,32 @@
 	}
 }
 .innerStream {
-	border-bottom: 1px solid $primary;
-	margin-bottom: 20px;
-	padding-bottom: 30px;
-	h3 {
-		flex: 0 0 100%;
-		text-align: center;
-	}
+	margin-top: 20px;
+	// border-bottom: 1px solid $primary;
+	// margin-bottom: 20px;
+	// padding-bottom: 30px;
+	// h3 {
+	// 	flex: 0 0 100%;
+	// 	text-align: center;
+	// }
 	a {
-		padding: 20px;
-		display: flex;
+		height: auto;
+		display: inline-block;
+		margin-right: 20px;
 		img {
+			margin: 0;
 			width: auto;
-			margin: 0 auto;
 			&[alt="Peacock"] {
-				height: 43px;
+				height: 30px;
 			}
 			&[alt="Hulu"] {
-				height: 36px;
+				height: 25px;
 			}
 			&[alt="Netflix"] {
-				height: 35px;
+				height: 25px;
 			}
 			&[alt="Apple TV"] {
-				height: 48px;
+				height: 35px;
 			}
 		}
 	}
@@ -441,17 +447,14 @@
 		}
 	}
 	.innerStream {
-		padding-bottom: 50px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-wrap: wrap;
-		a {
-			padding: 0 20px;
-			img {
-				width: 100px;
-			}
-		}
+		// padding-bottom: 50px;
+		// display: flex;
+		// justify-content: center;
+		// align-items: center;
+		// flex-wrap: wrap;
+		// a {
+		// 	padding: 0 20px;
+		// }
 	}
 	.innerBonus {
 		h3 {
@@ -590,7 +593,7 @@
 		article {
 			&.heroInfo {
 				width: 40%;
-				padding: 30px;
+				padding: 20px;
 				.infoWrap {
 					width: auto;
 					p,
@@ -598,7 +601,7 @@
 						font-size: 0.6rem;
 						line-height: 0.8rem;
 					}
-					img {
+					.heroLogo {
 						max-height: 150px;
 					}
 				}
@@ -641,8 +644,8 @@
 						font-size: 0.7rem;
 						line-height: 1rem;
 					}
-					img {
-						max-height: 200px;
+					.heroLogo {
+						max-height: 150px;
 					}
 				}
 			}
