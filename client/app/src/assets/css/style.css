@@ -317,12 +317,29 @@ footer {
     padding: 20px;
     box-sizing: border-box;
     color: #092E6E; }
-    .innerHero article.heroInfo .watch {
-      margin: 0 0 10px;
-      font-family: gothamBold; }
     .innerHero article.heroInfo p {
       color: #092E6E;
       margin: 30px 0 20px; }
+      .innerHero article.heroInfo p.innerStream {
+        margin: 20px 0 0; }
+        .innerHero article.heroInfo p.innerStream .watch {
+          font-weight: bold;
+          font-family: gothamBold; }
+        .innerHero article.heroInfo p.innerStream a {
+          height: auto;
+          display: inline-block;
+          margin: 5px 20px 0 0; }
+          .innerHero article.heroInfo p.innerStream a img {
+            margin: 0;
+            width: auto; }
+            .innerHero article.heroInfo p.innerStream a img[alt="Peacock"] {
+              height: 30px; }
+            .innerHero article.heroInfo p.innerStream a img[alt="Hulu"] {
+              height: 25px; }
+            .innerHero article.heroInfo p.innerStream a img[alt="Netflix"] {
+              height: 25px; }
+            .innerHero article.heroInfo p.innerStream a img[alt="Apple TV"] {
+              height: 35px; }
     .innerHero article.heroInfo .heroLogo {
       max-width: 80%;
       max-height: 150px;
@@ -355,24 +372,6 @@ footer {
       color: white;
       padding: 20px;
       text-align: center; }
-
-.innerStream {
-  margin-top: 20px; }
-  .innerStream a {
-    height: auto;
-    display: inline-block;
-    margin-right: 20px; }
-    .innerStream a img {
-      margin: 0;
-      width: auto; }
-      .innerStream a img[alt="Peacock"] {
-        height: 30px; }
-      .innerStream a img[alt="Hulu"] {
-        height: 25px; }
-      .innerStream a img[alt="Netflix"] {
-        height: 25px; }
-      .innerStream a img[alt="Apple TV"] {
-        height: 35px; }
 
 .item {
   width: 100%;

@@ -59,8 +59,8 @@ class inner extends React.Component{
                   })
                 ): null }
               </div>
-              <div className="innerStream">
-                <p className="watch">Watch Full Episodes On</p>
+              <p className="innerStream">
+                <div className="watch">Watch Full Episodes On</div>
                 {this.props.streaming ? ( 
                   this.props.streaming.map((data, key) => {
                     return (
@@ -70,7 +70,7 @@ class inner extends React.Component{
                     );
                   })
                 ): null }
-              </div>
+              </p>
             </div>
           </article>
 
