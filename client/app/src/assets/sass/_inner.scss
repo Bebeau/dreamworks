@@ -16,39 +16,39 @@
 			p {
 				color: $primary;
 				margin: 30px 0 20px;
-				&.innerStream {
-					margin: 20px 0 0;
-					// border-bottom: 1px solid $primary;
-					// margin-bottom: 20px;
-					// padding-bottom: 30px;
-					// h3 {
-					// 	flex: 0 0 100%;
-					// 	text-align: center;
-					// }
-					.watch {
-						font-weight: bold;
-						font-family: gothamBold;
-						margin: 20px 0 5px;
-					}
-					a {
-						height: auto;
-						display: inline-block;
-						margin: 5px 20px 0 0;
-						img {
-							margin: 0;
-							width: auto;
-							&[alt="Peacock"] {
-								height: 30px;
-							}
-							&[alt="Hulu"] {
-								height: 25px;
-							}
-							&[alt="Netflix"] {
-								height: 25px;
-							}
-							&[alt="Apple TV"] {
-								height: 35px;
-							}
+			}
+			.innerStream {
+				margin: 20px 0 0;
+				// border-bottom: 1px solid $primary;
+				// margin-bottom: 20px;
+				// padding-bottom: 30px;
+				// h3 {
+				// 	flex: 0 0 100%;
+				// 	text-align: center;
+				// }
+				.watch {
+					font-weight: bold;
+					font-family: gothamBold;
+					margin: 20px 0 5px;
+				}
+				a {
+					height: auto;
+					display: inline-block;
+					margin: 5px 20px 0 0;
+					img {
+						margin: 0;
+						width: auto;
+						&[alt="Peacock"] {
+							height: 30px;
+						}
+						&[alt="Hulu"] {
+							height: 25px;
+						}
+						&[alt="Netflix"] {
+							height: 25px;
+						}
+						&[alt="Apple TV"] {
+							height: 35px;
 						}
 					}
 				}
