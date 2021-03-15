@@ -23,13 +23,10 @@ class Homepage extends React.Component {
     };
     this.onTemplateOpen = this.onTemplateOpen.bind(this);
     this.onTemplateClose = this.onTemplateClose.bind(this);
-
     this.showModal = this.showModal.bind(this);
     this.hideModal = this.hideModal.bind(this);
-
     this.changeSlide = this.changeSlide.bind(this);
-
-    // this.toggleAudio = this.toggleAudio.bind(this);
+    this.backTrigger = this.backTrigger.bind(this);
   }
   componentDidCatch(error, errorInfo) {
     // Catch errors in any components below and re-render with error message
@@ -41,39 +38,82 @@ class Homepage extends React.Component {
   }
   componentDidMount() {
     let slug = window.location.pathname.split("/").pop();
-    projects.forEach((data, key) => {
-      if(data.slug === slug) {
-        this.setState({
-          layout: data.layout,
-          logo: data.logo,
-          hero: data.inner.hero,
-          copyright: data.inner.copyright,
-          description: data.inner.description,
-          credits: data.inner.credits,
-          streaming: data.inner.streaming,
-          items: data.inner.items,
-          bonus: data.inner.bonus,
-          consideration: data.inner.consideration,
-          gallery: data.inner.gallery,
-          clicked: true
-        });
-        // lock body scrll
-        document.body.classList.add("lock");
-        // auto scroll body to top
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-        // update url path
-        window.history.pushState({}, data.name, data.slug);
-      }
-    });
-    // let isMobile = navigator.userAgent.toLowerCase().match(/mobile/i);
-    // if(!isMobile) {
-    //   setTimeout(
-    //     function(){
-    //       let video = document.getElementById('introVideo');
-    //       video.play();
-    //     }, 5000
-    //   );
-    // }
+    if(slug !== "") {
+      projects.forEach((data, key) => {
+        if(data.slug === slug) {
+          this.setState({
+            layout: data.layout,
+            logo: data.logo,
+            hero: data.inner.hero,
+            copyright: data.inner.copyright,
+            description: data.inner.description,
+            credits: data.inner.credits,
+            streaming: data.inner.streaming,
+            items: data.inner.items,
+            bonus: data.inner.bonus,
+            consideration: data.inner.consideration,
+            gallery: data.inner.gallery,
+            clicked: true
+          });
+          // lock body scrll
+          document.body.classList.add("lock");
+          // auto scroll body to top
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+          // update url path
+          // console.log(window.history.state);
+          // window.history.pushState({}, data.name, data.slug);
+          // window.history.replaceState({}, data.name, data.slug);
+        }
+      });
+    }
+    // window.onpopstate = this.backTrigger;
+    window.addEventListener("popstate", this.backTrigger);
+  }
+  componentWillUnmount() {
+    window.removeEventListener('onpopstate', this.showPage, false)
+  }
+  backTrigger() {
+    let slug = window.location.pathname.split("/").pop();
+    if(slug === "") {
+      // hide inner view
+      this.setState({
+        clicked: false
+      });
+      // lock body scrll
+      document.body.classList.remove("lock");
+      // auto scroll body to top
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      // auto scroll project to top
+      document.getElementById('innerPageTemplate').scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    if(slug !== "") {
+      projects.forEach((data, key) => {
+        if(data.slug === slug) {
+          this.setState({
+            layout: data.layout,
+            logo: data.logo,
+            hero: data.inner.hero,
+            copyright: data.inner.copyright,
+            description: data.inner.description,
+            credits: data.inner.credits,
+            streaming: data.inner.streaming,
+            items: data.inner.items,
+            bonus: data.inner.bonus,
+            consideration: data.inner.consideration,
+            gallery: data.inner.gallery,
+            clicked: true
+          });
+          // lock body scrll
+          document.body.classList.add("lock");
+          // auto scroll body to top
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+          // update url path
+          // console.log(window.history.state);
+          // window.history.pushState({}, data.name, data.slug);
+          // window.history.replaceState({}, data.name, data.slug);
+        }
+      });
+    }
   }
   onTemplateOpen(e) {
     // get clicked project id
@@ -101,15 +141,11 @@ class Homepage extends React.Component {
         // auto scroll body to top
         window.scrollTo({ top: 0 });
         // update url path
-        window.history.pushState({}, data.name, data.slug);
+        // console.log(window.history.state);
+        window.history.pushState('', data.name, data.slug);
+        // window.history.replaceState({}, data.name, data.slug);
       }
     });
-    // pause video
-    // let video = document.getElementById('introVideo');
-    // video.muted = true;
-    // this.setState({
-    //   sound: false
-    // });
   }
   onTemplateClose() {
     // hide inner view
@@ -123,7 +159,9 @@ class Homepage extends React.Component {
     // auto scroll project to top
     document.getElementById('innerPageTemplate').scrollTo({ top: 0, behavior: 'smooth' });
     // update url path
+    // console.log(window.history.state);
     window.history.pushState({}, "Dreamworks", "/");
+    // window.history.replaceState({}, "Dreamworks", "/");
   }
   showModal(e) {
     let modal = document.getElementById("innerModal");
@@ -155,7 +193,7 @@ class Homepage extends React.Component {
         // append iframe to video modal
         modal.appendChild(iframeWrap);
         // console.log(window.screen.orientation);
-        window.screen.orientation.lock("landscape-primary");
+        // window.screen.orientation.lock("landscape-primary");
       }
     }
     if(e.target.closest(".innerGallery") && !e.target.closest(".innerGallery").classList.contains('video')) {
@@ -213,13 +251,6 @@ class Homepage extends React.Component {
       activeImage: index
     })
   }
-  // toggleAudio() {
-  //   let video = document.getElementById('introVideo');
-  //   video.muted = !video.muted;
-  //   this.setState({
-  //     sound: !this.state.sound
-  //   });
-  // }
   render() {
     const {
       layout,

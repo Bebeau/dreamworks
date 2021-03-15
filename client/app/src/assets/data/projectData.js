@@ -468,12 +468,12 @@ export const projects = [
 				{
 					"platform": "Peacock",
 					"logo": Peacock,
-					"link": ""
+					"link": "https://www.peacocktv.com/watch-online/tv/the-mighty-ones/8501865675229905112/seasons/1/episodes/rocksys-in-a-hole-lotta-trouble-the-great-invisi-barrier-episode-1/f1af496b-695d-3739-8f4a-79f9b539a141"
 				},
 				{
 					"platform": "Hulu",
 					"logo": Hulu,
-					"link": "https://www.netflix.com/watch/81009646"
+					"link": "https://www.hulu.com/series/the-mighty-ones-7b34470f-f28a-4740-8840-82a7355ce2ac"
 				}
 			],
 			"items": [
@@ -484,7 +484,7 @@ export const projects = [
 					"description": "A peek inside the weird backyard world of The Mighty Ones."
 				},
 				{
-					"video": "https://www.youtube.com/embed/mzCXDD3WOuU?autoplay=1",
+					"video": "https://www.youtube.com/embed/4sqmuzlY9J8?autoplay=1",
 					"poster": TMO_Item2,
 					"title": "Beware the Snowbeast",
 					"description": "Take a look inside the weird world of The Mighty Ones, with storyboard artist Eric Jones."
@@ -687,7 +687,7 @@ export const projects = [
 				{
 					"platform": "Hulu",
 					"logo": Hulu,
-					"link": ""
+					"link": "https://www.hulu.com/series/madagascar-a-little-wild-7a11e023-5762-4980-bfce-7f337e4c28ef"
 				}
 			],
 			"items": [
@@ -1066,7 +1066,7 @@ export const projects = [
 				{
 					"platform": "Hulu",
 					"logo": Hulu,
-					"link": ""
+					"link": "https://www.hulu.com/series/trolls-trollstopia-a5f2363f-ecc2-494e-9cf9-b896f6d7e574"
 				}
 			],
 			"items": [
