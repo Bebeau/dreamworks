@@ -60,7 +60,17 @@ import JW_Item1 from '../img/series/JurassicWorld/inner/items/1.jpg';
 import JW_Item2 from '../img/series/JurassicWorld/inner/items/2.jpg';
 import JW_Item3 from '../img/series/JurassicWorld/inner/items/3.jpg';
 import JW_Bonus from '../img/series/JurassicWorld/inner/bonus.jpg';
-import JW_Consideration from '../img/series/JurassicWorld/inner/consideration.jpg';
+import JW_Consideration from '../img/series/JurassicWorld/inner/gallery/Jurassic-World-Camp-Cretaceous_Camp_Art-by-John-Paul-Balmet.jpg';
+import JW_Consideration_1 from '../img/series/JurassicWorld/inner/gallery/Jurassic-World-Camp-Cretaceous_Camp_Color-Key_Art-by-Christophe-Vacher.jpg';
+import JW_Consideration_2 from '../img/series/JurassicWorld/inner/gallery/Jurassic-World-Camp-Cretaceous_Camp-Morning_Color-Key_Art-by-Christophe-Vacher.jpg';
+import JW_Consideration_3 from '../img/series/JurassicWorld/inner/gallery/Jurassic-World-Camp-Cretaceous_Color-Script_Art-by-Christophe-Vacher.jpg';
+import JW_Consideration_4 from '../img/series/JurassicWorld/inner/gallery/Jurassic-World-Camp-Cretaceous_Color-Script-Panels_Art-by-Christophe-Vacher.jpg';
+import JW_Consideration_5 from '../img/series/JurassicWorld/inner/gallery/Jurassic-World-Camp-Cretaceous_Isla-Nublar_Color-Key_Art-by-Christophe-Vacher.jpg';
+import JW_Consideration_6 from '../img/series/JurassicWorld/inner/gallery/Jurassic-World-Camp-Cretaceous_Jungle_Color-Key_Art-by-Christophe-Vacher.jpg';
+import JW_Consideration_7 from '../img/series/JurassicWorld/inner/gallery/Jurassic-World-Camp-Cretaceous_Jungle-Sunset_Color-Key_Art-by-Christophe-Vacher.jpg';
+import JW_Consideration_8 from '../img/series/JurassicWorld/inner/gallery/Jurassic-World-Camp-Cretaceous_Outside-Jungle_Art-by-Christophe-Vacher.jpg';
+import JW_Consideration_9 from '../img/series/JurassicWorld/inner/gallery/Jurassic-World-Camp-Cretaceous_Raptor_Color-Key_Art-by-Christophe-Vacher.jpg';
+import JW_Consideration_10 from '../img/series/JurassicWorld/inner/gallery/Jurassic-World-Camp-Cretaceous_Treetops_Art-by-John-Paul-Balmet.jpg';
 // THE MIGHTY ONES
 import TMO_Logo from '../img/series/MightyOnes/logo.png';
 import TMO_Poster from '../img/series/MightyOnes/poster.jpg';
@@ -434,14 +444,16 @@ export const projects = [
 				"description": "Stunning locales, rich colors and lush environments bring Isla Nublar to life in the first ever Jurassic World animated series.",
 				"btnText": "View Now",
 				"images": [
-					"",
-					"",
-					"",
-					"",
-					"",
-					"",
-					"",
-					"",
+					JW_Consideration_1,
+					JW_Consideration_2,
+					JW_Consideration_3,
+					JW_Consideration_4,
+					JW_Consideration_5,
+					JW_Consideration_6,
+					JW_Consideration_7,
+					JW_Consideration_8,
+					JW_Consideration_9,
+					JW_Consideration_10
 				]
 			}
 		}
@@ -507,14 +519,7 @@ export const projects = [
 				"title": "Art Gallery",
 				"btnText": "View Now",
 				"images": [
-					"",
-					"",
-					"",
-					"",
-					"",
-					"",
-					"",
-					"",
+					""
 				]
 			}
 		}
