@@ -80,6 +80,45 @@ import TMO_Item2 from '../img/series/MightyOnes/inner/items/2.jpg';
 import TMO_Item3 from '../img/series/MightyOnes/inner/items/3.jpg';
 import TMO_Bonus from '../img/series/MightyOnes/inner/bonus.jpg';
 import TMO_Gallery from '../img/series/MightyOnes/inner/gallery/poster.jpg';
+import TMO_Gallery_1 from '../img/series/MightyOnes/inner/gallery/YAR101_BackPorch_EXT_CLR_v002_JG.jpg';
+import TMO_Gallery_2 from '../img/series/MightyOnes/inner/gallery/YAR101_BigCan_EXT_CLR_v002_JG.jpg';
+import TMO_Gallery_3 from '../img/series/MightyOnes/inner/gallery/YAR101_BigRock_EXT_CLR_v003_BL.jpg';
+import TMO_Gallery_4 from '../img/series/MightyOnes/inner/gallery/YAR101_BrokenGlasses_EXT_CLR_v001_BL.jpg';
+import TMO_Gallery_5 from '../img/series/MightyOnes/inner/gallery/YAR101_Cave_Skylight_EXT_CLR_v006_BL.jpg';
+import TMO_Gallery_6 from '../img/series/MightyOnes/inner/gallery/YAR101_Colorscript_ForAnnies.jpg';
+import TMO_Gallery_7 from '../img/series/MightyOnes/inner/gallery/YAR101_Flashback_EXT_CLR_v002_BL.jpg';
+import TMO_Gallery_8 from '../img/series/MightyOnes/inner/gallery/YAR101_PlayArea_Pan_EXT_CLR_v002_BL.jpg';
+import TMO_Gallery_9 from '../img/series/MightyOnes/inner/gallery/YAR101_Pond_Towel_Area_Pan_EXT_CLR_v003_BL.jpg';
+// import TMO_Gallery_10 from '../img/series/MightyOnes/inner/gallery/YAR101_YardToPond_Pan_EXT_CLR_v007_BL.jpg';
+import TMO_Gallery_11 from '../img/series/MightyOnes/inner/gallery/YAR109_Ant_RUF_v003_BA.jpg';
+import TMO_Gallery_12 from '../img/series/MightyOnes/inner/gallery/YAR109_BatsSamosaCarryingToilet_RUF_v004_BA.jpg';
+import TMO_Gallery_13 from '../img/series/MightyOnes/inner/gallery/YAR109_BeetleBack_RUF_v003_BA.jpg';
+import TMO_Gallery_14 from '../img/series/MightyOnes/inner/gallery/YAR109_BeeWalnutTadpoleSunflower_RUF_v003_BA.jpg';
+import TMO_Gallery_15 from '../img/series/MightyOnes/inner/gallery/YAR109_BenTheStinkbug_StuckInGum_RUF_v004_BA.jpg';
+import TMO_Gallery_16 from '../img/series/MightyOnes/inner/gallery/YAR109_BerryBigSmile_RUF_v003_BA.jpg';
+import TMO_Gallery_17 from '../img/series/MightyOnes/inner/gallery/YAR109_BerryFaceSmushedOnRocksy_RUF_v003_BA.jpg';
+import TMO_Gallery_18 from '../img/series/MightyOnes/inner/gallery/YAR109_BerryRocksy_FlameColor_RUF_v004_BA.jpg';
+import TMO_Gallery_19 from '../img/series/MightyOnes/inner/gallery/YAR109_BerryRocksyFrowning_RUF_v003_BA.jpg';
+import TMO_Gallery_20 from '../img/series/MightyOnes/inner/gallery/YAR109_Buggzo_RUF_v003_BA.jpg';
+import TMO_Gallery_21 from '../img/series/MightyOnes/inner/gallery/YAR109_Flower_Seed_RUF_v004_BA.jpg';
+import TMO_Gallery_22 from '../img/series/MightyOnes/inner/gallery/YAR109_GumWadA_RUF_v003_BA.jpg';
+import TMO_Gallery_23 from '../img/series/MightyOnes/inner/gallery/YAR109_Mushroom_RUF_v004_BA.jpg';
+import TMO_Gallery_24 from '../img/series/MightyOnes/inner/gallery/YAR109_OldBug_RUF_v004_BA.jpg';
+import TMO_Gallery_25 from '../img/series/MightyOnes/inner/gallery/YAR109_RocksyBerryFaceHug_RUF_v003_BA.jpg';
+import TMO_Gallery_26 from '../img/series/MightyOnes/inner/gallery/YAR109_RocksyBerryHoldingHands_RUF_v003_BA.jpg';
+import TMO_Gallery_27 from '../img/series/MightyOnes/inner/gallery/YAR109_RocksyBerryHoldingHandsAngle_RUF_v003_BA.jpg';
+import TMO_Gallery_28 from '../img/series/MightyOnes/inner/gallery/YAR109_RocksyBerrySmileCU_RUF_v003_BA.jpg';
+import TMO_Gallery_29 from '../img/series/MightyOnes/inner/gallery/YAR109_RocksyBerryTwigBacks_RUF_v004_BA.jpg';
+import TMO_Gallery_30 from '../img/series/MightyOnes/inner/gallery/YAR109_RocksyBerryWadOpenMouth_RUF_v003_BA.jpg';
+import TMO_Gallery_31 from '../img/series/MightyOnes/inner/gallery/YAR109_RocksyExcited_RUF_v003_BA.jpg';
+import TMO_Gallery_32 from '../img/series/MightyOnes/inner/gallery/YAR109_TeenyBug_RUF_v005_BA.jpg';
+import TMO_Gallery_33 from '../img/series/MightyOnes/inner/gallery/YAR109_Thingsy_RUF_v003_BA.jpg';
+import TMO_Gallery_34 from '../img/series/MightyOnes/inner/gallery/YAR109_TwigAgainstSprouts_RUF_v004_BA.jpg';
+import TMO_Gallery_35 from '../img/series/MightyOnes/inner/gallery/YAR109_TwigBerryRocksyInAwe_RUF_v004_BA.jpg';
+import TMO_Gallery_36 from '../img/series/MightyOnes/inner/gallery/YAR109_TwigBlowingBubble_RUF_v003_BA.jpg';
+import TMO_Gallery_37 from '../img/series/MightyOnes/inner/gallery/YAR109_TwigBlurryHands_RUF_v003_BA.jpg';
+import TMO_Gallery_38 from '../img/series/MightyOnes/inner/gallery/YAR109_TwigHandsCU_RUF_v003_BA.jpg';
+import TMO_Gallery_39 from '../img/series/MightyOnes/inner/gallery/YAR109_TwigNotAmused_RUF_v002_BA.jpg';
 // SHE-RA AND THE PRINCESS OF POWER
 import SHE_Logo from '../img/series/SheRa/logo.png';
 import SHE_Poster from '../img/series/SheRa/poster.jpg';
@@ -88,7 +127,6 @@ import SHE_Item1 from '../img/series/SheRa/inner/items/1.jpg';
 import SHE_Item2 from '../img/series/SheRa/inner/items/2.jpg';
 import SHE_Item3 from '../img/series/SheRa/inner/items/3.jpg';
 import SHE_Gallery from '../img/series/SheRa/inner/gallery/poster.jpg';
-
 import SHE_Gallery_1 from "../img/series/SheRa/inner/gallery/stills/PerfumaFrostaAdoraScorpiaBow.jpg";
 import SHE_Gallery_2 from "../img/series/SheRa/inner/gallery/stills/SHE_PD215_01111702_RGB.jpg";
 import SHE_Gallery_3 from "../img/series/SheRa/inner/gallery/stills/SHE_PD216_01011919_RGB.jpg";
@@ -519,7 +557,45 @@ export const projects = [
 				"title": "Art Gallery",
 				"btnText": "View Now",
 				"images": [
-					""
+					TMO_Gallery_1,
+					TMO_Gallery_2,
+					TMO_Gallery_3,
+					TMO_Gallery_4,
+					TMO_Gallery_5,
+					TMO_Gallery_6,
+					TMO_Gallery_7,
+					TMO_Gallery_8,
+					TMO_Gallery_9,
+					// TMO_Gallery_10,
+					TMO_Gallery_11,
+					TMO_Gallery_12,
+					TMO_Gallery_13,
+					TMO_Gallery_14,
+					TMO_Gallery_15,
+					TMO_Gallery_16,
+					TMO_Gallery_17,
+					TMO_Gallery_18,
+					TMO_Gallery_19,
+					TMO_Gallery_20,
+					TMO_Gallery_21,
+					TMO_Gallery_22,
+					TMO_Gallery_23,
+					TMO_Gallery_24,
+					TMO_Gallery_25,
+					TMO_Gallery_26,
+					TMO_Gallery_27,
+					TMO_Gallery_28,
+					TMO_Gallery_29,
+					TMO_Gallery_30,
+					TMO_Gallery_31,
+					TMO_Gallery_32,
+					TMO_Gallery_33,
+					TMO_Gallery_34,
+					TMO_Gallery_35,
+					TMO_Gallery_36,
+					TMO_Gallery_37,
+					TMO_Gallery_38,
+					TMO_Gallery_39
 				]
 			}
 		}

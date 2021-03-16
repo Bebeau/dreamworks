@@ -1,13 +1,12 @@
 import React from 'react';
 
+import {projects} from '../assets/data/projectData.js';
+
 import Header from './header.js';
 import Footer from './footer.js';
 
-import {projects} from '../assets/data/projectData.js';
-
 import Inner from './single.js';
 import Gallery from './gallery.js';
-
 import Hero from '../assets/img/mainHero.jpg';
 
 class Homepage extends React.Component {
@@ -314,8 +313,8 @@ class Homepage extends React.Component {
               return (
                 <div className="project" key={data.id} data-id={data.id} onClick={this.onTemplateOpen}>
                   <article>
-                    <img className="poster" src={data.poster} alt={data.name} />
-                    <img className="logo" src={data.logo} alt={data.name} />
+                    <img rel="preload" className="poster" src={data.poster} alt={data.name} />
+                    <img rel="preload" className="logo" src={data.logo} alt={data.name} />
                   </article>
                 </div>
               );
