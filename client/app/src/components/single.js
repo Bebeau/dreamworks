@@ -87,7 +87,7 @@ class inner extends React.Component{
             {this.props.items ? (
               this.props.items.map((data, key) => {
                 return (
-                  <button key={key} className="item" data-video={data.video} onClick={this.props.modalActive}>
+                  <button key={key} className="item" data-link={data.link} data-video={data.video} onClick={this.props.modalActive}>
                     <div className="itemThumb">
                       <img src={data.poster} alt="" />
                       <i className="play" style={{backgroundImage: `url(${playIcon})`}}></i>

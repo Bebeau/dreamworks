@@ -26,6 +26,7 @@ class Homepage extends React.Component {
     this.hideModal = this.hideModal.bind(this);
     this.changeSlide = this.changeSlide.bind(this);
     this.backTrigger = this.backTrigger.bind(this);
+    this.bannerAnchor = this.bannerAnchor.bind(this);
   }
   componentDidCatch(error, errorInfo) {
     // Catch errors in any components below and re-render with error message
@@ -250,6 +251,9 @@ class Homepage extends React.Component {
       activeImage: index
     })
   }
+  bannerAnchor() {
+    document.getElementById('projectListing').scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+  }
   render() {
     const {
       layout,
@@ -265,7 +269,8 @@ class Homepage extends React.Component {
       gallery,
       modalActive,
       galleryImages,
-      activeImage
+      activeImage,
+      clicked
     } = this.state;
     if (this.state.errorInfo) {
       // Error path
@@ -306,7 +311,7 @@ class Homepage extends React.Component {
           modalActive={this.showModal}
         />
         <div id="homePage">
-          <div className="mainBanner" style={{backgroundImage: `url(${Hero})`}}>
+          <div className="mainBanner" style={{backgroundImage: `url(${Hero})`}} onClick={this.bannerAnchor}>
           </div>
           <div id="projectListing">
             {projects.map((data, key) => {
@@ -321,7 +326,9 @@ class Homepage extends React.Component {
             })}
           </div>
         </div>
-        <Footer />
+        <Footer
+          disabled={clicked}
+        />
       </div>
     );
   }

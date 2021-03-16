@@ -11,7 +11,7 @@ $text: #6F6F6F;
 }
 @font-face {
   font-family: gothamMedium;
-  src: url("../fonts/gotham/Gotham-Medium.ttf");
+  src: url("../fonts/gotham/Gotham-Medium.otf");
 }
 @font-face {
   font-family: gothamLight;
@@ -111,6 +111,7 @@ footer {
 	justify-content: center;
 	margin: 0 auto;
 	padding: 20px;
+	font-family: gothamMedium;
 	button,
 	span {
 		margin: 20px 0;
@@ -119,6 +120,7 @@ footer {
 		letter-spacing: 0.5px;
 		color: $primary;
 		text-align: center;
+		font-family: gothamMedium;
 	}
 	button {
 		border: none;
@@ -126,6 +128,15 @@ footer {
 		font-weight: bolder;
 		font-size: 0.8rem;
 		letter-spacing: 1px;
+		&.disabled {
+			color: #6F6F6F;
+			cursor: not-allowed;
+				pointer-events: all !important;
+		}
+		&:hover {
+			color: #6F6F6F;
+			transition: all 0.3s ease-in-out;
+		}
 	}
 }
 #pageWrap {
@@ -313,6 +324,7 @@ footer {
 		span {
 			margin: 0 20px;
 			font-size: 0.6rem;
+			transition: all 0.3s ease-in-out;
 		}
 	}
 }
