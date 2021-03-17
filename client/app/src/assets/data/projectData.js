@@ -52,38 +52,38 @@ import KIPO_Consideration_3 from "../img/series/Kipo_AW/inner/gallery/considerat
 import KIPO_Consideration_4 from "../img/series/Kipo_AW/inner/gallery/consideration/Surface-Stairs_Art-by-Angela-Sung.jpg";
 import KIPO_Consideration_5 from "../img/series/Kipo_AW/inner/gallery/consideration/Surface-Waterfall_Art-by-Angela-Sung.jpg";
 import KIPO_Gallery from '../img/series/Kipo_AW/inner/gallery/poster.jpg';
-import KIPO_Gallery_1 from '../img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_01.jpg';
-import KIPO_Gallery_2 from '../img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_02.jpg';
-import KIPO_Gallery_3 from '../img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_03.jpg';
-import KIPO_Gallery_4 from '../img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_04.jpg';
-import KIPO_Gallery_5 from '../img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_05.jpg';
-import KIPO_Gallery_6 from '../img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_06.jpg';
-import KIPO_Gallery_7 from '../img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_07.jpg';
-import KIPO_Gallery_8 from '../img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_08.jpg';
-import KIPO_Gallery_9 from '../img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_09.jpg';
-import KIPO_Gallery_10 from '../img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_10.jpg';
-import KIPO_Gallery_11 from '../img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_11.jpg';
-import KIPO_Gallery_12 from '../img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_12.jpg';
-import KIPO_Gallery_13 from '../img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_13.jpg';
-import KIPO_Gallery_14 from '../img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_14.jpg';
-import KIPO_Gallery_15 from '../img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_15.jpg';
-import KIPO_Gallery_16 from '../img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_16.jpg';
-import KIPO_Gallery_17 from '../img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_17.jpg';
-import KIPO_Gallery_18 from '../img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_18.jpg';
-import KIPO_Gallery_19 from '../img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_19.jpg';
-import KIPO_Gallery_20 from '../img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_20.jpg';
-import KIPO_Gallery_21 from '../img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_21.jpg';
-import KIPO_Gallery_22 from '../img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_22.jpg';
-import KIPO_Gallery_23 from '../img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_23.jpg';
-import KIPO_Gallery_24 from '../img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_24.jpg';
-import KIPO_Gallery_25 from '../img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_25.jpg';
-import KIPO_Gallery_26 from '../img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_26.jpg';
-import KIPO_Gallery_27 from '../img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_27.jpg';
-import KIPO_Gallery_28 from '../img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_28.jpg';
-import KIPO_Gallery_29 from '../img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_29.jpg';
-import KIPO_Gallery_30 from '../img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_30.jpg';
-import KIPO_Gallery_31 from '../img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_31.jpg';
-import KIPO_Gallery_32 from '../img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_32.jpg';
+// import KIPO_Gallery_1 from '../img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_01.jpg';
+// import KIPO_Gallery_2 from '../img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_02.jpg';
+// import KIPO_Gallery_3 from '../img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_03.jpg';
+// import KIPO_Gallery_4 from '../img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_04.jpg';
+// import KIPO_Gallery_5 from '../img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_05.jpg';
+// import KIPO_Gallery_6 from '../img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_06.jpg';
+// import KIPO_Gallery_7 from '../img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_07.jpg';
+// import KIPO_Gallery_8 from '../img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_08.jpg';
+// import KIPO_Gallery_9 from '../img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_09.jpg';
+// import KIPO_Gallery_10 from '../img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_10.jpg';
+// import KIPO_Gallery_11 from '../img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_11.jpg';
+// import KIPO_Gallery_12 from '../img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_12.jpg';
+// import KIPO_Gallery_13 from '../img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_13.jpg';
+// import KIPO_Gallery_14 from '../img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_14.jpg';
+// import KIPO_Gallery_15 from '../img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_15.jpg';
+// import KIPO_Gallery_16 from '../img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_16.jpg';
+// import KIPO_Gallery_17 from '../img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_17.jpg';
+// import KIPO_Gallery_18 from '../img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_18.jpg';
+// import KIPO_Gallery_19 from '../img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_19.jpg';
+// import KIPO_Gallery_20 from '../img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_20.jpg';
+// import KIPO_Gallery_21 from '../img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_21.jpg';
+// import KIPO_Gallery_22 from '../img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_22.jpg';
+// import KIPO_Gallery_23 from '../img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_23.jpg';
+// import KIPO_Gallery_24 from '../img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_24.jpg';
+// import KIPO_Gallery_25 from '../img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_25.jpg';
+// import KIPO_Gallery_26 from '../img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_26.jpg';
+// import KIPO_Gallery_27 from '../img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_27.jpg';
+// import KIPO_Gallery_28 from '../img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_28.jpg';
+// import KIPO_Gallery_29 from '../img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_29.jpg';
+// import KIPO_Gallery_30 from '../img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_30.jpg';
+// import KIPO_Gallery_31 from '../img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_31.jpg';
+// import KIPO_Gallery_32 from '../img/series/Kipo_AW/inner/gallery/comic/Kipo webcomic_Page_32.jpg';
 // JURASSIC WORLD: CAMP CRETACEOUS
 import JW_Logo from '../img/series/JurassicWorld/logo.png';
 import JW_Poster from '../img/series/JurassicWorld/poster.jpg';
@@ -420,40 +420,41 @@ export const projects = [
 				"poster": KIPO_Gallery,
 				"title": "Digital Comic",
 				"btnText": "View Now",
-				"images": [
-					KIPO_Gallery_1,
-					KIPO_Gallery_2,
-					KIPO_Gallery_3,
-					KIPO_Gallery_4,
-					KIPO_Gallery_5,
-					KIPO_Gallery_6,
-					KIPO_Gallery_7,
-					KIPO_Gallery_8,
-					KIPO_Gallery_9,
-					KIPO_Gallery_10,
-					KIPO_Gallery_11,
-					KIPO_Gallery_12,
-					KIPO_Gallery_13,
-					KIPO_Gallery_14,
-					KIPO_Gallery_15,
-					KIPO_Gallery_16,
-					KIPO_Gallery_17,
-					KIPO_Gallery_18,
-					KIPO_Gallery_19,
-					KIPO_Gallery_20,
-					KIPO_Gallery_21,
-					KIPO_Gallery_22,
-					KIPO_Gallery_23,
-					KIPO_Gallery_24,
-					KIPO_Gallery_25,
-					KIPO_Gallery_26,
-					KIPO_Gallery_27,
-					KIPO_Gallery_28,
-					KIPO_Gallery_29,
-					KIPO_Gallery_30,
-					KIPO_Gallery_31,
-					KIPO_Gallery_32
-				]
+				"link": "http://dreamworksfyc.cia-adv.com/KipoWebComic.pdf"
+				// "images": [
+				// 	KIPO_Gallery_1,
+				// 	KIPO_Gallery_2,
+				// 	KIPO_Gallery_3,
+				// 	KIPO_Gallery_4,
+				// 	KIPO_Gallery_5,
+				// 	KIPO_Gallery_6,
+				// 	KIPO_Gallery_7,
+				// 	KIPO_Gallery_8,
+				// 	KIPO_Gallery_9,
+				// 	KIPO_Gallery_10,
+				// 	KIPO_Gallery_11,
+				// 	KIPO_Gallery_12,
+				// 	KIPO_Gallery_13,
+				// 	KIPO_Gallery_14,
+				// 	KIPO_Gallery_15,
+				// 	KIPO_Gallery_16,
+				// 	KIPO_Gallery_17,
+				// 	KIPO_Gallery_18,
+				// 	KIPO_Gallery_19,
+				// 	KIPO_Gallery_20,
+				// 	KIPO_Gallery_21,
+				// 	KIPO_Gallery_22,
+				// 	KIPO_Gallery_23,
+				// 	KIPO_Gallery_24,
+				// 	KIPO_Gallery_25,
+				// 	KIPO_Gallery_26,
+				// 	KIPO_Gallery_27,
+				// 	KIPO_Gallery_28,
+				// 	KIPO_Gallery_29,
+				// 	KIPO_Gallery_30,
+				// 	KIPO_Gallery_31,
+				// 	KIPO_Gallery_32
+				// ]
 			}
 		}
 	},

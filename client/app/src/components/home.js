@@ -42,6 +42,7 @@ class Homepage extends React.Component {
       projects.forEach((data, key) => {
         if(data.slug === slug) {
           this.setState({
+            slug: data.slug,
             layout: data.layout,
             logo: data.logo,
             hero: data.inner.hero,
@@ -90,6 +91,7 @@ class Homepage extends React.Component {
       projects.forEach((data, key) => {
         if(data.slug === slug) {
           this.setState({
+            slug: data.slug,
             layout: data.layout,
             logo: data.logo,
             hero: data.inner.hero,
@@ -123,6 +125,7 @@ class Homepage extends React.Component {
       // if match, set data and show inner view
       if(key === parseInt(id)) {
         this.setState({
+          slug: data.slug,
           layout: data.layout,
           logo: data.logo,
           hero: data.inner.hero,
@@ -197,6 +200,11 @@ class Homepage extends React.Component {
       }
     }
     if(e.target.closest(".innerGallery") && !e.target.closest(".innerGallery").classList.contains('video')) {
+      if(e.target.hasAttribute('data-link')) {
+        let articleLink = e.target.getAttribute("data-link");
+        window.open(articleLink);
+        return;
+      }
       this.setState({
         galleryImages: this.state.gallery.images
       });
@@ -256,6 +264,7 @@ class Homepage extends React.Component {
   }
   render() {
     const {
+      slug,
       layout,
       logo,
       hero,
@@ -296,6 +305,7 @@ class Homepage extends React.Component {
         </section>
         <Header onClick={this.onTemplateClose} />
         <Inner
+          slug={slug}
           layout={layout}
           logo={logo}
           hero={hero}

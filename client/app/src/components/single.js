@@ -35,7 +35,7 @@ class inner extends React.Component{
       );
     }
     return (
-    	<div id="innerPageTemplate">
+    	<div id="innerPageTemplate" className={this.props.slug}>
 
         <section className="innerHero">
 
@@ -206,7 +206,7 @@ class inner extends React.Component{
               <article className="innerGallery" style={{backgroundImage: `url(${this.props.gallery.poster})`}}>
                 <div className="galleryInfo">
                   <h3>{this.props.gallery.title}</h3>
-                  <button className="btn" onClick={this.props.modalActive}>{this.props.gallery.btnText}</button>
+                  <button className="btn" data-link={this.props.gallery.link} onClick={this.props.modalActive}>{this.props.gallery.btnText}</button>
                 </div>
               </article>
             ): null }

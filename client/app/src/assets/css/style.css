@@ -49,6 +49,9 @@ header {
   background: #092e6e;
   position: sticky;
   top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
   z-index: 999;
   box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.16); }
   header svg {
@@ -382,9 +385,12 @@ footer {
       max-width: 100%;
       font-size: 0.5rem;
       letter-spacing: 0.5px;
-      color: #9D9D9D;
+      color: white;
       padding: 20px;
       text-align: center; }
+
+.epic-tales-of-captain-underpants .innerHero article.heroImage .copyright {
+  color: #6F6F6F; }
 
 .item {
   width: 100%;
