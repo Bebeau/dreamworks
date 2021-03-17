@@ -662,7 +662,7 @@ export const projects = [
 				{
 					"video": "https://www.youtube.com/embed/7EOGP0zDl1M?autoplay=1",
 					"poster": SHE_Item1,
-					"title": "Series Trailer",
+					"title": "She-Ra and the Princesses of Power Final Season Featurette",
 					"description": "Last year, fans saw She-Ra come to an epic conclusion. The cast and crew reflect on their journey."
 				},
 				{

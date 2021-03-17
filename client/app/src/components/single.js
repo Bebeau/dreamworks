@@ -90,7 +90,9 @@ class inner extends React.Component{
                   <button key={key} className="item" data-link={data.link} data-video={data.video} onClick={this.props.modalActive}>
                     <div className="itemThumb">
                       <img src={data.poster} alt="" />
-                      <i className="play" style={{backgroundImage: `url(${playIcon})`}}></i>
+                      {!data.link ? ( 
+                        <i className="play" style={{backgroundImage: `url(${playIcon})`}}></i>
+                      ) : null }
                     </div>
                     <h3>{data.title}</h3>
                     <p>{data.description}</p>
