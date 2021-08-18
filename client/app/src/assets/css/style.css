@@ -234,7 +234,7 @@ footer {
   width: 100%;
   padding-top: 56.25%;
   position: relative;
-  transform: scale(0.7); }
+  transform: scale(1); }
   #innerModal #videoRatioWrap iframe {
     width: 100%;
     height: 100%;
@@ -281,7 +281,9 @@ footer {
     footer span {
       margin: 0 20px;
       font-size: 0.6rem;
-      transition: all 0.3s ease-in-out; } }
+      transition: all 0.3s ease-in-out; }
+  #innerModal #videoRatioWrap {
+    transform: scale(0.7); } }
 
 @media (min-width: 812px) {
   .mainBanner .play {

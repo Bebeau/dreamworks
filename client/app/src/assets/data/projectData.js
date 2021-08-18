@@ -268,7 +268,7 @@ export const projects = [
 		"inner": {
 			"hero": TOA_Hero,
 			"copyright": "Dreamworks Tales of Arcadia © 2020 Dreamworks Animation LLC. All Rights Reserved.",
-			"description": "From Academy Award®-winning filmmaker Guillermo del Toro and the seven-time Emmy® Award-winning team behind Trollhunters comes DreamWorks Tales of Arcadia: Wizards, the final chapter in the Tales of Arcadia trilogy. Wizard-in-training Douxie and the heroes of Arcadia embark on a time-bending adventure to medieval Camelot, culminating in an apocalyptic battle for the control of magic that will determine the fate of the universe.",
+			"description": "From Academy Award®-winning filmmaker Guillermo del Toro and the seven-time Emmy® Award-winning team behind Trollhunters comes Dreamworks Tales of Arcadia: Wizards, the final chapter in the Tales of Arcadia trilogy. Wizard-in-training Douxie and the heroes of Arcadia embark on a time-bending adventure to medieval Camelot, culminating in an apocalyptic battle for the control of magic that will determine the fate of the universe.",
 			"credits": [
 				{
 					"label": "Creator and Executive Producer",
@@ -277,6 +277,10 @@ export const projects = [
 				{
 					"label": "Executive Producers",
 					"person": "Marc Guggenheim, Chad Hammes"
+				},
+				{
+					"label": "Co-Executive Producers",
+					"person": "Aaron Waltke and Chad Quandt"
 				}
 			],
 			"streaming": [
@@ -303,7 +307,7 @@ export const projects = [
 					"video": "https://www.youtube.com/embed/MJwUC3shv0g?autoplay=1",
 					"poster": TOA_Item3,
 					"title": "Three Wizards Fight",
-					"description": "When Douxie, Merlin and Morgana finally face off, its a stunning combination of feature quality FX and incredible character animation that brings this magical fight sequence to life."
+					"description": "When Douxie, Merlin and Morgana finally face off, it's a stunning combination of feature quality FX and incredible character animation that brings this magical fight sequence to life."
 				}
 			],
 			"consideration": {
@@ -358,7 +362,7 @@ export const projects = [
 		"poster": KIPO_Poster,
 		"inner": {
 			"hero": KIPO_Hero,
-			"copyright": "Dreamworks Kipo and the Age of Wonderbeast © 2019 Dreamworks Animation LLC. All Rights Reserved.",
+			"copyright": "Dreamworks Kipo and the Age of Wonderbeasts © 2019 Dreamworks Animation LLC. All Rights Reserved.",
 			"description": "After spending her entire life living in an underground burrow, a young girl named Kipo is thrust into an adventure on the surface of a fantastical post-apocalyptic Earth. She joins a ragtag group of survivors as they embark on a journey through a vibrant wonderland where everything trying to kill them is downright adorable.",
 			"credits": [
 				{
@@ -366,7 +370,7 @@ export const projects = [
 					"person": "Radford Sechrist"
 				},
 				{
-					"label": "Developed for TV & Executive Produced by",
+					"label": "Developed for Television & Executive Produced by",
 					"person": "Bill Wolkoff"
 				}
 			],
@@ -382,13 +386,13 @@ export const projects = [
 					"video": "https://www.youtube.com/embed/25UHUbpFTtY?autoplay=1",
 					"poster": KIPO_Item1,
 					"title": "Series Trailer",
-					"description": "Take a ride through the post-apoclyptic wonderland of Kipo and the Age of Wonderbeasts."
+					"description": "Take a ride through the post-apocalyptic wonderland of Kipo and the Age of Wonderbeasts."
 				},
 				{
 					"video": "https://www.youtube.com/embed/XqLpxBOyQf0?autoplay=1",
 					"poster": KIPO_Item2,
 					"title": "LGBTQ Representation Matters",
-					"description": "Kipo and the Age of Wonderbeasts featured the first time a character in a kids animated series said the words I'm gay."
+					"description": "Kipo and the Age of Wonderbeasts featured the first time a character in a kids animated series said the words \"I'm gay.\""
 				},
 				{
 					"video": "https://www.youtube.com/embed/ZCWqen4Q8nY?autoplay=1",
@@ -468,7 +472,7 @@ export const projects = [
 		"poster": JW_Poster,
 		"inner": {
 			"hero": JW_Hero,
-			"copyright": "Jurrasic World Franchise © 2020 Universal City Studios LLC and Amblin Entertainment INC. Series © 2020 Dreamworks Animation LLC. All Rights Reserved.",
+			"copyright": "Jurassic World Franchise © 2020 Universal City Studios LLC and Amblin Entertainment INC. Series © 2020 Dreamworks Animation LLC. All Rights Reserved.",
 			"description": "Set against the timeline of the blockbuster film Jurassic World, Jurassic World: Camp Cretaceous follows a group of six teenagers chosen for a once-in-a-lifetime experience at a new adventure camp on the opposite side of Isla Nublar.  When dinosaurs wreak havoc across the island, the campers are unable to reach the outside world and will quickly go from strangers to friends to family as they band together to survive.",
 			"credits": [
 				{
@@ -488,7 +492,7 @@ export const projects = [
 					"video": "https://www.youtube.com/embed/bUOpbuNgL4w?autoplay=1",
 					"poster": JW_Item1,
 					"title": "Series Trailer",
-					"description": "Jurassic World Camp Cretaceous opens up the world of Isla Nublar like never before."
+					"description": "Jurassic World: Camp Cretaceous opens up the world of Isla Nublar like never before."
 				},
 				{
 					"video": "https://www.youtube.com/embed/EwaCQn1QVM0?autoplay=1",
@@ -507,12 +511,12 @@ export const projects = [
 				"video": "https://www.youtube.com/embed/MPRlKqLn7AM?autoplay=1",
 				"poster": JW_Bonus,
 				"title": "Visual Effects in Jurassic World",
-				"description": "Custom jungle lighting, underground bioluminescent rivers and a giant mosasaurus lagoon are just a few of environments that the incredible FX team created."
+				"description": "Custom jungle lighting, underground bioluminescent rivers and a giant mosasaurus lagoon are just a few of the environments that the incredible FX team created."
 			},
 			"consideration": {
 				"poster": JW_Consideration,
 				"title": "Production Design by Christophe Vacher",
-				"description": "Stunning locales, rich colors and lush environments bring Isla Nublar to life in the first ever Jurassic World animated series.",
+				"description": "Stunning locales, rich colors and lush environments bring Isla Nublar to life in the first-ever Jurassic World animated series.",
 				"btnText": "View Now",
 				"images": [
 					JW_Consideration_1,
@@ -540,7 +544,7 @@ export const projects = [
 		"inner": {
 			"hero": TMO_Hero,
 			"copyright": "Dreamworks The Mighty Ones © 2020 Dreamworks Animation LLC. All Rights Reserved.",
-			"description": "In every backyard a secret world exists filled with tiny creatures.The Mighty Ones follows the hilarious adventures of the smallest of them: a twig, a pebble, a leaf and a strawberry who call themselves “the Mighty Ones.”  These best friends live in an unkempt backyard belonging to a trio of equally unkempt humans who they mistake for gods. Despite their diminutive stature, The Mighty Ones are determined to live large and have fun in their wild world.",
+			"description": "In every backyard a secret world exists filled with tiny creatures. The Mighty Ones follows the hilarious adventures of the smallest of them: a twig, a pebble, a leaf and a strawberry who call themselves “the Mighty Ones.” These best friends live in an unkempt backyard belonging to a trio of equally unkempt humans who they mistake for gods. Despite their diminutive stature, The Mighty Ones are determined to live large and have fun in their wild world.",
 			"credits": [
 				{
 					"label": "Creators and Executive Producers",
@@ -644,7 +648,7 @@ export const projects = [
 		"inner": {
 			"hero": SHE_Hero,
 			"copyright": "SHE-RA and associated trademarks and character copyrights are owned by and used under license from Mattel, Inc. Under license to Classic Media.",
-			"description": "A reimagining of the ‘80s hit series, She-Ra and the Princesses of Power is the story of an orphan named Adora, who leaves behind her former life in the evil Horde when she discovers a magic sword that transforms her into She-Ra, a mythical warrior princess. When she finds a new surrogate family in the Rebellion she unites a group of magical princesses in the ultimate fight against evil.",
+			"description": "A reimagining of the ’80s hit series, She-Ra and the Princesses of Power is the story of an orphan named Adora, who leaves behind her former life in the evil Horde when she discovers a magic sword that transforms her into She-Ra, a mythical warrior princess. When she finds a new surrogate family in the Rebellion she unites a group of magical princesses in the ultimate fight against evil.",
 			"credits": [
 				{
 					"label": "Executive Producers",
@@ -708,7 +712,7 @@ export const projects = [
 		"poster": FF_Poster,
 		"inner": {
 			"hero": FF_Hero,
-			"copyright": "Fast & Furious and all related elements TM & © 2019 Universal City Studios LLC. TV Series © 2019 DreamWorks Animation LLC. All rights reserved.",
+			"copyright": "Fast & Furious and all related elements TM & © 2019 Universal City Studios LLC. TV Series © 2019 Dreamworks Animation LLC. All rights reserved.",
 			"description": "Teenager Tony Toretto follows in the footsteps of his cousin Dom when he and his friends are recruited by a government agency to infiltrate an elite racing league serving as a front for a nefarious crime organization bent on world domination.",
 			"credits": [
 				{
@@ -717,7 +721,7 @@ export const projects = [
 				},
 				{
 					"label": "Executive Producers",
-					"person": "Vin Diesel, Neal H Moritz, Chris Morgan"
+					"person": "Vin Diesel, Neal H. Moritz, Chris Morgan"
 				}
 			],
 			"streaming": [
@@ -738,13 +742,13 @@ export const projects = [
 					"video": "https://www.youtube.com/embed/5_9m7VgoSOY?autoplay=1",
 					"poster": FF_Item2,
 					"title": "Reimagining Rio",
-					"description": "The Fast team took their high octane races to the streets of Rio in Season 2. Here Tony and Layla navigate the narrow, winding corridors of Rio's favelas in an adrenaline pumping chase."
+					"description": "The Fast team took their high octane races to the streets of Rio in Season 2. Here Tony and Layla navigate the narrow, winding corridors of Rio's favelas in an adrenaline-pumping chase."
 				},
 				{
 					"video": "https://www.youtube.com/embed/90JMgMHflvk?autoplay=1",
 					"poster": FF_Item3,
 					"title": "Lost in the Sahara",
-					"description": "When the Spy Racers head to Africa in season 3, they find themselves in a death-defying race across the dangerous Sahara."
+					"description": "When the Spy Racers head to Africa in Season 3, they find themselves in a death-defying race across the dangerous Sahara."
 				},
 			],
 			"consideration": {
@@ -785,11 +789,11 @@ export const projects = [
 		"inner": {
 			"hero": MAD_Hero,
 			"copyright": "Dreamworks Madagascar © 2020 Dreamworks Animation LLC. All Rights Reserved.",
-			"description": "Loveable foursome Alex the Lion, Marty the Zebra, Melman the Giraffe and Gloria the Hippo steal the show in Madagascar: A Little Wild, from executive producer Johanna Stein and co-excecutive producer Dana Starfield. Capturing the iconic personalities of each of the four dynamos, Madagascar: A Little Wild showcases the team as kids residing in their rescue habitat at the Central Park Zoo. They might be small, but like everybody who lands in New York City, these little guys have big dreams and Madagascar: A Little Wild will follow all of their adventures.",
+			"description": "Lovable foursome Alex the Lion, Marty the Zebra, Melman the Giraffe and Gloria the Hippo steal the show in Madagascar: A Little Wild, from executive producer Johanna Stein and co-excecutive producer Dana Starfield. Capturing the iconic personalities of each of the four dynamos, Madagascar: A Little Wild showcases the team as kids residing in their rescue habitat at the Central Park Zoo. They might be small, but like everybody who lands in New York City, these little guys have big dreams and Madagascar: A Little Wild will follow all of their adventures.",
 			"credits": [
 				{
 					"label": "Executive Producer",
-					"person": "Joanna Stein"
+					"person": "Johanna Stein"
 				}
 			],
 			"streaming": [
@@ -809,19 +813,19 @@ export const projects = [
 					"video": "https://www.youtube.com/embed/nBi9xnUfeAw?autoplay=1",
 					"poster": MAD_Item1,
 					"title": "Series Trailer",
-					"description": "The lovable Zoo Crew is back as their younger selves, living out big dream in the big city."
+					"description": "The lovable Zoo Crew is back as their younger selves, living out big dreams in the big city."
 				},
 				{
 					"video": "https://www.youtube.com/embed/G3fy2metCRM?autoplay=1",
 					"poster": MAD_Item2,
 					"title": "Disability Representation Matters",
-					"description": "Madagascar: A Little Wild features a diverse cast of characters, including Dave and Pickles, a chimp who is deaf and his sister speaks and translates ASL to the other animals."
+					"description": "Madagascar: A Little Wild features a diverse cast of characters, including Dave and Pickles, a chimp who is deaf and his sister who speaks and translates ASL to the other animals."
 				},
 				{
 					"video": "https://www.youtube.com/embed/nKHdtp7Znbc?autoplay=1",
 					"poster": MAD_Item3,
 					"title": "Best Original Song - Shine",
-					"description": "When Gloria’s faith in her dancing is tested, she learns that she doesn’t need someone else to decide that she’s a prima hippo-rina! Twirl along to 'Shine', written by the incredible Alana D and Jordan Yaeger, who have filled the world of Madagascar with incredible original songs in every episode."
+					"description": "When Gloria’s faith in her dancing is tested, she learns that she doesn’t need someone else to decide that she’s a prima hippo-rina! Twirl along to \"Shine\", written by the incredible Alana D and Jordan Yaeger, who have filled the world of Madagascar with incredible original songs in every episode."
 				},
 			]
 		}
@@ -844,7 +848,7 @@ export const projects = [
 					"person": "Tony Hale"
 				},
 				{
-					"label": "Executive Producer: ",
+					"label": "Executive Producer",
 					"person": "Eric Fogel"
 				}
 			],
@@ -923,7 +927,7 @@ export const projects = [
 		"inner": {
 			"hero": CU_Hero,
 			"copyright": "Dreamworks Captain Underpants © 2020 Dreamworks Animation LLC. All Rights Reserved.",
-			"description": "The team behind Epic Tales of Captain Underpants had an equally epic year, breaking format and rolling out three distinct special productions for fans on Netflix: the Epic Choice-O-Rama interactive special, Captain Underpants in Space and Captain Underpants: Mega Blissmas.  Whether George and Harold and friends were launched into space, putting their own spin on the Christmas holiday or letting the viewer make the choices that would hopefully save their treehouse, The Epic Tale of Captain Underpants never fails to capture the creativity and imagination of Dav Pilkey's best selling books.",
+			"description": "The team behind The Epic Tales of Captain Underpants had an equally epic year, breaking format and rolling out three distinct special productions for fans on Netflix: the Epic Choice-O-Rama interactive special, Captain Underpants in Space and Captain Underpants: Mega Blissmas. Whether George and Harold and friends were launched into space, putting their own spin on the Christmas holiday or letting the viewer make the choices that would hopefully save their treehouse, The Epic Tales of Captain Underpants never fails to capture the creativity and imagination of Dav Pilkey's best-selling books.",
 			"credits": [
 				{
 					"label": "Executive Producer",
@@ -970,10 +974,10 @@ export const projects = [
 		"inner": {
 			"hero": DU_Hero,
 			"copyright": "Dreamworks Doug Unplugs © 2020 Dreamworks Animation LLC. All Rights Reserved.",
-			"description": "Based on the critically acclaimed children’s book by Dan Yaccarino, DreamWorks Doug Unplugs follows a curious six-year-old robot, Doug, as he ‘plugs in’ to learn new facts about the world every day. Sensing there’s more to life than just the facts, Doug journeys into the human world in search of experience. And to do that, Doug has to...unplug. With the help of his best friend, a human ball of energy, Emma, the two discover all the simple wonders of the world. Join Doug as he learns about the intersection of technology and humanity, and how they both keep us truly connected!",
+			"description": "Based on the critically acclaimed children’s book by Dan Yaccarino, Dreamworks' Doug Unplugs follows a curious six-year-old robot, Doug, as he ‘plugs in’ to learn new facts about the world every day. Sensing there’s more to life than just the facts, Doug journeys into the human world in search of experience. And to do that, Doug has to...unplug. With the help of his best friend, a human ball of energy, Emma, the two discover all the simple wonders of the world. Join Doug as he learns about the intersection of technology and humanity, and how they both keep us truly connected!",
 			"credits": [
 				{
-					"label": "Executive Producer",
+					"label": "Executive Producers",
 					"person": "Aliki Theofilopoulos and Jim Nolan"
 				}
 			],
@@ -1017,7 +1021,7 @@ export const projects = [
 		"inner": {
 			"hero": DRR_Hero,
 			"copyright": "Dreamworks Dragons © 2019 Dreamworks Animation LLC. All Rights Reserved.",
-			"description": "In a faraway corner of the viking and dragon world, viking twins Dak and Leyla were rescued and raised by dragons, growing up learning to speak their language. In addition to a full season of episodes, the Dragons Rescue Riders team also debuted two incredible special productions. The first, Hunt for the Golden Dragon, sets the young Rescue Riders off an adventure to save the precious Golden Dragon. And the Secret of the Songwing was a music-filled special that found the people of Huttsgalor transfixed by the Songwing dragon's harmonic hypnosis.",
+			"description": "In a faraway corner of the viking and dragon world, viking twins Dak and Leyla were rescued and raised by dragons, growing up learning to speak their language. In addition to a full season of episodes, the Dragons Rescue Riders team also debuted two incredible special productions. The first, Hunt for the Golden Dragon, sets the young Rescue Riders off on an adventure to save the precious Golden Dragon. And the Secret of the Songwing was a music-filled special that found the people of Huttsgalor transfixed by the Songwing dragon's harmonic hypnosis.",
 			"credits": [
 				{
 					"label": "Executive Producer",
@@ -1068,7 +1072,7 @@ export const projects = [
 		"inner": {
 			"hero": RTT_Hero,
 			"copyright": "Dreamworks Rhyme Time Town © 2020 Dreamworks Animation LLC. All Rights Reserved.",
-			"description": "All aboard to DreamWorks Rhyme Time Town, where Daisy the Puppy and Cole the Kitten are ready to guide young children through a colorful and adventurous world filled with nursery rhymes and imaginative play.",
+			"description": "All aboard to Dreamworks' Rhyme Time Town, where Daisy the Puppy and Cole the Kitten are ready to guide young children through a colorful and adventurous world filled with nursery rhymes and imaginative play.",
 			"credits": [
 				{
 					"label": "Executive Producer",
@@ -1091,7 +1095,7 @@ export const projects = [
 					"video": "https://www.youtube.com/embed/TEe-Fn-XZY8?autoplay=1",
 					"poster": RTT_Item1,
 					"title": "Series Trailer",
-					"description": "Join Daisy the puppy and Cole the kitten in a colorful world of nursery rhymes and imagination."
+					"description": "Join Daisy the Puppy and Cole the Kitten in a colorful world of nursery rhymes and imagination."
 				},
 				{
 					"video": "https://www.youtube.com/embed/2h4Kd-ay0IE?autoplay=1",
@@ -1164,7 +1168,7 @@ export const projects = [
 		"inner": {
 			"hero": TROLL_Hero,
 			"copyright": "Dreamworks Trolls © 2020 Dreamworks Animation LLC. All Rights Reserved.",
-			"description": "Inspired by the beloved DreamWorks Animation films, TrollsTopia is the next chapter in the hair-raising adventures of the trolls. Now that Poppy knows there are other musical trolls scattered throughout the forest, she bottles up her endless positivity and invites delegates from every troll tribe in the forest to live together in harmony in a grand experiment she calls TrollsTopia!",
+			"description": "Inspired by the beloved Dreamworks Animation films, TrollsTopia is the next chapter in the hair-raising adventures of the trolls. Now that Poppy knows there are other musical trolls scattered throughout the forest, she bottles up her endless positivity and invites delegates from every troll tribe in the forest to live together in harmony in a grand experiment she calls TrollsTopia!",
 			"credits": [
 				{
 					"label": "Executive Producer",
@@ -1199,8 +1203,8 @@ export const projects = [
 				{
 					"video": "https://www.youtube.com/embed/FOd2Zgz1vtE?autoplay=1",
 					"poster": TROLL_Item3,
-					"title": "Conversations with Creators",
-					"description": "Executive producer Matt Beans talks about expanding the world of Trollstopia."
+					"title": "Conversations with Creator",
+					"description": "Executive producer Matt Beans talks about expanding the world of TrollsTopia."
 				}
 			]
 		}

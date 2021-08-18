@@ -145,7 +145,7 @@ class Homepage extends React.Component {
         window.scrollTo({ top: 0 });
         // update url path
         // console.log(window.history.state);
-        window.history.pushState('', data.name, data.slug);
+        // window.history.pushState('', data.name, data.slug);
         // window.history.replaceState({}, data.name, data.slug);
       }
     });
@@ -163,7 +163,7 @@ class Homepage extends React.Component {
     document.getElementById('innerPageTemplate').scrollTo({ top: 0, behavior: 'smooth' });
     // update url path
     // console.log(window.history.state);
-    window.history.pushState({}, "Dreamworks", "/");
+    // window.history.pushState({}, "Dreamworks", "/");
     // window.history.replaceState({}, "Dreamworks", "/");
   }
   showModal(e) {
