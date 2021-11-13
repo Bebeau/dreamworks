@@ -8,7 +8,7 @@
 			background: rgba(9, 46, 110, 0.23);
 			display: flex;
 			flex-direction: column;
-			justify-content: center;
+			justify-content: flex-start;
 			align-items: center;
 			padding: 20px;
 			box-sizing: border-box;
@@ -16,6 +16,7 @@
 			p {
 				color: $primary;
 				margin: 30px 0 20px;
+				line-height: 1.3rem;
 			}
 			.innerStream {
 				margin: 20px 0 0;
@@ -92,6 +93,7 @@
 				color: white;
 				padding: 20px;
 				text-align: center;
+				text-transform: uppercase;
 			}
 		}
 	}
@@ -107,17 +109,27 @@
 		}
 	}
 }
+.madagascar-a-little-wild {
+	.considerationInfo {
+		h5 {
+			display: none;
+		}
+	}
+}
 .item  {
 	width: 100%;
 	border: none;
 	background: none;
-	padding: 0;
+	padding: 20px;
 	box-sizing: border-box;
 	&:active,
 	&:focus {
 		outline: none;
 		border: none;
 		box-shadow: none;
+	}
+	.itemThumb {
+		position: relative;
 	}
 	img {
 		width: 100%;
@@ -128,7 +140,7 @@
 		text-transform: normal;
 	}
 	h3 {
-		font-size: 0.8rem;
+		font-size: 1rem;
 	}
 }
 .innerItems {
@@ -144,16 +156,6 @@
 		width: 100%;
 		font-size: 2rem;
 		margin: 20px 0 10px;
-	}
-}
-.item {
-	width: 100%;
-	padding: 20px;
-	.itemThumb {
-		position: relative;
-	}
-	h3 {
-		font-size: 1rem;
 	}
 }
 .innerConsideration {
@@ -446,7 +448,6 @@
 }
 @media (min-width: 768px) {
 	.projectModal {
-		cursor: url('/assets/img/close.png'), move;
 		#gallery {
 			width: 533px;
 			cursor: auto;
@@ -554,9 +555,7 @@
 					padding: 0 20px 0 0;
 				}
 			}
-			.innerGallery {
-				width: 63%;
-			}
+
 		}
 		&.third {
 			flex-direction: row;
@@ -608,13 +607,13 @@
 		article {
 			&.heroInfo {
 				width: 40%;
-				padding: 20px;
+				padding: 40px;
 				.infoWrap {
 					width: auto;
 					p,
 					cite {
-						font-size: 0.6rem;
-						line-height: 0.8rem;
+						font-size: 0.7rem;
+						line-height: 1rem;
 					}
 					.heroLogo {
 						max-height: 150px;
@@ -656,8 +655,8 @@
 				.infoWrap {
 					p,
 					cite {
-						font-size: 0.7rem;
-						line-height: 1rem;
+						font-size: 0.75rem;
+						line-height: 1.2rem;
 					}
 					.heroLogo {
 						max-height: 150px;
@@ -677,7 +676,8 @@
 				.infoWrap {
 					p,
 					cite {
-						line-height: 1.1rem;
+						font-size: 0.8rem;
+						line-height: 1.4rem;
 					}
 				}
 			}
@@ -688,16 +688,5 @@
 	.innerHero {
 		width: 1540px;
 		margin: 0 auto;
-		article {
-			&.heroInfo {
-				.infoWrap {
-					p,
-					cite {
-						font-size: 0.8rem;
-						line-height: 1.2rem;
-					}
-				}
-			}
-		}
 	}
 }

@@ -76,33 +76,94 @@ header {
 	.bar {
 		display: flex;
 		justify-content: space-between;
-		padding: 10px 20px;
 		margin: 0 auto;
-		article {
+		position: relative;
+		padding: 0 20px;
+		.left {
+			flex: 0 0 50%;
 			display: flex;
 			justify-content: center;
-			align-items: center;
-			flex-wrap: nowrap;
-			span {
-				white-space: nowrap;
-				font-weight: bolder;
-				text-transform: uppercase;
-				letter-spacing: 3px;
-				font-size: 0.8rem;
-				margin-left: 12px;
-				padding-left: 15px;
-				position: relative;
-				color: white;
-				font-family: "gothamBlack", sans-serif;
-				line-height: 30px;
-				&:before {
-					content:"";
-					position: absolute;
-					left: 0;
-					top: 0;
-					bottom: 0;
-					width: 1px;
+			align-items: flex-start;
+			flex-direction: column;
+			padding: 10px 0;
+			background: rgba(9, 46, 110, 1);
+			z-index: 998;
+		}
+		.right {
+			flex: 0 0 50%;
+			display: flex;
+			justify-content: flex-end;
+			position: relative;
+			padding: 10px 0;
+			background: rgba(9, 46, 110, 1);
+			z-index: 998;
+			.icon {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-wrap: nowrap;
+				background: url('../img/dreamworks_icon.svg') no-repeat scroll center / contain;
+				height: 30px;
+				width: 100px;
+				margin-right: 20px;
+			}
+			nav {
+				display: flex;
+				justify-content: center;
+				flex-direction: column;
+				align-items: center;
+				height: 30px;
+				&:hover {
+					cursor: pointer;
+				}
+				span {
+					width: 30px;
+					height: 2px;
 					background: white;
+					margin: 5px 0;
+					transition: all 0.5s ease-in-out;
+				}
+				&.show {
+					span {
+						transition: all 0.5s ease-in-out;
+						&:first-child {
+							transform: translate(0,6px) rotate(-45deg);
+						}
+						&:last-child {
+							transform: translate(0,-6px) rotate(45deg);
+						}
+					}
+				}
+			}
+		}
+		.navMenu {
+			position: absolute;
+			z-index: 997;
+			top: 50px;
+			right: 0;
+			left: 0;
+			background: rgba(9,46,110, 0.5);
+			backdrop-filter: blur(4px);
+			list-style: none;
+			margin: 0;
+			padding: 0 0 10px;
+			transform: translate(0,-100%);
+			transition: all 0.5s ease-in-out;
+			&.show {
+				transform: translate(0,0);
+				transition: all 0.5s ease-in-out;
+			}
+			li {
+				text-align: left;
+				color: white;
+				font-family: gothamBlack;
+				font-size: 0.8rem;
+				line-height: 28px;
+				padding: 0 22px;
+				text-transform: uppercase;
+				&:hover {
+					background: rgba(9,46,110, 1);
+					cursor: pointer;
 				}
 			}
 		}
@@ -112,9 +173,11 @@ footer {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	align-items: center;
 	margin: 0 auto;
 	padding: 20px;
 	font-family: gothamMedium;
+	a,
 	button,
 	span {
 		margin: 20px 0;
@@ -124,8 +187,11 @@ footer {
 		color: $primary;
 		text-align: center;
 		font-family: gothamMedium;
+		dsiplay: block;
 	}
+	a,
 	button {
+		text-decoration: none;
 		border: none;
 		background: none;
 		font-weight: bolder;
@@ -309,6 +375,10 @@ footer {
 					letter-spacing: 5px;
 				}
 			}
+			.navMenu {
+				left: auto;
+				padding: 20px 0;
+			}
 		}
 	}
 	.wrap,
@@ -323,6 +393,7 @@ footer {
 	footer {
 		flex-direction: row;
 		margin-bottom: 20px;
+		a,
 		button,
 		span {
 			margin: 0 20px;

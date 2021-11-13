@@ -139,7 +139,7 @@ class inner extends React.Component{
                     <h3>{this.props.consideration.title}</h3>
                     <p>{this.props.consideration.description}</p>
                   </div>
-                  <button className="btn item" onClick={this.props.modalActive} data-video={this.props.consideration.video}>
+                  <button className="btn item" data-video={this.props.consideration.video} data-link={this.props.consideration.link} onClick={this.props.modalActive}>
                     {this.props.consideration.btnText}
                   </button>
                 </div>
@@ -197,7 +197,7 @@ class inner extends React.Component{
                     <h3>{this.props.consideration.title}</h3>
                     <p>{this.props.consideration.description}</p>
                   </div>
-                  <button className="btn item" onClick={this.props.modalActive} data-video={this.props.consideration.video}>
+                  <button className="btn item" data-video={this.props.consideration.video} data-link={this.props.consideration.link} onClick={this.props.modalActive}>
                     {this.props.consideration.btnText}
                   </button>
                 </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {projects} from '../assets/data/projectData.js';
+import {projects} from '../assets/data/projectData2.js';
 
 import Header from './header.js';
 import Footer from './footer.js';
@@ -45,6 +45,7 @@ class Homepage extends React.Component {
             slug: data.slug,
             layout: data.layout,
             logo: data.logo,
+            logo2: data.logo2,
             hero: data.inner.hero,
             copyright: data.inner.copyright,
             description: data.inner.description,
@@ -177,7 +178,7 @@ class Homepage extends React.Component {
         return;
       }
       // if video link launch modal
-      if(e.target.closest(".item").hasAttribute('data-video')) {
+      if(e.target.closest(".item").hasAttribute('data-video') && e.target.closest(".item").getAttribute('data-video') !== "") {
         // Create an iFrame with autoplay set to true
         let videoLink = e.target.closest(".item").getAttribute("data-video"),
             iframeWrap = document.createElement("article"),
@@ -303,7 +304,11 @@ class Homepage extends React.Component {
             activeImage={activeImage}
           />
         </section>
-        <Header onClick={this.onTemplateClose} />
+        <Header 
+          projects={projects}
+          onTemplateOpen={this.onTemplateOpen}
+          onTemplateClose={this.onTemplateClose}
+        />
         <Inner
           slug={slug}
           layout={layout}
@@ -329,7 +334,11 @@ class Homepage extends React.Component {
                 <div className="project" key={data.id} data-id={data.id} onClick={this.onTemplateOpen}>
                   <article>
                     <img rel="preload" className="poster" src={data.poster} alt={data.name} />
-                    <img rel="preload" className="logo" src={data.logo} alt={data.name} />
+                    {data.logo2 ? (
+                      <img rel="preload" className="logo" src={data.logo2} alt={data.name} />
+                    ) : (
+                      <img rel="preload" className="logo" src={data.logo} alt={data.name} />
+                    )}
                   </article>
                 </div>
               );

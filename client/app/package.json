@@ -5,7 +5,7 @@
   "repository": "https://github.com/Bebeau/dreamworks",
   "author": "Kyle Bebeau",
   "license": "MIT",
-  "homepage": "http://dreamworksfyc.cia-adv.com/",
+  "homepage": "https://theinitgroup.com/dreamworks2022/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -17,6 +17,11 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "^4.0.1",
-    "typescript": "^4.1.3"
+    "typescript": "^4.1.3",
+    "eslint": "^7.5.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/eslint-parser": "^7.12.1"
   }
 }
