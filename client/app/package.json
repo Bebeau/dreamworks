@@ -5,7 +5,6 @@
   "repository": "https://github.com/Bebeau/dreamworks",
   "author": "Kyle Bebeau",
   "license": "MIT",
-  "homepage": "https://theinitgroup.com/dreamworks2022/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

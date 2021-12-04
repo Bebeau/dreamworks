@@ -24,10 +24,10 @@
     "eject": "react-scripts eject",
     "build": "yarn --cwd client/app build",
     "server": "nodemon server.js",
+    "client-install": "yarn --cwd client/app install",
     "client": "yarn --cwd client/app start",
-    "dev": "concurrently \"yarn run server\" \"yarn run client\" \"yarn run sass\"",
     "sass": "sass --watch client/app/src/assets/sass:client/app/src/assets/css",
-    "client-install": "yarn --cwd client/app install"
+    "dev": "concurrently \"yarn run server\" \"yarn run client\" \"yarn run sass\""
   },
   "eslintConfig": {
     "extends": "react-app"
