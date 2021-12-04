@@ -321,6 +321,14 @@ footer {
 				transition: all 0.3s ease-in-out;
 			}
 		}
+		// placeholder
+		&[data-id="5"] {
+			article {
+				&:hover {
+					cursor: auto;
+				}
+			}
+		}
 	}
 }
 .wrap {

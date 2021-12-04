@@ -677,7 +677,7 @@
 					p,
 					cite {
 						font-size: 0.8rem;
-						line-height: 1.4rem;
+						line-height: 1.2rem;
 					}
 				}
 			}
@@ -688,5 +688,15 @@
 	.innerHero {
 		width: 1540px;
 		margin: 0 auto;
+		article {
+			&.heroInfo {
+				.infoWrap {
+					p,
+					cite {
+						line-height: 1.4rem;
+					}
+				}
+			}
+		}
 	}
 }

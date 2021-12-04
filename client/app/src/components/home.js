@@ -7,7 +7,10 @@ import Footer from './footer.js';
 
 import Inner from './single.js';
 import Gallery from './gallery.js';
-import Hero from '../assets/img/mainHero.jpg';
+// import Hero from '../assets/img/mainHero.jpg';
+
+import IntroMP4 from '../assets/video/intro.mp4';
+import IntroWebM from '../assets/video/intro.webm';
 
 class Homepage extends React.Component {
   constructor(props) {
@@ -26,7 +29,7 @@ class Homepage extends React.Component {
     this.hideModal = this.hideModal.bind(this);
     this.changeSlide = this.changeSlide.bind(this);
     this.backTrigger = this.backTrigger.bind(this);
-    this.bannerAnchor = this.bannerAnchor.bind(this);
+    this.unMute = this.unMute.bind(this);
   }
   componentDidCatch(error, errorInfo) {
     // Catch errors in any components below and re-render with error message
@@ -121,6 +124,10 @@ class Homepage extends React.Component {
   onTemplateOpen(e) {
     // get clicked project id
     let id = e.target.closest(".project").getAttribute("data-id");
+    // placeholder
+    if(id === 5) {
+      return;
+    }
     // check if data exists
     projects.forEach((data, key) => {
       // if match, set data and show inner view
@@ -260,8 +267,12 @@ class Homepage extends React.Component {
       activeImage: index
     })
   }
-  bannerAnchor() {
-    document.getElementById('projectListing').scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+  // bannerAnchor() {
+  //   document.getElementById('projectListing').scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+  // }
+  unMute() {
+    let video = document.getElementById('introVideo');
+    video.muted = !video.muted;
   }
   render() {
     const {
@@ -326,7 +337,11 @@ class Homepage extends React.Component {
           modalActive={this.showModal}
         />
         <div id="homePage">
-          <div className="mainBanner" style={{backgroundImage: `url(${Hero})`}} onClick={this.bannerAnchor}>
+          <div className="mainBanner">
+            <video id="introVideo" autoPlay muted loop onClick={this.unMute}>
+              <source src={IntroWebM} type="video/webm" />
+              <source src={IntroMP4} type="video/mp4" />
+            </video>
           </div>
           <div id="projectListing">
             {projects.map((data, key) => {

@@ -1,6 +1,6 @@
-import logoPlaceholder from '../img/series2022/placeholders/logoPlaceholder.jpg';
-import dragonPoster from '../img/series2022/placeholders/dragonsPoster.jpg';
-import heroPlaceholder from '../img/series2022/placeholders/heroPlaceholder.jpg';
+// import logoPlaceholder from '../img/series2022/placeholders/logoPlaceholder.jpg';
+// import posterPlaceholder from '../img/series2022/placeholders/dragonsPoster.jpg';
+// import heroPlaceholder from '../img/series2022/placeholders/heroPlaceholder.jpg';
 import itemPlaceholder from '../img/series2022/placeholders/itemPlaceholder.jpg';
 import galleryPlaceholder from '../img/series2022/placeholders/galleryPlaceholder.jpg';
 import galleryStillPlaceholder from '../img/series2022/placeholders/galleryStillPlaceholder.jpg';
@@ -18,7 +18,6 @@ import JW_Hero from '../img/series2022/JurassicWorld/inner/hero.jpg';
 import JW_Item1 from '../img/series2022/JurassicWorld/inner/items/1.jpg';
 import JW_Item2 from '../img/series2022/JurassicWorld/inner/items/2.jpg';
 import JW_Item3 from '../img/series2022/JurassicWorld/inner/items/3.jpg';
-import JW_Consideration from '../img/series2022/JurassicWorld/inner/consideration/poster.jpg';
 import JW_Gallery from '../img/series2022/JurassicWorld/inner/gallery/poster.jpg';
 import JW_Gallery_1 from '../img/series2022/JurassicWorld/inner/gallery/stills/1.jpg';
 import JW_Gallery_2 from '../img/series2022/JurassicWorld/inner/gallery/stills/2.jpg';
@@ -26,6 +25,15 @@ import JW_Gallery_3 from '../img/series2022/JurassicWorld/inner/gallery/stills/3
 import JW_Gallery_4 from '../img/series2022/JurassicWorld/inner/gallery/stills/4.jpg';
 import JW_Gallery_5 from '../img/series2022/JurassicWorld/inner/gallery/stills/5.jpg';
 import JW_Gallery_6 from '../img/series2022/JurassicWorld/inner/gallery/stills/6.jpg';
+import JW_Consideration from '../img/series2022/JurassicWorld/inner/consideration/poster.jpg';
+import JW_Consideration_1 from '../img/series2022/JurassicWorld/inner/consideration/stills/1.jpg';
+import JW_Consideration_2 from '../img/series2022/JurassicWorld/inner/consideration/stills/2.jpg';
+import JW_Consideration_3 from '../img/series2022/JurassicWorld/inner/consideration/stills/3.jpg';
+import JW_Consideration_4 from '../img/series2022/JurassicWorld/inner/consideration/stills/4.jpg';
+import JW_Consideration_5 from '../img/series2022/JurassicWorld/inner/consideration/stills/5.jpg';
+import JW_Consideration_6 from '../img/series2022/JurassicWorld/inner/consideration/stills/6.jpg';
+import JW_Consideration_7 from '../img/series2022/JurassicWorld/inner/consideration/stills/7.jpg';
+import JW_Consideration_8 from '../img/series2022/JurassicWorld/inner/consideration/stills/8.jpg';
 
 // TROLL HUNTERS
 import TH_Logo from '../img/series2022/TrollHunters/logo.png';
@@ -41,6 +49,17 @@ import TH_Gallery_3 from "../img/series2022/TrollHunters/inner/gallery/stills/3.
 import TH_Gallery_4 from "../img/series2022/TrollHunters/inner/gallery/stills/4.jpg";
 import TH_Gallery_5 from "../img/series2022/TrollHunters/inner/gallery/stills/5.jpg";
 import TH_Gallery_6 from "../img/series2022/TrollHunters/inner/gallery/stills/6.jpg";
+import TH_Consideration from '../img/series2022/TrollHunters/inner/consideration/poster.jpg';
+import TH_Consideration_1 from '../img/series2022/TrollHunters/inner/consideration/stills/1.jpg';
+import TH_Consideration_2 from '../img/series2022/TrollHunters/inner/consideration/stills/2.jpg';
+import TH_Consideration_3 from '../img/series2022/TrollHunters/inner/consideration/stills/3.jpg';
+import TH_Consideration_4 from '../img/series2022/TrollHunters/inner/consideration/stills/4.jpg';
+import TH_Consideration_5 from '../img/series2022/TrollHunters/inner/consideration/stills/5.jpg';
+import TH_Consideration_6 from '../img/series2022/TrollHunters/inner/consideration/stills/6.jpg';
+import TH_Consideration_7 from '../img/series2022/TrollHunters/inner/consideration/stills/7.jpg';
+import TH_Consideration_8 from '../img/series2022/TrollHunters/inner/consideration/stills/8.jpg';
+import TH_Consideration_9 from '../img/series2022/TrollHunters/inner/consideration/stills/9.jpg';
+import TH_Consideration_10 from '../img/series2022/TrollHunters/inner/consideration/stills/10.jpg';
 
 // GABBYS DOLLHOUSE
 import GD_Logo from '../img/series2022/GabbysDollhouse/logo.png';
@@ -175,12 +194,24 @@ import TMO_Gallery_5 from '../img/series2022/MightyOnes/inner/gallery/stills/5.j
 import DU_Logo from '../img/series2022/DougUnplugs/logo.png';
 import DU_Poster from '../img/series2022/DougUnplugs/poster.jpg';
 import DU_Hero from '../img/series2022/DougUnplugs/inner/hero.jpg';
+import DU_Item1 from '../img/series2022/DougUnplugs/inner/items/1.jpg';
+import DU_Item2 from '../img/series2022/DougUnplugs/inner/items/2.jpg';
+import DU_Gallery from '../img/series2022/DougUnplugs/inner/gallery/poster.jpg';
+import DU_Gallery_1 from '../img/series2022/DougUnplugs/inner/gallery/stills/1.jpg';
+import DU_Gallery_2 from '../img/series2022/DougUnplugs/inner/gallery/stills/2.jpg';
+import DU_Gallery_3 from '../img/series2022/DougUnplugs/inner/gallery/stills/3.jpg';
+import DU_Gallery_4 from '../img/series2022/DougUnplugs/inner/gallery/stills/4.jpg';
+import DU_Gallery_5 from '../img/series2022/DougUnplugs/inner/gallery/stills/5.jpg';
+import DU_Gallery_6 from '../img/series2022/DougUnplugs/inner/gallery/stills/6.jpg';
+import DU_Gallery_7 from '../img/series2022/DougUnplugs/inner/gallery/stills/7.jpg';
 
 // DRAGONS RESCUE RIDERS
 import DRR_Logo from '../img/series2022/RescueRiders/logo.png';
 import DRR_Logo2 from '../img/series2022/RescueRiders/logo2.png';
 import DRR_Poster from '../img/series2022/RescueRiders/poster.jpg';
 import DRR_Hero from '../img/series2022/RescueRiders/inner/hero.jpg';
+import DRR_Item1 from '../img/series2022/RescueRiders/inner/items/1.jpg';
+import DRR_Item2 from '../img/series2022/RescueRiders/inner/items/2.jpg';
 import DRR_Gallery from '../img/series2022/RescueRiders/inner/gallery/poster.jpg';
 import DRR_Gallery_1 from '../img/series2022/RescueRiders/inner/gallery/stills/1.jpg';
 import DRR_Gallery_2 from '../img/series2022/RescueRiders/inner/gallery/stills/2.jpg';
@@ -207,6 +238,11 @@ import RTT_Logo from '../img/series2022/RhymeTimeTown/logo.png';
 import RTT_Poster from '../img/series2022/RhymeTimeTown/poster.jpg';
 import RTT_Hero from '../img/series2022/RhymeTimeTown/inner/hero.jpg';
 import RTT_Item1 from '../img/series2022/RhymeTimeTown/inner/items/1.jpg';
+
+// DRAGONS: NINE REALMS
+import DNR_Logo from '../img/series2022/NineRealms/logo.png';
+import DNR_Poster from '../img/series2022/NineRealms/poster.jpg';
+import DNR_Hero from '../img/series2022/NineRealms/inner/hero.jpg';
 
 export const projects = [
 	// JURASSIC WORLD: CAMP CRETACEOUS
@@ -253,7 +289,16 @@ export const projects = [
 				"title": "Production Design by TBD",
 				"description": "TBD created a stunning production design.",
 				"btnText": "View Now",
-				"images": []
+				"images": [
+					JW_Consideration_1,
+					JW_Consideration_2,
+					JW_Consideration_3,
+					JW_Consideration_4,
+					JW_Consideration_5,
+					JW_Consideration_6,
+					JW_Consideration_7,
+					JW_Consideration_8
+				]
 			},
 			"gallery": {
 				"poster": JW_Gallery,
@@ -310,12 +355,21 @@ export const projects = [
 				}
 			],
 			"consideration": {
-				"poster": galleryPlaceholder,
+				"poster": TH_Consideration,
 				"title": "Production Design by TBD",
 				"description": "TBD created a stunning production design.",
 				"btnText": "View Now",
 				"images": [
-					galleryStillPlaceholder
+					TH_Consideration_1,
+					TH_Consideration_2,
+					TH_Consideration_3,
+					TH_Consideration_4,
+					TH_Consideration_5,
+					TH_Consideration_6,
+					TH_Consideration_7,
+					TH_Consideration_8,
+					TH_Consideration_9,
+					TH_Consideration_10
 				]
 			},
 			"gallery": {
@@ -525,16 +579,16 @@ export const projects = [
 			}
 		}
 	},
-	// BLANK
+	// DRAGONS: THE NINE REALMS
 	{
 		"id": 5,
 		"layout": "fourth",
-		"name": "",
+		"name": "Dragons: The Nine Realms",
 		"slug": "",
-		"logo": logoPlaceholder,
-		"poster": dragonPoster,
+		"logo": DNR_Logo,
+		"poster": DNR_Poster,
 		"inner": {
-			"hero": heroPlaceholder,
+			"hero": DNR_Hero,
 			"copyright": "",
 			"description": "Set 1,300 years after the events of How To Train Your Dragon, dragons are now just a legend to the modern world. When a geological anomaly opens up an immense, miles-deep fissure in the Earth’s surface, scientists from all over the world gather at a new research facility to study the mysterious phenomenon. Soon a group of misfit kids, brought to the site by their parents, uncover the truth about dragons and where they’ve been hiding -- a secret they must keep to themselves to protect what they’ve discovered. From executive producer John Tellegen (Dragons: Race to the Edge),  Dragons: The Nine Realms soars onto hulu and Peacock December 23.",
 			"streaming": [
@@ -671,10 +725,10 @@ export const projects = [
 					"description": "A series of traÜc jams threatens to make Tag and Scooch late for the Party in the Tree!"
 				},
 				{
-					"video": "",
+					"video": "https://www.youtube.com/embed/agQCBieUUfI?autoplay=1",
 					"poster": GDG_Item3,
-					"title": "TBD",
-					"description": "TBD"
+					"title": "A Motorcycle Jump for Friendship",
+					"description": "Beans is nervous that Frank is starting to make a new best friend, so Beans enlists Tag to help him win Frank back!"
 				},
 			],
 			"gallery": {
@@ -839,30 +893,30 @@ export const projects = [
 			],
 			"items": [
 				{
-					"video": "",
-					"poster": itemPlaceholder,
+					"video": "https://www.youtube.com/embed/1y3kWleC1Es?autoplay=1",
+					"poster": DU_Item1,
 					"title": "Series Trailer",
 					"description": "TBD"
 				},
 				{
-					"video": "",
-					"poster": itemPlaceholder,
+					"video": "https://www.youtube.com/embed/1y3kWleC1Es?autoplay=1",
+					"poster": DU_Item2,
 					"title": "Leaves Reboot the Earth",
-					"description": "TBD"
-				},
-				{
-					"video": "",
-					"poster": itemPlaceholder,
-					"title": "Video Title 3",
 					"description": "TBD"
 				}
 			],
 			"gallery": {
-				"poster": galleryPlaceholder,
+				"poster": DU_Gallery,
 				"title": "Art Gallery",
 				"btnText": "View Now",
 				"images": [
-					galleryStillPlaceholder
+					DU_Gallery_1,
+					DU_Gallery_2,
+					DU_Gallery_3,
+					DU_Gallery_4,
+					DU_Gallery_5,
+					DU_Gallery_6,
+					DU_Gallery_7
 				]
 			}
 		}
@@ -871,7 +925,7 @@ export const projects = [
 	{
 		"id": 11,
 		"layout": "fourth",
-		"name": "Dragons Rescue Riders",
+		"name": "Dragons: Rescue Riders",
 		"slug": "dragons-rescue-riders",
 		"logo": DRR_Logo,
 		"logo2": DRR_Logo2,
@@ -890,13 +944,13 @@ export const projects = [
 			"items": [
 				{
 					"video": "",
-					"poster": itemPlaceholder,
+					"poster": DRR_Item1,
 					"title": "Series Trailer",
 					"description": "TBD"
 				},
 				{
 					"video": "",
-					"poster": itemPlaceholder,
+					"poster": DRR_Item2,
 					"title": "Chief Ingrid the Intimidating",
 					"description": "TBD"
 				}
