@@ -21,7 +21,8 @@ class Homepage extends React.Component {
       clicked: false,
       modalActive: false,
       galleryImages: false,
-      activeImage: 0
+      activeImage: 0,
+      muted: true
     };
     this.onTemplateOpen = this.onTemplateOpen.bind(this);
     this.onTemplateClose = this.onTemplateClose.bind(this);
@@ -273,6 +274,9 @@ class Homepage extends React.Component {
   unMute() {
     let video = document.getElementById('introVideo');
     video.muted = !video.muted;
+    this.setState({
+      muted: !this.state.muted
+    })
   }
   render() {
     const {
@@ -291,7 +295,8 @@ class Homepage extends React.Component {
       modalActive,
       galleryImages,
       activeImage,
-      clicked
+      clicked,
+      muted
     } = this.state;
     if (this.state.errorInfo) {
       // Error path
@@ -337,7 +342,7 @@ class Homepage extends React.Component {
           modalActive={this.showModal}
         />
         <div id="homePage">
-          <div className="mainBanner">
+          <div className={this.state.muted ? 'mainBanner': 'mainBanner sound'}>
             <video id="introVideo" autoPlay muted loop onClick={this.unMute}>
               <source src={IntroWebM} type="video/webm" />
               <source src={IntroMP4} type="video/mp4" />
