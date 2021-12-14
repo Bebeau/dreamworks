@@ -136,7 +136,7 @@ class inner extends React.Component{
                       <span>o</span>
                       <span>n</span>
                     </h5>
-                    <h3>{this.props.consideration.title}</h3>
+                    <h3>{this.props.consideration.title.replace(/\n/g, "\u00a0")}</h3>
                     <p>{this.props.consideration.description}</p>
                   </div>
                   <button className="btn item" data-video={this.props.consideration.video} data-link={this.props.consideration.link} onClick={this.props.modalActive}>
@@ -194,7 +194,7 @@ class inner extends React.Component{
                       <span>o</span>
                       <span>n</span>
                     </h5>
-                    <h3>{this.props.consideration.title}</h3>
+                    <h3>{this.props.consideration.title.replace(/\n/g, '\u00a0')}</h3>
                     <p>{this.props.consideration.description}</p>
                   </div>
                   <button className="btn item" data-video={this.props.consideration.video} data-link={this.props.consideration.link} onClick={this.props.modalActive}>

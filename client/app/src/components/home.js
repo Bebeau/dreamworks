@@ -1,5 +1,6 @@
 import React from 'react';
 
+import {images} from '../assets/data/projectData2.js';
 import {projects} from '../assets/data/projectData2.js';
 
 import Header from './header.js';
@@ -22,7 +23,8 @@ class Homepage extends React.Component {
       modalActive: false,
       galleryImages: false,
       activeImage: 0,
-      muted: true
+      muted: true,
+      loading: true
     };
     this.onTemplateOpen = this.onTemplateOpen.bind(this);
     this.onTemplateClose = this.onTemplateClose.bind(this);
@@ -41,6 +43,24 @@ class Homepage extends React.Component {
     // You can also log error messages to an error reporting service here
   }
   componentDidMount() {
+
+    let imagePreload = images.map(function(item){
+      return new Promise((resolve, reject) => {
+        let img = new Image();
+        img.src = item;
+        img.onload = function(){
+          resolve();
+        }
+      })
+    })
+
+    Promise.all(imagePreload)
+    .then(() => {
+      this.setState({
+        loading: false
+      })
+    })
+
     let slug = window.location.pathname.split("/").pop();
     if(slug !== "") {
       projects.forEach((data, key) => {
@@ -67,8 +87,8 @@ class Homepage extends React.Component {
           window.scrollTo({ top: 0, behavior: 'smooth' });
           // update url path
           // console.log(window.history.state);
-          window.history.pushState({}, data.name, data.slug);
-          window.history.replaceState({}, data.name, data.slug);
+          // window.history.pushState({}, data.name, data.slug);
+          // window.history.replaceState({}, data.name, data.slug);
         }
       });
     }
@@ -116,8 +136,8 @@ class Homepage extends React.Component {
           window.scrollTo({ top: 0, behavior: 'smooth' });
           // update url path
           // console.log(window.history.state);
-          window.history.pushState({}, data.name, data.slug);
-          window.history.replaceState({}, data.name, data.slug);
+          // window.history.pushState({}, data.name, data.slug);
+          // window.history.replaceState({}, data.name, data.slug);
         }
       });
     }
@@ -154,8 +174,8 @@ class Homepage extends React.Component {
         window.scrollTo({ top: 0 });
         // update url path
         // console.log(window.history.state);
-        window.history.pushState('', data.name, data.slug);
-        window.history.replaceState({}, data.name, data.slug);
+        // window.history.pushState('', data.name, data.slug);
+        // window.history.replaceState({}, data.name, data.slug);
       }
     });
   }
@@ -172,8 +192,8 @@ class Homepage extends React.Component {
     document.getElementById('innerPageTemplate').scrollTo({ top: 0, behavior: 'smooth' });
     // update url path
     // console.log(window.history.state);
-    window.history.pushState({}, "Dreamworks", "/");
-    window.history.replaceState({}, "Dreamworks", "/");
+    // window.history.pushState({}, "Dreamworks", "/");
+    // window.history.replaceState({}, "Dreamworks", "/");
   }
   showModal(e) {
     let modal = document.getElementById("innerModal");
@@ -295,8 +315,7 @@ class Homepage extends React.Component {
       modalActive,
       galleryImages,
       activeImage,
-      clicked,
-      muted
+      clicked
     } = this.state;
     if (this.state.errorInfo) {
       // Error path
@@ -313,6 +332,7 @@ class Homepage extends React.Component {
     }
     return (
       <div id="pageWrap" className={this.state.clicked ? 'inner': null}>
+        <div id="loading" className={this.state.loading ? null : 'show'}></div>
         <section id="innerModal" className={modalActive  ? 'projectModal show': 'projectModal'}>
           <Gallery
             images={galleryImages}

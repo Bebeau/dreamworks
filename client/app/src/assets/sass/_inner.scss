@@ -181,6 +181,7 @@
 	h3 {
 		font-size: 1.4rem;
 		margin: 0 auto 10px;
+		white-space: pre-line;
 	}
 	p {
 		color: white;
@@ -625,6 +626,8 @@
 				display: flex;
 				padding-top: 46.25%;
 				justify-content: flex-end;
+				flex-direction: column;
+   				align-items: flex-end;
 				&.mobileHero {
 					display: none;
 				}

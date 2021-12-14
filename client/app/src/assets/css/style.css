@@ -25,6 +25,56 @@ html.lock {
   overflow: hidden;
 }
 
+html {
+  background: black;
+  min-height: 100vh;
+}
+
+body {
+  background: white;
+}
+
+@keyframes spinner {
+  0% {
+    transform: translate3d(-50%, -50%, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate3d(-50%, -50%, 0) rotate(360deg);
+  }
+}
+#loading::before {
+  animation: 1.5s linear infinite spinner;
+  animation-play-state: inherit;
+  border: solid 5px #092E6E;
+  border-bottom-color: white;
+  border-radius: 50%;
+  content: "";
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  will-change: transform;
+}
+
+#loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999999;
+  background: black;
+  opacity: 1;
+  transition: all 1s ease-in-out;
+}
+#loading.show {
+  opacity: 0;
+  pointer-events: none;
+  transition: all 1s ease-in-out;
+}
+
 h1, h2, h3, h4, h5, h6 {
   color: #092E6E;
   font-family: "gothamBold", "arial", sans-serif;
@@ -252,7 +302,7 @@ footer button:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 997;
+  z-index: 2;
 }
 .mainBanner video:hover {
   cursor: pointer;
@@ -266,7 +316,7 @@ footer button:hover {
   position: absolute;
   top: 10px;
   left: 10px;
-  z-index: 998;
+  z-index: 3;
   opacity: 0;
   transition: all 0.2s ease-in-out;
 }
@@ -638,6 +688,7 @@ footer span {
 .innerConsideration h3 {
   font-size: 1.4rem;
   margin: 0 auto 10px;
+  white-space: pre-line;
 }
 .innerConsideration p {
   color: white;
@@ -1057,6 +1108,8 @@ footer span {
     display: flex;
     padding-top: 46.25%;
     justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
   }
   .innerHero article.heroImage.mobileHero {
     display: none;
