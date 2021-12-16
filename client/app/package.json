@@ -1,11 +1,11 @@
 {
   "name": "dreamworks",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "main": "index.js",
   "repository": "https://github.com/Bebeau/dreamworks",
   "author": "Kyle Bebeau",
   "license": "MIT",
-  "homepage": "https://theinitgroup.com/dreamworks2022/",
+  "homepage": "https://fyc.dreamworks.com",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

@@ -81,7 +81,7 @@ import FF_Poster from '../img/series2022/FastFurious/poster.jpg';
 import FF_Hero from '../img/series2022/FastFurious/inner/hero.jpg';
 import FF_Item1 from '../img/series2022/FastFurious/inner/items/1.jpg';
 import FF_Item2 from '../img/series2022/FastFurious/inner/items/2.jpg';
-// import FF_Item3 from '../img/series2022/FastFurious/inner/items/3.jpg';
+import FF_Item3 from '../img/series2022/FastFurious/inner/items/3.jpg';
 import FF_Gallery from '../img/series2022/FastFurious/inner/gallery/poster.jpg';
 import FF_Gallery_1 from "../img/series2022/FastFurious/inner/gallery/stills/1.jpg";
 import FF_Gallery_2 from "../img/series2022/FastFurious/inner/gallery/stills/2.jpg";
@@ -196,6 +196,7 @@ import DU_Poster from '../img/series2022/DougUnplugs/poster.jpg';
 import DU_Hero from '../img/series2022/DougUnplugs/inner/hero.jpg';
 import DU_Item1 from '../img/series2022/DougUnplugs/inner/items/1.jpg';
 import DU_Item2 from '../img/series2022/DougUnplugs/inner/items/2.jpg';
+import DU_Item3 from '../img/series2022/DougUnplugs/inner/items/3.jpg';
 import DU_Gallery from '../img/series2022/DougUnplugs/inner/gallery/poster.jpg';
 import DU_Gallery_1 from '../img/series2022/DougUnplugs/inner/gallery/stills/1.jpg';
 import DU_Gallery_2 from '../img/series2022/DougUnplugs/inner/gallery/stills/2.jpg';
@@ -335,6 +336,7 @@ export const images = [
 	FF_Hero,
 	FF_Item1,
 	FF_Item2,
+	FF_Item3,
 	FF_Gallery,
 	FF_Gallery_1,
 	FF_Gallery_2,
@@ -437,6 +439,7 @@ export const images = [
 	DU_Hero,
 	DU_Item1,
 	DU_Item2,
+	DU_Item3,
 	DU_Gallery,
 	DU_Gallery_1,
 	DU_Gallery_2,
@@ -503,7 +506,7 @@ export const projects = [
 	{
 		"id": 0,
 		"layout": "first",
-		"name": "JURASSIC WORLD",
+		"name": "Jurassic World: Camp Cretaceous",
 		"slug": "jurassic-world-camp-cretaceous",
 		"logo": JW_Logo,
 		"poster": JW_Poster,
@@ -573,7 +576,7 @@ export const projects = [
 	{
 		"id": 1,
 		"layout": "first",
-		"name": "TROLLHUNTERS",
+		"name": "TrollHunters: Rise of the Titans",
 		"slug": "trollhunters-rise-of-the-titans",
 		"logo": TH_Logo,
 		"poster": TH_Poster,
@@ -596,7 +599,7 @@ export const projects = [
 					"description": "In an epic conclusion to the Tales of Arcadia saga, our heroes must unite their worlds in order to save the universe."
 				},
 				{
-					"video": "",
+					"video": "https://www.youtube.com/embed/G1ahEdO-xy0?autoplay=1",
 					"poster": TH_Item2,
 					"title": "Rise of the Titans Creative Team",
 					"description": "Hear from the Creative Team behind Trollhunters: Rise of the Titans including creator Guillermo del Toro, Chad Hammes, Johane Matte, Francisco Ruiz and Andrew Schmidt."
@@ -698,8 +701,8 @@ export const projects = [
 	{
 		"id": 3,
 		"layout": "first",
-		"name": "FAST & FURIOUS: SPY RACERS",
-		"slug": "fast-furious-spy-racers",
+		"name": "Fast & Furious: Spy Racers South Pacific",
+		"slug": "fast-furious-spy-racers-south-pacific",
 		"logo": FF_Logo,
 		"poster": FF_Poster,
 		"inner": {
@@ -725,6 +728,12 @@ export const projects = [
 					"poster": FF_Item2,
 					"title": "Ms. Nowhere and Palindrome",
 					"description": "With tensions running high, will Ms. Nowhere and Palindrome be able to get past their differences and work together as a team?"
+				},
+				{
+					"video": "https://www.youtube.com/embed/sFl2EaiIesw?autoplay=1",
+					"poster": FF_Item3,
+					"title": "Captain Cisco",
+					"description": "The Spy Racers must defend themselves against their most daunting enemy yet: the sea!"
 				}
 			],
 			"consideration": {
@@ -800,7 +809,7 @@ export const projects = [
 				{
 					"video": "https://www.youtube.com/embed/ABdTeVJw1fg?autoplay=1",
 					"poster": CDS_Item2,
-					"title": "The Bounceberries Taste like Bounceberries",
+					"title": "The Bounceberries Taste Like Bounceberries",
 					"description": "Determined to prove their worth on the Betterman farm, the Croods set out to harvest the seriously sticky bounceberries."
 				},
 				{
@@ -832,7 +841,7 @@ export const projects = [
 		"id": 5,
 		"layout": "fourth",
 		"name": "Dragons: The Nine Realms",
-		"slug": "",
+		"slug": "dragons-the-nine-realms",
 		"logo": DNR_Logo,
 		"poster": DNR_Poster,
 		"inner": {
@@ -976,7 +985,7 @@ export const projects = [
 			],
 			"items": [
 				{
-					"video": "https://www.youtube.com/embed/nmIYxGLzhng?autoplay=1",
+					"video": "https://www.youtube.com/embed/26qItuggWz4?autoplay=1",
 					"poster": GDG_Item1,
 					"title": "Series Trailer",
 					"description": "Join Tag Barker and her best friend, Scooch Pooch, as they chase adventure throughout the community of Pawston"
@@ -1011,7 +1020,7 @@ export const projects = [
 		"id": 8,
 		"layout": "first",
 		"name": "THE MIGHTY ONES",
-		"slug": "mighty-ones",
+		"slug": "the-mighty-ones",
 		"logo": TMO_Logo,
 		"poster": TMO_Poster,
 		"inner": {
@@ -1086,7 +1095,7 @@ export const projects = [
 		"id": 9,
 		"layout": "fourth",
 		"name": "Archibald's Next Big Thing is Here",
-		"slug": "archibalds-next-big-thing",
+		"slug": "archibalds-next-big-thing-is-here",
 		"logo": NBT_Logo,
 		"poster": NBT_Poster,
 		"inner": {
@@ -1156,16 +1165,22 @@ export const projects = [
 			],
 			"items": [
 				{
-					"video": "https://www.youtube.com/embed/1y3kWleC1Es?autoplay=1",
+					"video": "https://www.youtube.com/embed/AHnHSr7_V2Q?autoplay=1",
 					"poster": DU_Item1,
 					"title": "Series Trailer",
-					"description": "TBD"
+					"description": "Doug and Emma return with big adventures!"
 				},
 				{
-					"video": "https://www.youtube.com/embed/1y3kWleC1Es?autoplay=1",
+					"video": "https://www.youtube.com/embed/qxLbEEBrmcM?autoplay=1",
 					"poster": DU_Item2,
-					"title": "Leaves Reboot the Earth",
-					"description": "TBD"
+					"title": "Fall Has Arrived",
+					"description": "When there’s a chill in the air, leaves on the ground, and the smell of pumpkin spiced muffins, it can only mean one thing — it’s fall time! Emma shows Doug and the rest of the bots how fun fall can be."
+				},
+				{
+					"video": "https://www.youtube.com/embed/WhNuv4hs4Eo?autoplay=1",
+					"poster": DU_Item3,
+					"title": "What Is A Habitat?",
+					"description": "When a little duck loses his way, Doug and Emma try to help him find his way back home."
 				}
 			],
 			"gallery": {
@@ -1189,7 +1204,7 @@ export const projects = [
 		"id": 11,
 		"layout": "fourth",
 		"name": "Dragons Rescue Riders: Heroes of the Sky",
-		"slug": "dragons-rescue-riders",
+		"slug": "dragons-rescue-riders-heros-of-the-sky",
 		"logo": DRR_Logo,
 		"logo2": DRR_Logo2,
 		"poster": DRR_Poster,
@@ -1206,16 +1221,16 @@ export const projects = [
 			],
 			"items": [
 				{
-					"video": "",
+					"video": "https://www.youtube.com/embed/PieavGBCBTo?autoplay=1",
 					"poster": DRR_Item1,
 					"title": "Series Trailer",
-					"description": "TBD"
+					"description": "Heroes take flight and friendship soars in the newest chapter of Dragons Rescue Riders: Heroes of the Sky!"
 				},
 				{
-					"video": "",
+					"video": "https://www.youtube.com/embed/3E6XiO4sK7s?autoplay=1",
 					"poster": DRR_Item2,
-					"title": "Chief Ingrid the Intimidating",
-					"description": "TBD"
+					"title": "Octopus and Eel Escape",
+					"description": "The Riders set out to find the Sunken City of Valantis—an ancient Viking city where dragons and people were friends— but when they find it, they realize they aren’t alone down there in the lost city!"
 				}
 			],
 			"gallery": {

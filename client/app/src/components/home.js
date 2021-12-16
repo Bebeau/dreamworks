@@ -192,8 +192,8 @@ class Homepage extends React.Component {
     document.getElementById('innerPageTemplate').scrollTo({ top: 0, behavior: 'smooth' });
     // update url path
     // console.log(window.history.state);
-    // window.history.pushState({}, "Dreamworks", "/");
-    // window.history.replaceState({}, "Dreamworks", "/");
+    // window.history.pushState({}, "Dreamworks Animation Studio", "./");
+    // window.history.replaceState({}, "Dreamworks Animation Studio", "./");
   }
   showModal(e) {
     let modal = document.getElementById("innerModal");
@@ -225,7 +225,7 @@ class Homepage extends React.Component {
         // append iframe to video modal
         modal.appendChild(iframeWrap);
         // console.log(window.screen.orientation);
-        // window.screen.orientation.lock("landscape-primary");
+        window.screen.orientation.lock("landscape-primary");
       }
     }
     if(e.target.closest(".innerGallery") && !e.target.closest(".innerGallery").classList.contains('video')) {
@@ -332,7 +332,11 @@ class Homepage extends React.Component {
     }
     return (
       <div id="pageWrap" className={this.state.clicked ? 'inner': null}>
-        <div id="loading" className={this.state.loading ? null : 'show'}></div>
+        <div id="loading" className={this.state.loading ? null : 'show'}>
+          <article>
+            loading...
+          </article>
+        </div>
         <section id="innerModal" className={modalActive  ? 'projectModal show': 'projectModal'}>
           <Gallery
             images={galleryImages}
