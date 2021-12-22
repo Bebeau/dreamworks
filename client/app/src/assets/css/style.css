@@ -19,6 +19,7 @@ html {
   padding: 0;
   margin: 0;
   font-family: "gothamLight", "arial", sans-serif;
+  scroll-behavior: smooth;
 }
 body.lock,
 html.lock {
@@ -204,7 +205,7 @@ header .bar .navMenu {
   top: 50px;
   right: 0;
   left: 0;
-  background: rgba(9, 46, 110, 0.5);
+  background: #092e6e;
   backdrop-filter: blur(4px);
   list-style: none;
   margin: 0;
@@ -212,22 +213,28 @@ header .bar .navMenu {
   transform: translate(0, -100%);
   transition: all 0.5s ease-in-out;
 }
-header .bar .navMenu.show {
-  transform: translate(0, 0);
-  transition: all 0.5s ease-in-out;
-}
 header .bar .navMenu li {
   text-align: left;
-  color: white;
+  color: #092e6e;
   font-family: gothamBlack;
   font-size: 0.8rem;
   line-height: 28px;
   padding: 0 22px;
   text-transform: uppercase;
+  transition: all 0.5s ease-in-out;
 }
 header .bar .navMenu li:hover {
   background: #092e6e;
   cursor: pointer;
+}
+header .bar .navMenu.show {
+  background: rgba(9, 46, 110, 0.5);
+  transform: translate(0, 0);
+  transition: all 0.5s ease-in-out;
+}
+header .bar .navMenu.show li {
+  color: white;
+  transition: all 0.5s ease-in-out;
 }
 
 footer {
@@ -328,6 +335,7 @@ footer button:hover {
   z-index: 3;
   opacity: 0;
   transition: all 0.2s ease-in-out;
+  display: none;
 }
 .mainBanner.sound:before {
   background: url("/assets/img/audio-off.png") no-repeat scroll center/contain;
@@ -493,6 +501,10 @@ footer span {
 @media (min-width: 991px) {
   header .bar {
     width: 900px;
+  }
+
+  .mainBanner:before {
+    display: inherit;
   }
 
   #projectListing,

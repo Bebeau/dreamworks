@@ -1,4 +1,5 @@
 import React from 'react';
+// import { BrowserView, MobileView } from 'react-device-detect';
 
 import {images} from '../assets/data/projectData2.js';
 import {projects} from '../assets/data/projectData2.js';
@@ -8,7 +9,7 @@ import Footer from './footer.js';
 
 import Inner from './single.js';
 import Gallery from './gallery.js';
-// import Hero from '../assets/img/mainHero.jpg';
+import Hero from '../assets/img/mainHero_2021.jpg';
 
 import IntroMP4 from '../assets/video/intro.mp4';
 import IntroWebM from '../assets/video/intro.webm';
@@ -35,14 +36,14 @@ class Homepage extends React.Component {
     this.unMute = this.unMute.bind(this);
   }
   componentDidCatch(error, errorInfo) {
-    // Catch errors in any components below and re-render with error message
     this.setState({
       error: error,
       errorInfo: errorInfo
     })
-    // You can also log error messages to an error reporting service here
   }
   componentDidMount() {
+
+    window.addEventListener("popstate", this.backTrigger);
 
     let imagePreload = images.map(function(item){
       return new Promise((resolve, reject) => {
@@ -60,6 +61,9 @@ class Homepage extends React.Component {
         loading: false
       })
     })
+
+    window.history.pushState({}, "Dreamworks Animation Studio", "./");
+    window.history.replaceState({}, "Dreamworks Animation Studio", "./");
 
     let slug = window.location.pathname.split("/").pop();
     if(slug !== "") {
@@ -81,35 +85,22 @@ class Homepage extends React.Component {
             gallery: data.inner.gallery,
             clicked: true
           });
-          // lock body scrll
           document.body.classList.add("lock");
-          // auto scroll body to top
           window.scrollTo({ top: 0, behavior: 'smooth' });
-          // update url path
-          // console.log(window.history.state);
-          // window.history.pushState({}, data.name, data.slug);
-          // window.history.replaceState({}, data.name, data.slug);
+          window.history.pushState({}, data.name, data.slug);
+          window.history.replaceState({}, data.name, data.slug);
         }
       });
     }
-    // window.onpopstate = this.backTrigger;
-    window.addEventListener("popstate", this.backTrigger);
   }
-  componentWillUnmount() {
-    window.removeEventListener('onpopstate', this.showPage, false)
-  }
-  backTrigger() {
+  backTrigger(event) {
+    event.stopPropagation();
     let slug = window.location.pathname.split("/").pop();
     if(slug === "") {
-      // hide inner view
       this.setState({
         clicked: false
       });
-      // lock body scrll
       document.body.classList.remove("lock");
-      // auto scroll body to top
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-      // auto scroll project to top
       document.getElementById('innerPageTemplate').scrollTo({ top: 0, behavior: 'smooth' });
     }
     if(slug !== "") {
@@ -130,28 +121,14 @@ class Homepage extends React.Component {
             gallery: data.inner.gallery,
             clicked: true
           });
-          // lock body scrll
           document.body.classList.add("lock");
-          // auto scroll body to top
-          window.scrollTo({ top: 0, behavior: 'smooth' });
-          // update url path
-          // console.log(window.history.state);
-          // window.history.pushState({}, data.name, data.slug);
-          // window.history.replaceState({}, data.name, data.slug);
         }
       });
     }
   }
   onTemplateOpen(e) {
-    // get clicked project id
     let id = e.target.closest(".project").getAttribute("data-id");
-    // placeholder
-    if(id === 5) {
-      return;
-    }
-    // check if data exists
     projects.forEach((data, key) => {
-      // if match, set data and show inner view
       if(key === parseInt(id)) {
         this.setState({
           slug: data.slug,
@@ -168,50 +145,36 @@ class Homepage extends React.Component {
           gallery: data.inner.gallery,
           clicked: true
         });
-        // lock body scrll
         document.body.classList.add("lock");
-        // auto scroll body to top
         window.scrollTo({ top: 0 });
-        // update url path
-        // console.log(window.history.state);
-        // window.history.pushState('', data.name, data.slug);
-        // window.history.replaceState({}, data.name, data.slug);
+        window.history.pushState({}, data.name, data.slug);
+        window.history.replaceState({}, data.name, data.slug);
       }
     });
   }
   onTemplateClose() {
-    // hide inner view
     this.setState({
       clicked: false
     });
-    // lock body scrll
     document.body.classList.remove("lock");
-    // auto scroll body to top
     window.scrollTo({ top: 0, behavior: 'smooth' });
-    // auto scroll project to top
     document.getElementById('innerPageTemplate').scrollTo({ top: 0, behavior: 'smooth' });
-    // update url path
-    // console.log(window.history.state);
-    // window.history.pushState({}, "Dreamworks Animation Studio", "./");
-    // window.history.replaceState({}, "Dreamworks Animation Studio", "./");
+    window.history.pushState({}, "Dreamworks Animation Studio", "./");
+    window.history.replaceState({}, "Dreamworks Animation Studio", "./");
   }
   showModal(e) {
     let modal = document.getElementById("innerModal");
     
     if(e.target.closest(".item")) {
-      // if article link, redirect to link
       if(e.target.closest(".item").hasAttribute('data-link')) {
         let articleLink = e.target.closest(".item").getAttribute("data-link");
         window.open(articleLink);
         return;
       }
-      // if video link launch modal
       if(e.target.closest(".item").hasAttribute('data-video') && e.target.closest(".item").getAttribute('data-video') !== "") {
-        // Create an iFrame with autoplay set to true
         let videoLink = e.target.closest(".item").getAttribute("data-video"),
             iframeWrap = document.createElement("article"),
             iframe = document.createElement("iframe")
-        // set attributes
         iframe.setAttribute("src",videoLink);
         iframe.setAttribute("frameborder",0);
         iframe.setAttribute("allow","accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture");
@@ -219,12 +182,9 @@ class Homepage extends React.Component {
         iframe.setAttribute("autoplay", 1);
         iframe.setAttribute("title", "");
         iframe.setAttribute("id", "videoIframe");
-
         iframeWrap.setAttribute("id", "videoRatioWrap");
         iframeWrap.appendChild(iframe);
-        // append iframe to video modal
         modal.appendChild(iframeWrap);
-        // console.log(window.screen.orientation);
         window.screen.orientation.lock("landscape-primary");
       }
     }
@@ -249,16 +209,13 @@ class Homepage extends React.Component {
     this.hideModal(this);
   }
   hideModal(e) {
-    // define vars
     let body = document.getElementById('innerModal'),
         videoWrap = document.getElementById('videoRatioWrap');
-    // add click listener to modal body
     body.addEventListener("click", function(event) {
         if(videoWrap) {
           videoWrap.remove();
         }
         if(event.target === event.currentTarget) {
-          // change state
           e.setState({
             modalActive: false,
             galleryImages: false,
@@ -266,7 +223,6 @@ class Homepage extends React.Component {
           });
         }
     }, false);
-    // add click listener to inner modal
     if(videoWrap) {
       videoWrap.addEventListener("click", function(e) {
           e.stopPropagation();
@@ -283,14 +239,10 @@ class Homepage extends React.Component {
     if(direction === "next") {
       index = this.state.activeImage === this.state.galleryImages.length -1 ? 0 : this.state.activeImage + 1;
     }
-    // assign the logical index to currentImageIndex that will use in render method
     this.setState({
       activeImage: index
     })
   }
-  // bannerAnchor() {
-  //   document.getElementById('projectListing').scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
-  // }
   unMute() {
     let video = document.getElementById('introVideo');
     video.muted = !video.muted;
@@ -366,8 +318,20 @@ class Homepage extends React.Component {
           modalActive={this.showModal}
         />
         <div id="homePage">
+          {/*<BrowserView>
+            <div className={this.state.muted ? 'mainBanner': 'mainBanner sound'}>
+              <video id="introVideo" poster={Hero} playsInline autoPlay muted loop onClick={this.unMute}>
+                <source src={IntroWebM} type="video/webm" />
+                <source src={IntroMP4} type="video/mp4" />
+              </video>
+            </div>
+          </BrowserView>
+          <MobileView>
+            <div className="mainBanner" style={{backgroundImage: `url(${Hero})`}} onClick={this.bannerAnchor}>
+            </div>
+          </MobileView>*/}
           <div className={this.state.muted ? 'mainBanner': 'mainBanner sound'}>
-            <video id="introVideo" autoPlay muted loop onClick={this.unMute}>
+            <video id="introVideo" poster={Hero} playsInline autoPlay muted loop onClick={this.unMute}>
               <source src={IntroWebM} type="video/webm" />
               <source src={IntroMP4} type="video/mp4" />
             </video>
