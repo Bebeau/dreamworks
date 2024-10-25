@@ -25,7 +25,7 @@ class Homepage extends React.Component {
       galleryImages: false,
       activeImage: 0,
       muted: true,
-      loading: true
+      loading: false
     };
     this.onTemplateOpen = this.onTemplateOpen.bind(this);
     this.onTemplateClose = this.onTemplateClose.bind(this);
