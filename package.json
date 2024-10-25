@@ -20,7 +20,7 @@
     "webpack": "5.95.0"
   },
   "scripts": {
-    "start": "PORT=5005 react-scripts start",
+    "start": "yarn start --port 5005",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "build": "yarn --cwd client/app build",
