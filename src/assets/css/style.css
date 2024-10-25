@@ -69,7 +69,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #4d4d4d;
+  color: rgb(76.5, 76.5, 76.5);
 }
 #loading article:before {
   content: "";
@@ -113,7 +113,7 @@ a:active {
 }
 
 header {
-  background: #092e6e;
+  background: rgb(9, 46, 110);
   position: sticky;
   top: 0;
   left: 0;
@@ -151,7 +151,7 @@ header .bar .left {
   align-items: flex-start;
   flex-direction: column;
   padding: 10px 0;
-  background: #092e6e;
+  background: rgb(9, 46, 110);
   z-index: 998;
 }
 header .bar .right {
@@ -160,7 +160,7 @@ header .bar .right {
   justify-content: flex-end;
   position: relative;
   padding: 10px 0;
-  background: #092e6e;
+  background: rgb(9, 46, 110);
   z-index: 998;
 }
 header .bar .right .icon {
@@ -205,7 +205,7 @@ header .bar .navMenu {
   top: 50px;
   right: 0;
   left: 0;
-  background: #092e6e;
+  background: rgb(9, 46, 110);
   backdrop-filter: blur(4px);
   list-style: none;
   margin: 0;
@@ -215,7 +215,7 @@ header .bar .navMenu {
 }
 header .bar .navMenu li {
   text-align: left;
-  color: #092e6e;
+  color: rgb(9, 46, 110);
   font-family: gothamBlack;
   font-size: 0.8rem;
   line-height: 28px;
@@ -224,7 +224,7 @@ header .bar .navMenu li {
   transition: all 0.5s ease-in-out;
 }
 header .bar .navMenu li:hover {
-  background: #092e6e;
+  background: rgb(9, 46, 110);
   cursor: pointer;
 }
 header .bar .navMenu.show {
@@ -335,7 +335,6 @@ footer button:hover {
   z-index: 3;
   opacity: 0;
   transition: all 0.2s ease-in-out;
-  display: none;
 }
 .mainBanner.sound:before {
   background: url("/assets/img/audio-off.png") no-repeat scroll center/contain;
@@ -465,30 +464,27 @@ footer button:hover {
     left: auto;
     padding: 20px 0;
   }
-
   .wrap,
-#projectListing {
+  #projectListing {
     margin: 20px auto;
     padding: 0 20px;
   }
   .wrap .project,
-#projectListing .project {
+  #projectListing .project {
     padding: 10px;
     width: 33.3333333%;
   }
-
   footer {
     flex-direction: row;
     margin-bottom: 20px;
   }
   footer a,
-footer button,
-footer span {
+  footer button,
+  footer span {
     margin: 0 20px;
     font-size: 0.6rem;
     transition: all 0.3s ease-in-out;
   }
-
   #innerModal #videoRatioWrap {
     transform: scale(0.7);
   }
@@ -502,13 +498,8 @@ footer span {
   header .bar {
     width: 900px;
   }
-
-  .mainBanner:before {
-    display: inherit;
-  }
-
   #projectListing,
-.wrap {
+  .wrap {
     width: 800px;
   }
 }
@@ -516,13 +507,12 @@ footer span {
   header .bar {
     width: 991px;
   }
-
   #projectListing,
-.wrap {
+  .wrap {
     width: 991px;
   }
   #projectListing .project,
-.wrap .project {
+  .wrap .project {
     width: 25%;
   }
 }
@@ -530,15 +520,14 @@ footer span {
   header .bar {
     width: 1200px;
   }
-
   #projectListing,
-.wrap {
+  .wrap {
     width: 1024px;
   }
 }
 @media (min-width: 1200px) {
   #projectListing,
-.wrap {
+  .wrap {
     width: 1200px;
   }
 }
@@ -937,7 +926,7 @@ footer span {
   cursor: pointer;
 }
 .projectModal #gallery .arrows article[data-arrow=next]:hover:before, .projectModal #gallery .arrows article[data-arrow=next]:hover:after {
-  background: black;
+  background: rgb(0, 0, 0);
 }
 .projectModal #gallery .arrows article[data-arrow=prev] {
   width: 30px;
@@ -970,7 +959,7 @@ footer span {
   cursor: pointer;
 }
 .projectModal #gallery .arrows article[data-arrow=prev]:hover:before, .projectModal #gallery .arrows article[data-arrow=prev]:hover:after {
-  background: black;
+  background: rgb(0, 0, 0);
 }
 
 @media (min-width: 768px) {
@@ -978,7 +967,6 @@ footer span {
     width: 533px;
     cursor: auto;
   }
-
   .innerHero article.heroInfo {
     padding: 50px;
   }
@@ -986,11 +974,9 @@ footer span {
     width: 60%;
     margin: 0 auto;
   }
-
   .innerBonus h3 {
     text-align: left;
   }
-
   .innerItems {
     margin: 0 -20px;
     flex-direction: row;
@@ -998,7 +984,6 @@ footer span {
   .innerItems .item {
     width: 33.3%;
   }
-
   .item .itemThumb .play {
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.5);
@@ -1008,7 +993,6 @@ footer span {
     transform: translate(-50%, -50%) scale(1);
     transition: all 0.3s ease-in-out;
   }
-
   .innerConsideration {
     padding: 40px;
   }
@@ -1018,11 +1002,9 @@ footer span {
   .innerConsideration p {
     margin: 0 auto 20px;
   }
-
   .innerGallery h3 {
     letter-spacing: 10px;
   }
-
   .innerSecondary.first {
     flex-direction: row;
     align-items: stretch;
@@ -1104,7 +1086,6 @@ footer span {
     width: 800px;
     padding: 40px;
   }
-
   .innerHero {
     flex-direction: row;
     align-items: stretch;
@@ -1117,7 +1098,7 @@ footer span {
     width: auto;
   }
   .innerHero article.heroInfo .infoWrap p,
-.innerHero article.heroInfo .infoWrap cite {
+  .innerHero article.heroInfo .infoWrap cite {
     font-size: 0.7rem;
     line-height: 1rem;
   }
@@ -1139,7 +1120,6 @@ footer span {
     max-width: 100%;
     text-align: left;
   }
-
   .innerSecondary.second .innerConsideration h5 {
     justify-content: flex-start;
   }
@@ -1149,7 +1129,7 @@ footer span {
 }
 @media (min-width: 1200px) {
   .innerHero article.heroInfo .infoWrap p,
-.innerHero article.heroInfo .infoWrap cite {
+  .innerHero article.heroInfo .infoWrap cite {
     font-size: 0.75rem;
     line-height: 1.2rem;
   }
@@ -1162,7 +1142,7 @@ footer span {
 }
 @media (min-width: 1300px) {
   .innerHero article.heroInfo .infoWrap p,
-.innerHero article.heroInfo .infoWrap cite {
+  .innerHero article.heroInfo .infoWrap cite {
     font-size: 0.8rem;
     line-height: 1.2rem;
   }
@@ -1173,7 +1153,7 @@ footer span {
     margin: 0 auto;
   }
   .innerHero article.heroInfo .infoWrap p,
-.innerHero article.heroInfo .infoWrap cite {
+  .innerHero article.heroInfo .infoWrap cite {
     line-height: 1.4rem;
   }
 }

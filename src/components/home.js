@@ -57,6 +57,7 @@ class Homepage extends React.Component {
 
     Promise.all(imagePreload)
     .then(() => {
+      console.log('IMAGES HAVE BEEN LOADED!!!');
       this.setState({
         loading: false
       })
@@ -284,11 +285,13 @@ class Homepage extends React.Component {
     }
     return (
       <div id="pageWrap" className={this.state.clicked ? 'inner': null}>
+
         <div id="loading" className={this.state.loading ? null : 'show'}>
           <article>
             loading...
           </article>
         </div>
+
         <section id="innerModal" className={modalActive  ? 'projectModal show': 'projectModal'}>
           <Gallery
             images={galleryImages}
